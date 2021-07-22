@@ -1,0 +1,20 @@
+- remove border on scroll. ✓
+- set texure of origami 4 on mouse click / screen tap. ✓
+- add text to origami 4.✓
+- add option to input text to origami 4.
+	- Input should have character limit.
+- add option for custom fonts.
+- create more texture patterns.
+- look into IAP.
+- look into ads.
+- Fix all tex coords for origami models. ✓
+- loading animation. Origami start flat, then folds into fortune teller. ✓
+- origami 4 text fade in.
+- persist background image from scene to scene.
+- custom preset colour options.
+- Fortune Teller Scene.
+- stop colour from going to black when texture is selected.
+- texture ui border needs to change when drop down changes. ✓
+- text with label behind.
+
+

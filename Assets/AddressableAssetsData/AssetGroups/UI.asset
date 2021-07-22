@@ -1,0 +1,151 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: UI
+  m_EditorClassIdentifier: 
+  m_GroupName: UI
+  m_Data:
+    m_SerializedData: []
+  m_GUID: b635fe76718b07e449c3547006276ceb
+  m_SerializeEntries:
+  - m_GUID: 778244277c020e746ad65ecc6f5f0a2f
+    m_Address: Assets/Stickers/UI/Teacup ui.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 1475792d88e584e4d9bcd6eb1abdd37b
+    m_Address: Assets/Stickers/UI/Narwhal ui.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 738412f94ee536047be5021052f44578
+    m_Address: Assets/Stickers/UI/Moon ui.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 738412f94ee536047be5021052f44578, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 738412f94ee536047be5021052f44578, type: 3}
+  - m_GUID: 601dc099ef87fd44fb695f67a9c774a9
+    m_Address: Assets/Stickers/UI/Pineapple ui.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: a3e8bf223ae33b948bd97ca34cdd6f4d
+    m_Address: Assets/Stickers/UI/Roman Numerals Clock 1 ui.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 8edb1fe7e55ac9c4ebfea8ee575ca0db
+    m_Address: Assets/Stickers/UI/StarGold ui.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 5cc2514b3646f814bbcbb97f5a9a1b48
+    m_Address: Assets/Stickers/UI/Rainbow Gold ui.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 5cc2514b3646f814bbcbb97f5a9a1b48, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 5cc2514b3646f814bbcbb97f5a9a1b48, type: 3}
+  - m_GUID: bfee4641fd81b114b8cd12c1debda52c
+    m_Address: Assets/Stickers/UI/Panda ui.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: ef70f5f5a8ade944d93c05b62c6d838c
+    m_Address: Assets/Stickers/UI/Avocado ui.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 4df7f80297080a84aa9b9d7d7f153c68
+    m_Address: Assets/Stickers/UI/Teapot ui.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 9a728683d3ad3994d8dabf353fa133ba
+    m_Address: Assets/Stickers/UI/Ice Cream ui.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: a55f44b30b79ff848a02cc9c4136831a
+    m_Address: Assets/Stickers/UI/llama ui.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 8db54131d07029d42a8e5d039540b157
+    m_Address: Assets/Stickers/UI/Cactus ui.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: ca4d33707e6f49946bd3422708bac1a9
+    m_Address: Assets/Stickers/UI/Watermelon Slice ui.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 43e2d81f90146834087fb166302c0a10
+    m_Address: Assets/Stickers/UI/Heart ui.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 641c863170b27f04597a401c720501b9
+    m_Address: Assets/Stickers/UI/Bowler Hat ui.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 79efa23fc428e314e9ea5a097099589e
+    m_Address: Assets/Stickers/UI/Chocolate ui.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: fca4bf80fc2f2b84d8899d7e74325e46
+    m_Address: Assets/Stickers/UI/Sun ui.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 9fd57ff85432e1e44967e69b43b89510
+    m_Address: Assets/Stickers/UI/Narwhal1 ui.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: e644bd1318742384182cd4e02c72e49c
+    m_Address: Assets/Stickers/UI/Star ui.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: cb9480dd9bea7194cb2ba6e934bc45b4
+    m_Address: Assets/Stickers/UI/Apple ui.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 4331345866ae5a044bc2bfc0f638c7f6, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 74eb3e06b58b49b4aa28c1fd1ddc1430, type: 2}
+    - {fileID: 11400000, guid: 653813f47d13c4840abe3a78c5968bcc, type: 2}

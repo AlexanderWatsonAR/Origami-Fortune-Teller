@@ -1,0 +1,157 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Texture Packed Assets
+  m_EditorClassIdentifier: 
+  m_GroupName: Texture Packed Assets
+  m_Data:
+    m_SerializedData: []
+  m_GUID: e274b5ad35f4d9443979c910973b9ec9
+  m_SerializeEntries:
+  - m_GUID: fe4cfadafa9b6b8458e135c10c9a1ef3
+    m_Address: Assets/Materials/brickwall cutout.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 3a04458531aa58942aff3b35de6785a1
+    m_Address: Assets/Materials/Blank.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 64ff6f1a57e5a964daa0d172a83e7e8a
+    m_Address: Assets/Materials/cactus.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: e16205c61507b2a4a97970ba599aa5d0
+    m_Address: Assets/Materials/Checkerboard.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 6276edbd15589234ab333c977ddce260
+    m_Address: Assets/Materials/Cheetah.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: bd07a20639f356d469c107116a531cc8
+    m_Address: Assets/Materials/Circles.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: e702de7f48581144ab34e79dddb605cf
+    m_Address: Assets/Materials/CircularPlus.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: c151533ec40cfa644ab6411b379ce824
+    m_Address: Assets/Materials/Diamond 1.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 1f80322334994534b942c2ca8f8890b1
+    m_Address: Assets/Materials/Fish.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: be99c2916b9172346ac80c6de1564222
+    m_Address: Assets/Materials/lips.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 6c24d5e4ad6bacf409f9d52606bfbab0
+    m_Address: Assets/Materials/Heart.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 9017c09edfd341b438f4a8b36fa55d0f
+    m_Address: Assets/Materials/Polka Dot.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: b3160bb409eece14c9dd5d128a268e1e
+    m_Address: Assets/Materials/Heart 2.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 69f0686ba486567449b91e32e639363d
+    m_Address: Assets/Materials/Octagon.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 59b989915ee499e45b546bce2644297b
+    m_Address: Assets/Materials/grid.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 816fd193d8b7c5d4cb8284caae3f8a77
+    m_Address: Assets/Materials/Star.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: f7858dd3bf192da4c962a84beb79d443
+    m_Address: Assets/Materials/Diamond.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 5547990c8b63e9844b99bdcb8f64b3c2
+    m_Address: Assets/Materials/CrescentMoon.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 5157c28f1ed36b34786e87e8efea29ae
+    m_Address: Assets/Materials/Triangle.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 5157c28f1ed36b34786e87e8efea29ae, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 5157c28f1ed36b34786e87e8efea29ae, type: 3}
+  - m_GUID: 4ed5653823ef29c45b7da61821931bbd
+    m_Address: Assets/Materials/qbertish.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: ecba6f6aff2a0f8448252d53cc6fad1f
+    m_Address: Assets/Materials/Circles 1.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 473b161c23118e244a5219f3b3078b32
+    m_Address: Assets/Materials/Paws.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 4331345866ae5a044bc2bfc0f638c7f6, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: eb3d9ea0b54ec1b4f86e5c24f0589732, type: 2}
+    - {fileID: 11400000, guid: 804456097eab79c468277f20d003858d, type: 2}

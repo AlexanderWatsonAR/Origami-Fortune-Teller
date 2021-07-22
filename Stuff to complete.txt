@@ -1,0 +1,9 @@
+
+
+- Remove object persist on Load QuestionData.
+- Add character constraints to input text fields 
+- Change background around.
+- stop juttering effect on loading screen.
+	- Find alt to using skinned mesh?
+	- Load Game scene at the very beginning?
+	
