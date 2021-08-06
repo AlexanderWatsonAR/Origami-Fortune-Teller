@@ -1,0 +1,11 @@
+Todo 30/07/2021
+
+- Test adverts.
+- add intersistial ads.
+- Create more backgrounds
+- allow editing of saved decision makers.
+- enable removing decision makers
+	- Will probably require re-indexing all other decision makers
+	- quick way would be to add a bool property to player prefs telling it to ignore the decision maker.
+- add secondary colour to load screen animation.
+- iap

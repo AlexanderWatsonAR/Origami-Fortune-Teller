@@ -7,8 +7,10 @@ using UnityEngine.AddressableAssets;
 
 public class ChangeOrigamiTexture : MonoBehaviour
 {
+    public AssetReferenceSprite spriteRef;
     public AssetReferenceTexture texture;
     public int textureHash;
+    public GameObject ScrollView;
     private float textureIndex;
 
     public GameObject SegmentDropdown;
@@ -37,8 +39,13 @@ public class ChangeOrigamiTexture : MonoBehaviour
             DropdownValueChanged(colourDropdown);
         });
 
-        //if (texture == null)
-        //    texture = new Texture2D(0,0);
+        if (spriteRef == null)
+            return;
+
+        ScrollView.GetComponent<ScrollRect>().onValueChanged.AddListener(delegate
+        {
+            IsThisVisible();
+        });
     }
 
     private void DropdownValueChanged(TMP_Dropdown change)
@@ -223,5 +230,31 @@ public class ChangeOrigamiTexture : MonoBehaviour
     private void OnEnable()
     {
         Border();
+    }
+
+    public void IsThisVisible()
+    {
+        if (GetComponent<Image>().sprite != null || spriteRef == null)
+        {
+            RemoveListener();
+            return;
+        }
+
+        Image tempImage = GetComponent<Image>();
+        bool isVisible = RectTransformUtility.RectangleContainsScreenPoint(ScrollView.GetComponent<RectTransform>(), new Vector2(transform.position.x, transform.position.y));
+
+        if (isVisible)
+        {
+            OrigamiManager.instance.GetSpriteFromRef(spriteRef, tempImage);
+            RemoveListener();
+        }
+    }
+
+    private void RemoveListener()
+    {
+        ScrollView.GetComponent<ScrollRect>().onValueChanged.RemoveListener(delegate
+        {
+            IsThisVisible();
+        });
     }
 }

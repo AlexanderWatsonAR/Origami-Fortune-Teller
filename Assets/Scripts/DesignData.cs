@@ -41,12 +41,12 @@ public class DesignData : MonoBehaviour
     {
         get
         {
-            return PlayerPrefs.GetFloat("TopLeftColourPrimary" + CreateDecisionMaker.EntryNumber());
+            return PlayerPrefs.GetFloat("TopLeftColourPrimary" + CreateDecisionMaker.currentEntry);
             //return _TopLeftColourPrimary;
         }
         set
         {
-            PlayerPrefs.SetFloat("TopLeftColourPrimary" + CreateDecisionMaker.EntryNumber(), value);
+            PlayerPrefs.SetFloat("TopLeftColourPrimary" + CreateDecisionMaker.currentEntry, value);
             _TopLeftColourPrimary = value;
         }
     }
@@ -55,12 +55,12 @@ public class DesignData : MonoBehaviour
     {
         get
         {
-            return PlayerPrefs.GetFloat("TopRightColourPrimary" + CreateDecisionMaker.EntryNumber());
+            return PlayerPrefs.GetFloat("TopRightColourPrimary" + CreateDecisionMaker.currentEntry);
             //return _TopRightColourPrimary;
         }
         set
         {
-            PlayerPrefs.SetFloat("TopRightColourPrimary" + CreateDecisionMaker.EntryNumber(), value);
+            PlayerPrefs.SetFloat("TopRightColourPrimary" + CreateDecisionMaker.currentEntry, value);
             _TopRightColourPrimary = value;
         }
     }
@@ -69,12 +69,12 @@ public class DesignData : MonoBehaviour
     {
         get
         {
-            return PlayerPrefs.GetFloat("BottomLeftColourPrimary" + CreateDecisionMaker.EntryNumber());
+            return PlayerPrefs.GetFloat("BottomLeftColourPrimary" + CreateDecisionMaker.currentEntry);
             //return _BottomLeftColourPrimary;
         }
         set
         {
-            PlayerPrefs.SetFloat("BottomLeftColourPrimary" + CreateDecisionMaker.EntryNumber(), value);
+            PlayerPrefs.SetFloat("BottomLeftColourPrimary" + CreateDecisionMaker.currentEntry, value);
             _BottomLeftColourPrimary = value;
         }
     }
@@ -83,12 +83,12 @@ public class DesignData : MonoBehaviour
     {
         get
         {
-            return PlayerPrefs.GetFloat("BottomRightColourPrimary" + CreateDecisionMaker.EntryNumber());
+            return PlayerPrefs.GetFloat("BottomRightColourPrimary" + CreateDecisionMaker.currentEntry);
             //return _BottomRightColourPrimary;
         }
         set
         {
-            PlayerPrefs.SetFloat("BottomRightColourPrimary" + CreateDecisionMaker.EntryNumber(), value);
+            PlayerPrefs.SetFloat("BottomRightColourPrimary" + CreateDecisionMaker.currentEntry, value);
             _BottomRightColourPrimary = value;
         }
     }
@@ -97,12 +97,12 @@ public class DesignData : MonoBehaviour
     {
         get
         {
-            return PlayerPrefs.GetFloat("TopLeftColourSecondary" + CreateDecisionMaker.EntryNumber());
+            return PlayerPrefs.GetFloat("TopLeftColourSecondary" + CreateDecisionMaker.currentEntry);
             //return _TopLeftColourSecondary;
         }
         set
         {
-            PlayerPrefs.SetFloat("TopLeftColourSecondary" + CreateDecisionMaker.EntryNumber(), value);
+            PlayerPrefs.SetFloat("TopLeftColourSecondary" + CreateDecisionMaker.currentEntry, value);
             _TopLeftColourSecondary = value;
         }
     }
@@ -111,12 +111,12 @@ public class DesignData : MonoBehaviour
     {
         get
         {
-            return PlayerPrefs.GetFloat("TopRightColourSecondary" + CreateDecisionMaker.EntryNumber());
+            return PlayerPrefs.GetFloat("TopRightColourSecondary" + CreateDecisionMaker.currentEntry);
             //return _TopRightColourSecondary;
         }
         set
         {
-            PlayerPrefs.SetFloat("TopRightColourSecondary" + CreateDecisionMaker.EntryNumber(), value);
+            PlayerPrefs.SetFloat("TopRightColourSecondary" + CreateDecisionMaker.currentEntry, value);
             _TopRightColourSecondary = value;
         }
     }
@@ -125,12 +125,12 @@ public class DesignData : MonoBehaviour
     {
         get
         {
-            return PlayerPrefs.GetFloat("BottomLeftColourSecondary" + CreateDecisionMaker.EntryNumber());
+            return PlayerPrefs.GetFloat("BottomLeftColourSecondary" + CreateDecisionMaker.currentEntry);
             //return _BottomLeftColourSecondary;
         }
         set
         {
-            PlayerPrefs.SetFloat("BottomLeftColourSecondary" + CreateDecisionMaker.EntryNumber(), value);
+            PlayerPrefs.SetFloat("BottomLeftColourSecondary" + CreateDecisionMaker.currentEntry, value);
             _BottomLeftColourSecondary = value;
         }
     }
@@ -139,12 +139,12 @@ public class DesignData : MonoBehaviour
     {
         get
         {
-            return PlayerPrefs.GetFloat("BottomRightColourSecondary" + CreateDecisionMaker.EntryNumber());
+            return PlayerPrefs.GetFloat("BottomRightColourSecondary" + CreateDecisionMaker.currentEntry);
             //return _BottomRightColourSecondary;
         }
         set
         {
-            PlayerPrefs.SetFloat("BottomRightColourSecondary" + CreateDecisionMaker.EntryNumber(), value);
+            PlayerPrefs.SetFloat("BottomRightColourSecondary" + CreateDecisionMaker.currentEntry, value);
             _BottomRightColourSecondary = value;
         }
     }
@@ -154,12 +154,12 @@ public class DesignData : MonoBehaviour
     {
         get
         {
-            return PlayerPrefs.GetFloat("TopLeftTexPrimary" + CreateDecisionMaker.EntryNumber());
+            return PlayerPrefs.GetFloat("TopLeftTexPrimary" + CreateDecisionMaker.currentEntry);
             //return _TopLeftTexPrimary;
         }
         set
         {
-            PlayerPrefs.SetFloat("TopLeftTexPrimary" + CreateDecisionMaker.EntryNumber(), value);
+            PlayerPrefs.SetFloat("TopLeftTexPrimary" + CreateDecisionMaker.currentEntry, value);
             _TopLeftTexPrimary = value;
         }
     }
@@ -168,12 +168,12 @@ public class DesignData : MonoBehaviour
     {
         get
         {
-            return PlayerPrefs.GetFloat("TopRightTexPrimary" + CreateDecisionMaker.EntryNumber());
+            return PlayerPrefs.GetFloat("TopRightTexPrimary" + CreateDecisionMaker.currentEntry);
             //return _TopRightTexPrimary;
         }
         set
         {
-            PlayerPrefs.SetFloat("TopRightTexPrimary" + CreateDecisionMaker.EntryNumber(), value);
+            PlayerPrefs.SetFloat("TopRightTexPrimary" + CreateDecisionMaker.currentEntry, value);
             _TopRightTexPrimary = value;
         }
     }
@@ -182,12 +182,12 @@ public class DesignData : MonoBehaviour
     {
         get
         {
-            return PlayerPrefs.GetFloat("BottomLeftTexPrimary" + CreateDecisionMaker.EntryNumber());
+            return PlayerPrefs.GetFloat("BottomLeftTexPrimary" + CreateDecisionMaker.currentEntry);
             //return _BottomLeftTexPrimary;
         }
         set
         {
-            PlayerPrefs.SetFloat("BottomLeftTexPrimary" + CreateDecisionMaker.EntryNumber(), value);
+            PlayerPrefs.SetFloat("BottomLeftTexPrimary" + CreateDecisionMaker.currentEntry, value);
             _BottomLeftTexPrimary = value;
         }
     }
@@ -196,12 +196,12 @@ public class DesignData : MonoBehaviour
     {
         get
         {
-            return PlayerPrefs.GetFloat("BottomRightTexPrimary" + CreateDecisionMaker.EntryNumber());
+            return PlayerPrefs.GetFloat("BottomRightTexPrimary" + CreateDecisionMaker.currentEntry);
             //return _BottomRightTexPrimary;
         }
         set
         {
-            PlayerPrefs.SetFloat("BottomRightTexPrimary" + CreateDecisionMaker.EntryNumber(), value);
+            PlayerPrefs.SetFloat("BottomRightTexPrimary" + CreateDecisionMaker.currentEntry, value);
             _BottomRightTexPrimary = value;
         }
     }
@@ -210,12 +210,12 @@ public class DesignData : MonoBehaviour
     {
         get
         {
-            return PlayerPrefs.GetFloat("TopLeftTexSecondary" + CreateDecisionMaker.EntryNumber());
+            return PlayerPrefs.GetFloat("TopLeftTexSecondary" + CreateDecisionMaker.currentEntry);
             //return _TopLeftTexSecondary;
         }
         set
         {
-            PlayerPrefs.SetFloat("TopLeftTexSecondary" + CreateDecisionMaker.EntryNumber(), value);
+            PlayerPrefs.SetFloat("TopLeftTexSecondary" + CreateDecisionMaker.currentEntry, value);
             _TopLeftTexSecondary = value;
         }
     }
@@ -224,12 +224,12 @@ public class DesignData : MonoBehaviour
     {
         get
         {
-            return PlayerPrefs.GetFloat("TopRightTexSecondary" + CreateDecisionMaker.EntryNumber());
+            return PlayerPrefs.GetFloat("TopRightTexSecondary" + CreateDecisionMaker.currentEntry);
             //return _TopRightTexSecondary;
         }
         set
         {
-            PlayerPrefs.SetFloat("TopRightTexSecondary" + CreateDecisionMaker.EntryNumber(), value);
+            PlayerPrefs.SetFloat("TopRightTexSecondary" + CreateDecisionMaker.currentEntry, value);
             _TopRightTexSecondary = value;
         }
     }
@@ -238,12 +238,12 @@ public class DesignData : MonoBehaviour
     {
         get
         {
-            return PlayerPrefs.GetFloat("BottomLeftTexSecondary" + CreateDecisionMaker.EntryNumber());
+            return PlayerPrefs.GetFloat("BottomLeftTexSecondary" + CreateDecisionMaker.currentEntry);
             //return _BottomLeftTexSecondary;
         }
         set
         {
-            PlayerPrefs.SetFloat("BottomLeftTexSecondary" + CreateDecisionMaker.EntryNumber(), value);
+            PlayerPrefs.SetFloat("BottomLeftTexSecondary" + CreateDecisionMaker.currentEntry, value);
             _BottomLeftTexSecondary = value;
         }
     }
@@ -252,12 +252,12 @@ public class DesignData : MonoBehaviour
     {
         get
         {
-            return PlayerPrefs.GetFloat("BottomRightTexSecondary" + CreateDecisionMaker.EntryNumber());
+            return PlayerPrefs.GetFloat("BottomRightTexSecondary" + CreateDecisionMaker.currentEntry);
             //return _BottomRightTexSecondary;
         }
         set
         {
-            PlayerPrefs.SetFloat("BottomRightTexSecondary" + CreateDecisionMaker.EntryNumber(), value);
+            PlayerPrefs.SetFloat("BottomRightTexSecondary" + CreateDecisionMaker.currentEntry, value);
             _BottomRightTexSecondary = value;
         }
     }
@@ -266,12 +266,12 @@ public class DesignData : MonoBehaviour
     {
         get
         {
-            return PlayerPrefs.GetFloat("TopLeftStickerTex" + CreateDecisionMaker.EntryNumber());
+            return PlayerPrefs.GetFloat("TopLeftStickerTex" + CreateDecisionMaker.currentEntry);
             //return _TopLeftStickerTex;
         }
         set
         {
-            PlayerPrefs.SetFloat("TopLeftStickerTex" + CreateDecisionMaker.EntryNumber(), value);
+            PlayerPrefs.SetFloat("TopLeftStickerTex" + CreateDecisionMaker.currentEntry, value);
             _TopLeftStickerTex = value;
         }
     }
@@ -280,12 +280,12 @@ public class DesignData : MonoBehaviour
     {
         get
         {
-            return PlayerPrefs.GetFloat("TopRightStickerTex" + CreateDecisionMaker.EntryNumber());
+            return PlayerPrefs.GetFloat("TopRightStickerTex" + CreateDecisionMaker.currentEntry);
             //return _TopRightStickerTex;
         }
         set
         {
-            PlayerPrefs.SetFloat("TopRightStickerTex" + CreateDecisionMaker.EntryNumber(), value);
+            PlayerPrefs.SetFloat("TopRightStickerTex" + CreateDecisionMaker.currentEntry, value);
             _TopRightStickerTex = value;
         }
     }
@@ -294,12 +294,12 @@ public class DesignData : MonoBehaviour
     {
         get
         {
-            return PlayerPrefs.GetFloat("BottomLeftStickerTex" + CreateDecisionMaker.EntryNumber());
+            return PlayerPrefs.GetFloat("BottomLeftStickerTex" + CreateDecisionMaker.currentEntry);
             //return _BottomLeftStickerTex;
         }
         set
         {
-            PlayerPrefs.SetFloat("BottomLeftStickerTex" + CreateDecisionMaker.EntryNumber(), value);
+            PlayerPrefs.SetFloat("BottomLeftStickerTex" + CreateDecisionMaker.currentEntry, value);
             _BottomLeftStickerTex = value;
         }
     }
@@ -308,12 +308,12 @@ public class DesignData : MonoBehaviour
     {
         get
         {
-            return PlayerPrefs.GetFloat("BottomRightStickerTex" + CreateDecisionMaker.EntryNumber());
+            return PlayerPrefs.GetFloat("BottomRightStickerTex" + CreateDecisionMaker.currentEntry);
             //return _BottomRightStickerTex;
         }
         set
         {
-            PlayerPrefs.SetFloat("BottomRightStickerTex" + CreateDecisionMaker.EntryNumber(), value);
+            PlayerPrefs.SetFloat("BottomRightStickerTex" + CreateDecisionMaker.currentEntry, value);
             _BottomRightStickerTex = value;
         }
     }
@@ -322,12 +322,12 @@ public class DesignData : MonoBehaviour
     {
         get
         {
-            return PlayerPrefs.GetFloat("TopLeftStickerTexPos" + CreateDecisionMaker.EntryNumber());
+            return PlayerPrefs.GetFloat("TopLeftStickerTexPos" + CreateDecisionMaker.currentEntry);
             //return _TopLeftStickerTexPos;
         }
         set
         {
-            PlayerPrefs.SetFloat("TopLeftStickerTexPos" + CreateDecisionMaker.EntryNumber(), value);
+            PlayerPrefs.SetFloat("TopLeftStickerTexPos" + CreateDecisionMaker.currentEntry, value);
             _TopLeftStickerTexPos = value;
         }
     }
@@ -335,12 +335,12 @@ public class DesignData : MonoBehaviour
     {
         get
         {
-            return PlayerPrefs.GetFloat("TopRightStickerTexPos" + CreateDecisionMaker.EntryNumber());
+            return PlayerPrefs.GetFloat("TopRightStickerTexPos" + CreateDecisionMaker.currentEntry);
             //return _TopRightStickerTexPos;
         }
         set
         {
-            PlayerPrefs.SetFloat("TopRightStickerTexPos" + CreateDecisionMaker.EntryNumber(), value);
+            PlayerPrefs.SetFloat("TopRightStickerTexPos" + CreateDecisionMaker.currentEntry, value);
             _TopRightStickerTexPos = value;
         }
     }
@@ -348,12 +348,12 @@ public class DesignData : MonoBehaviour
     {
         get
         {
-            return PlayerPrefs.GetFloat("BottomLeftStickerTexPos" + CreateDecisionMaker.EntryNumber());
+            return PlayerPrefs.GetFloat("BottomLeftStickerTexPos" + CreateDecisionMaker.currentEntry);
             //return _BottomLeftStickerTexPos;
         }
         set
         {
-            PlayerPrefs.SetFloat("BottomLeftStickerTexPos" + CreateDecisionMaker.EntryNumber(), value);
+            PlayerPrefs.SetFloat("BottomLeftStickerTexPos" + CreateDecisionMaker.currentEntry, value);
             _BottomLeftStickerTexPos = value;
         }
     }
@@ -361,12 +361,12 @@ public class DesignData : MonoBehaviour
     {
         get
         {
-            return PlayerPrefs.GetFloat("BottomRightStickerTexPos" + CreateDecisionMaker.EntryNumber());
+            return PlayerPrefs.GetFloat("BottomRightStickerTexPos" + CreateDecisionMaker.currentEntry);
             //return _BottomRightStickerTexPos;
         }
         set
         {
-            PlayerPrefs.SetFloat("BottomRightStickerTexPos" + CreateDecisionMaker.EntryNumber(), value);
+            PlayerPrefs.SetFloat("BottomRightStickerTexPos" + CreateDecisionMaker.currentEntry, value);
             _BottomRightStickerTexPos = value;
         }
     }

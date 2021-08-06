@@ -68,7 +68,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2ff096cd08afe9f468e95c82a2412452, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -146,8 +146,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b68a3f4600907e443aec2be67e6f28f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texture: {fileID: 2800000, guid: 1f80322334994534b942c2ca8f8890b1, type: 3}
+  spriteRef:
+    m_AssetGUID: 2ff096cd08afe9f468e95c82a2412452
+    m_SubObjectName: Fish ui
+    m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  texture:
+    m_AssetGUID: 
+    m_SubObjectName: 
+    m_SubObjectType: 
   textureHash: 15
+  ScrollView: {fileID: 0}
   SegmentDropdown: {fileID: 0}
   ColourDropdown: {fileID: 0}
 --- !u!1 &583535272089212674
@@ -293,7 +302,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 329d3d95512d77a419e0f7cd4900d1d1, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -359,8 +368,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b68a3f4600907e443aec2be67e6f28f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texture: {fileID: 2800000, guid: ecba6f6aff2a0f8448252d53cc6fad1f, type: 3}
+  spriteRef:
+    m_AssetGUID: 329d3d95512d77a419e0f7cd4900d1d1
+    m_SubObjectName: Circles 1 ui
+    m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  texture:
+    m_AssetGUID: 
+    m_SubObjectName: 
+    m_SubObjectType: 
   textureHash: 10
+  ScrollView: {fileID: 0}
   SegmentDropdown: {fileID: 0}
   ColourDropdown: {fileID: 0}
 --- !u!1 &824696573626867647
@@ -431,7 +449,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 48a823727d47a8546ab209e476efc5b1, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -509,8 +527,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b68a3f4600907e443aec2be67e6f28f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texture: {fileID: 2800000, guid: 6276edbd15589234ab333c977ddce260, type: 3}
+  spriteRef:
+    m_AssetGUID: 48a823727d47a8546ab209e476efc5b1
+    m_SubObjectName: Cheetah ui
+    m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  texture:
+    m_AssetGUID: 
+    m_SubObjectName: 
+    m_SubObjectType: 
   textureHash: 17
+  ScrollView: {fileID: 0}
   SegmentDropdown: {fileID: 0}
   ColourDropdown: {fileID: 0}
 --- !u!1 &1068855288214140175
@@ -656,7 +683,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e5a6521b04e984d4f91bc7e16bfe894b, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -734,8 +761,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b68a3f4600907e443aec2be67e6f28f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texture: {fileID: 2800000, guid: 64ff6f1a57e5a964daa0d172a83e7e8a, type: 3}
+  spriteRef:
+    m_AssetGUID: e5a6521b04e984d4f91bc7e16bfe894b
+    m_SubObjectName: cactus ui
+    m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  texture:
+    m_AssetGUID: 
+    m_SubObjectName: 
+    m_SubObjectType: 
   textureHash: 19
+  ScrollView: {fileID: 0}
   SegmentDropdown: {fileID: 0}
   ColourDropdown: {fileID: 0}
 --- !u!1 &1867863342808682573
@@ -956,7 +992,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0641ee671c114a642845825643a72707, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1034,8 +1070,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b68a3f4600907e443aec2be67e6f28f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texture: {fileID: 2800000, guid: fe4cfadafa9b6b8458e135c10c9a1ef3, type: 3}
+  spriteRef:
+    m_AssetGUID: 0641ee671c114a642845825643a72707
+    m_SubObjectName: brickwall cutout ui
+    m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  texture:
+    m_AssetGUID: 
+    m_SubObjectName: 
+    m_SubObjectType: 
   textureHash: 2
+  ScrollView: {fileID: 0}
   SegmentDropdown: {fileID: 0}
   ColourDropdown: {fileID: 0}
 --- !u!1 &2294578923554906582
@@ -1106,7 +1151,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a4b0ae40d640b6e40a33fb7aad27cc45, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1184,8 +1229,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b68a3f4600907e443aec2be67e6f28f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texture: {fileID: 2800000, guid: 6c24d5e4ad6bacf409f9d52606bfbab0, type: 3}
+  spriteRef:
+    m_AssetGUID: a4b0ae40d640b6e40a33fb7aad27cc45
+    m_SubObjectName: Heart ui
+    m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  texture:
+    m_AssetGUID: 
+    m_SubObjectName: 
+    m_SubObjectType: 
   textureHash: 7
+  ScrollView: {fileID: 0}
   SegmentDropdown: {fileID: 0}
   ColourDropdown: {fileID: 0}
 --- !u!1 &2658939928887989882
@@ -1331,7 +1385,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: df1977feb346f72478444fdf78c12bd3, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1409,8 +1463,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b68a3f4600907e443aec2be67e6f28f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texture: {fileID: 2800000, guid: 5547990c8b63e9844b99bdcb8f64b3c2, type: 3}
+  spriteRef:
+    m_AssetGUID: df1977feb346f72478444fdf78c12bd3
+    m_SubObjectName: CrescentMoon ui
+    m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  texture:
+    m_AssetGUID: 
+    m_SubObjectName: 
+    m_SubObjectType: 
   textureHash: 13
+  ScrollView: {fileID: 0}
   SegmentDropdown: {fileID: 0}
   ColourDropdown: {fileID: 0}
 --- !u!1 &3339186629673661564
@@ -1631,7 +1694,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1891fc31b39b8324baa75209b298f403, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1709,8 +1772,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b68a3f4600907e443aec2be67e6f28f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texture: {fileID: 2800000, guid: 816fd193d8b7c5d4cb8284caae3f8a77, type: 3}
+  spriteRef:
+    m_AssetGUID: 1891fc31b39b8324baa75209b298f403
+    m_SubObjectName: Star ui
+    m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  texture:
+    m_AssetGUID: 
+    m_SubObjectName: 
+    m_SubObjectType: 
   textureHash: 3
+  ScrollView: {fileID: 0}
   SegmentDropdown: {fileID: 0}
   ColourDropdown: {fileID: 0}
 --- !u!1 &3624766598012485242
@@ -2006,7 +2078,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 35d0c6ad18b31e94a8c886931ffc0429, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2072,8 +2144,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b68a3f4600907e443aec2be67e6f28f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texture: {fileID: 2800000, guid: b3160bb409eece14c9dd5d128a268e1e, type: 3}
+  spriteRef:
+    m_AssetGUID: 35d0c6ad18b31e94a8c886931ffc0429
+    m_SubObjectName: Heart 2 ui
+    m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  texture:
+    m_AssetGUID: 
+    m_SubObjectName: 
+    m_SubObjectType: 
   textureHash: 12
+  ScrollView: {fileID: 0}
   SegmentDropdown: {fileID: 0}
   ColourDropdown: {fileID: 0}
 --- !u!1 &5309445320137066224
@@ -2219,7 +2300,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fe72f6d5ff914524bbd96bc7204c6304, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2297,8 +2378,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b68a3f4600907e443aec2be67e6f28f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texture: {fileID: 2800000, guid: 473b161c23118e244a5219f3b3078b32, type: 3}
+  spriteRef:
+    m_AssetGUID: fe72f6d5ff914524bbd96bc7204c6304
+    m_SubObjectName: Paw ui
+    m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  texture:
+    m_AssetGUID: 
+    m_SubObjectName: 
+    m_SubObjectType: 
   textureHash: 14
+  ScrollView: {fileID: 0}
   SegmentDropdown: {fileID: 0}
   ColourDropdown: {fileID: 0}
 --- !u!1 &5914260340913105757
@@ -2444,7 +2534,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c692cf0dc0bca0b43861cf7ee1ebd000, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2522,8 +2612,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b68a3f4600907e443aec2be67e6f28f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texture: {fileID: 2800000, guid: bd07a20639f356d469c107116a531cc8, type: 3}
+  spriteRef:
+    m_AssetGUID: c692cf0dc0bca0b43861cf7ee1ebd000
+    m_SubObjectName: Circles ui
+    m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  texture:
+    m_AssetGUID: 
+    m_SubObjectName: 
+    m_SubObjectType: 
   textureHash: 4
+  ScrollView: {fileID: 0}
   SegmentDropdown: {fileID: 0}
   ColourDropdown: {fileID: 0}
 --- !u!1 &6405523301223278804
@@ -2594,7 +2693,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 04563042a04b099459440ca625f39f88, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2660,8 +2759,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b68a3f4600907e443aec2be67e6f28f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texture: {fileID: 0}
+  spriteRef:
+    m_AssetGUID: 04563042a04b099459440ca625f39f88
+    m_SubObjectName: CircularPlus ui
+    m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  texture:
+    m_AssetGUID: 
+    m_SubObjectName: 
+    m_SubObjectType: 
   textureHash: 9
+  ScrollView: {fileID: 0}
   SegmentDropdown: {fileID: 0}
   ColourDropdown: {fileID: 0}
 --- !u!1 &6483524338140668805
@@ -2798,8 +2906,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b68a3f4600907e443aec2be67e6f28f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texture: {fileID: 2800000, guid: 3a04458531aa58942aff3b35de6785a1, type: 3}
+  spriteRef:
+    m_AssetGUID: 
+    m_SubObjectName: 
+    m_SubObjectType: 
+  texture:
+    m_AssetGUID: 
+    m_SubObjectName: 
+    m_SubObjectType: 
   textureHash: 0
+  ScrollView: {fileID: 0}
   SegmentDropdown: {fileID: 0}
   ColourDropdown: {fileID: 0}
 --- !u!1 &6507918371379036032
@@ -2870,7 +2986,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fd183b242d437454fa7681af7af90298, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2948,8 +3064,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b68a3f4600907e443aec2be67e6f28f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texture: {fileID: 2800000, guid: 59b989915ee499e45b546bce2644297b, type: 3}
+  spriteRef:
+    m_AssetGUID: fd183b242d437454fa7681af7af90298
+    m_SubObjectName: grid ui
+    m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  texture:
+    m_AssetGUID: 
+    m_SubObjectName: 
+    m_SubObjectType: 
   textureHash: 11
+  ScrollView: {fileID: 0}
   SegmentDropdown: {fileID: 0}
   ColourDropdown: {fileID: 0}
 --- !u!1 &6714277094930299962
@@ -3095,7 +3220,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4b0add49275102240a0a038cf6ecfdb6, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3173,8 +3298,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b68a3f4600907e443aec2be67e6f28f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texture: {fileID: 2800000, guid: f7858dd3bf192da4c962a84beb79d443, type: 3}
+  spriteRef:
+    m_AssetGUID: 4b0add49275102240a0a038cf6ecfdb6
+    m_SubObjectName: Diamond ui
+    m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  texture:
+    m_AssetGUID: 
+    m_SubObjectName: 
+    m_SubObjectType: 
   textureHash: 16
+  ScrollView: {fileID: 0}
   SegmentDropdown: {fileID: 0}
   ColourDropdown: {fileID: 0}
 --- !u!1 &6816875353248896888
@@ -3245,7 +3379,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b33376edcf4336a4e8380187d7f6d64b, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3323,8 +3457,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b68a3f4600907e443aec2be67e6f28f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texture: {fileID: 2800000, guid: e16205c61507b2a4a97970ba599aa5d0, type: 3}
+  spriteRef:
+    m_AssetGUID: b33376edcf4336a4e8380187d7f6d64b
+    m_SubObjectName: Checkerboard ui
+    m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  texture:
+    m_AssetGUID: 
+    m_SubObjectName: 
+    m_SubObjectType: 
   textureHash: 1
+  ScrollView: {fileID: 0}
   SegmentDropdown: {fileID: 0}
   ColourDropdown: {fileID: 0}
 --- !u!1 &6898524072976978606
@@ -3590,7 +3733,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cb80512e74a96ab438223893c50c1236, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3656,8 +3799,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b68a3f4600907e443aec2be67e6f28f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texture: {fileID: 0}
+  spriteRef:
+    m_AssetGUID: cb80512e74a96ab438223893c50c1236
+    m_SubObjectName: qbertish ui
+    m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  texture:
+    m_AssetGUID: 
+    m_SubObjectName: 
+    m_SubObjectType: 
   textureHash: 8
+  ScrollView: {fileID: 0}
   SegmentDropdown: {fileID: 0}
   ColourDropdown: {fileID: 0}
 --- !u!1 &7507330039176043671
@@ -3803,7 +3955,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 91b9524207b9e844eb8ae9a8a1ba4358, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3881,8 +4033,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b68a3f4600907e443aec2be67e6f28f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texture: {fileID: 2800000, guid: 5157c28f1ed36b34786e87e8efea29ae, type: 3}
+  spriteRef:
+    m_AssetGUID: 91b9524207b9e844eb8ae9a8a1ba4358
+    m_SubObjectName: Triangle ui
+    m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  texture:
+    m_AssetGUID: 
+    m_SubObjectName: 
+    m_SubObjectType: 
   textureHash: 6
+  ScrollView: {fileID: 0}
   SegmentDropdown: {fileID: 0}
   ColourDropdown: {fileID: 0}
 --- !u!1 &7645754013269324088
@@ -3953,7 +4114,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fefe4562a024c1346b793d9c7c9a71b1, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4031,8 +4192,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b68a3f4600907e443aec2be67e6f28f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texture: {fileID: 2800000, guid: be99c2916b9172346ac80c6de1564222, type: 3}
+  spriteRef:
+    m_AssetGUID: fefe4562a024c1346b793d9c7c9a71b1
+    m_SubObjectName: lips ui
+    m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  texture:
+    m_AssetGUID: 
+    m_SubObjectName: 
+    m_SubObjectType: 
   textureHash: 18
+  ScrollView: {fileID: 0}
   SegmentDropdown: {fileID: 0}
   ColourDropdown: {fileID: 0}
 --- !u!1 &7674663447920593053
@@ -4253,7 +4423,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 86d34b73ecb4afd49be9970aa57c7101, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4331,8 +4501,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b68a3f4600907e443aec2be67e6f28f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texture: {fileID: 2800000, guid: 9017c09edfd341b438f4a8b36fa55d0f, type: 3}
+  spriteRef:
+    m_AssetGUID: 86d34b73ecb4afd49be9970aa57c7101
+    m_SubObjectName: Polka Dot ui
+    m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  texture:
+    m_AssetGUID: 
+    m_SubObjectName: 
+    m_SubObjectType: 
   textureHash: 5
+  ScrollView: {fileID: 0}
   SegmentDropdown: {fileID: 0}
   ColourDropdown: {fileID: 0}
 --- !u!1 &8014398650484052447

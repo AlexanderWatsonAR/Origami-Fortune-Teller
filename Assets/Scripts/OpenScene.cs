@@ -25,6 +25,7 @@ public class OpenScene : MonoBehaviour
         {
             OrigamiManager.instance.orgami[0].SetActive(true);
             OrigamiManager.instance.Canvas.SetActive(true);
+            OrigamiManager.instance.SecondaryCanvas.SetActive(true);
             Destroy(gameObject);
         }
     }

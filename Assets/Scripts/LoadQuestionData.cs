@@ -24,14 +24,27 @@ public class LoadQuestionData : MonoBehaviour
         if (data == null)
         {
             questionData = new GameObject();
-            size = PlayerPrefs.GetFloat("QuestionDataSize" + CreateDecisionMaker.currentEntry.ToString());
             questionData.AddComponent<QuestionData>();
             data = questionData.GetComponent<QuestionData>();
-            data.data = new string[(int)size];
 
-            for (int i = 0; i < size; i++)
+            if (CreateDecisionMaker.currentEntry == -1)
             {
-                data.data[i] = PlayerPrefs.GetString("QuestionData" + i.ToString() + "Entry" + CreateDecisionMaker.currentEntry.ToString());
+                data.data = new string[5];
+                data.data[0] = "Decision Maker (Example)";
+                data.data[1] = "Test a";
+                data.data[2] = "Test b";
+                data.data[3] = "Test c";
+                data.data[4] = "Test d";
+            }
+            else
+            {
+                size = PlayerPrefs.GetFloat("QuestionDataSize" + CreateDecisionMaker.currentEntry.ToString());
+                data.data = new string[(int)size];
+
+                for (int i = 0; i < size; i++)
+                {
+                    data.data[i] = PlayerPrefs.GetString("QuestionData" + i.ToString() + "Entry" + CreateDecisionMaker.currentEntry.ToString());
+                }
             }
         }
 

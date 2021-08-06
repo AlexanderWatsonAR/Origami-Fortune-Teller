@@ -174,5 +174,19 @@ public class ChangeOrigamiColour : MonoBehaviour
 
         OrigamiManager.instance.orgami[last].transform.GetChild(3).GetComponent<Renderer>().material.SetColor("Color_cc2877fbd4c8430591cd0e4dc9d8ad1a", secondaryColours[2]); // Top Left
         OrigamiManager.instance.orgami[last].transform.GetChild(3).GetComponent<Renderer>().material.SetColor("Color_27bc9690873845048adc1140e1c09a57", secondaryColours[3]); // Top Right
+
+        // 16, 17, 18, 19.
+        OrigamiManager.instance.orgami[last].transform.GetChild(16).GetComponent<Renderer>().material.SetColor("Color_cc2877fbd4c8430591cd0e4dc9d8ad1a", secondaryColours[1]); // Bottom Right
+        OrigamiManager.instance.orgami[last].transform.GetChild(16).GetComponent<Renderer>().material.SetColor("Color_27bc9690873845048adc1140e1c09a57", secondaryColours[0]); // Bottom Left
+
+        OrigamiManager.instance.orgami[last].transform.GetChild(17).GetComponent<Renderer>().material.SetColor("Color_cc2877fbd4c8430591cd0e4dc9d8ad1a", secondaryColours[0]); // Left Top
+        OrigamiManager.instance.orgami[last].transform.GetChild(17).GetComponent<Renderer>().material.SetColor("Color_27bc9690873845048adc1140e1c09a57", secondaryColours[2]); // Left Bottom
+
+        OrigamiManager.instance.orgami[last].transform.GetChild(18).GetComponent<Renderer>().material.SetColor("Color_cc2877fbd4c8430591cd0e4dc9d8ad1a", secondaryColours[3]); // Right Bottom
+        OrigamiManager.instance.orgami[last].transform.GetChild(18).GetComponent<Renderer>().material.SetColor("Color_27bc9690873845048adc1140e1c09a57", secondaryColours[1]); // Right Top
+
+        OrigamiManager.instance.orgami[last].transform.GetChild(19).GetComponent<Renderer>().material.SetColor("Color_cc2877fbd4c8430591cd0e4dc9d8ad1a", secondaryColours[2]); // Top Left
+        OrigamiManager.instance.orgami[last].transform.GetChild(19).GetComponent<Renderer>().material.SetColor("Color_27bc9690873845048adc1140e1c09a57", secondaryColours[3]); // Top Right
+
     }
 }

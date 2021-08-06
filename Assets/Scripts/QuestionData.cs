@@ -15,7 +15,7 @@ public class QuestionData : MonoBehaviour
 
         set
         {
-            PlayerPrefs.SetFloat("QuestionDataSize" + CreateDecisionMaker.EntryNumber(), value);
+            PlayerPrefs.SetFloat("QuestionDataSize" + CreateDecisionMaker.currentEntry, value);
             dataSize = value;
         }
     }
@@ -23,23 +23,18 @@ public class QuestionData : MonoBehaviour
     // zero index is the question. One - Eight are the questions.
     public string[] data;
 
-    private void Start()
-    {
-        DontDestroyOnLoad(this);
-    }
-
     public void InsertData(int index)
     {
         TMPro.TMP_InputField[] textInputs = AdjustTextInputField.GetAllInputFieldsOrdered();
         data[index] = textInputs[index].text;
 
-        PlayerPrefs.SetString("QuestionData" + index.ToString() + "Entry" + CreateDecisionMaker.EntryNumber(), data[index]);
+        PlayerPrefs.SetString("QuestionData" + index.ToString() + "Entry" + CreateDecisionMaker.currentEntry, data[index]);
 
     }
 
     public void RemoveData(int index)
     {
-        PlayerPrefs.DeleteKey("QuestionData" + index.ToString() + "Entry" + CreateDecisionMaker.EntryNumber());
+        PlayerPrefs.DeleteKey("QuestionData" + index.ToString() + "Entry" + CreateDecisionMaker.currentEntry);
     }
 
     public static void LoadDefaultValues()

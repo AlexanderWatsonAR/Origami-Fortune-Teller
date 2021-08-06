@@ -38,12 +38,12 @@ public class AdjustTextInputField : MonoBehaviour
             Destroy(textInputs[textInputs.Length - 1].gameObject);
 
             
-            TheQuestionData.GetComponent<QuestionData>().data[textInputs.Length - 1] = "";
-            TheQuestionData.GetComponent<QuestionData>().RemoveData(textInputs.Length - 1);
+            TheQuestionData.GetComponent<QuestionData>().data[textInputs.Length] = "";
+            TheQuestionData.GetComponent<QuestionData>().RemoveData(textInputs.Length);
             VerticalLayout.GetComponent<RectTransform>().sizeDelta = new Vector2(VerticalLayout.GetComponent<RectTransform>().sizeDelta.x,
                                                                                  VerticalLayout.GetComponent<RectTransform>().sizeDelta.y - 30f);
             //VerticalLayout.transform.localPosition += (Vector3.up * 50);
-            QuestionData.DataSize = textInputs.Length;
+            QuestionData.DataSize = textInputs.Length + 1;
         }
     }
 

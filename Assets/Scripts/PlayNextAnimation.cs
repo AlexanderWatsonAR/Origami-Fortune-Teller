@@ -6,7 +6,7 @@ public class PlayNextAnimation : MonoBehaviour
 {
     public int origamiNumber;
 
-    public void Play()
+    public void PlayNext()
     {
         OrigamiManager.instance.orgami[origamiNumber].SetActive(true);
         OrigamiManager.instance.orgami[origamiNumber].GetComponent<Animator>().enabled = true;

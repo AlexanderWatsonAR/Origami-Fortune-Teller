@@ -12,16 +12,23 @@ public class AnimationSpeedController : MonoBehaviour
     private void Start()
     {
         animationSlider = GetComponent<Slider>();
-        animationSlider.onValueChanged.AddListener(delegate { NewMethod(); });
+        animationSlider.onValueChanged.AddListener(delegate { AdjustAnimationSpeed(); });
     }
 
-    public void NewMethod()
+    public void AdjustAnimationSpeed()
     {
         for(int i = 0; i < OrigamiManager.instance.orgami.Length; i++)
         {
             OrigamiManager.instance.orgami[i].GetComponent<Animator>().speed = startSpeed + (animationSlider.value * animationMultiplier);
         }
 
-        //Debug.Log(animationSlider.value);
+
+        foreach(Sound s in AudioManager.instance.sounds)
+        {
+            s.pitch = startSpeed + (animationSlider.value * animationMultiplier);
+            if (s.pitch > 2)
+                s.pitch = 2;
+            s.source.pitch = s.pitch;
+        }
     }
 }

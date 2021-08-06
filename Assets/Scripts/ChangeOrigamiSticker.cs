@@ -11,6 +11,7 @@ public class ChangeOrigamiSticker : MonoBehaviour
     public AssetReferenceT<Material> stickerMatRef;
     public GameObject SegmentDropdown;
     public GameObject ColourDropdown;
+    public GameObject ScrollView;
     public int stickerHash;
     public bool isBorderActive;
 
@@ -42,6 +43,14 @@ public class ChangeOrigamiSticker : MonoBehaviour
         });
 
         stickerPos = FindObjectOfType<SelectStickerPostion>();
+
+        if (spriteRef == null)
+            return;
+
+        ScrollView.GetComponent<ScrollRect>().onValueChanged.AddListener(delegate
+        {
+            IsThisVisible();
+        });
     }
 
     private void DropdownValueChanged(TMP_Dropdown change)
@@ -229,9 +238,32 @@ public class ChangeOrigamiSticker : MonoBehaviour
     }
     private void OnEnable()
     {
-        Image tempImage = GetComponent<Image>();
-      
-        tempImage.sprite = OrigamiManager.instance.GetSpriteFromRef(spriteRef);
         Border();
+    }
+
+    public void IsThisVisible()
+    {
+        if (GetComponent<Image>().sprite != null || spriteRef == null)
+        {
+            RemoveListener();
+            return;
+        }
+            
+        Image tempImage = GetComponent<Image>();
+        bool isVisible = RectTransformUtility.RectangleContainsScreenPoint(ScrollView.GetComponent<RectTransform>(), new Vector2(transform.position.x, transform.position.y));
+
+        if (isVisible)
+        {
+            OrigamiManager.instance.GetSpriteFromRef(spriteRef, tempImage);
+            RemoveListener();
+        }
+    }
+
+    private void RemoveListener()
+    {
+        ScrollView.GetComponent<ScrollRect>().onValueChanged.RemoveListener(delegate
+        {
+            IsThisVisible();
+        });
     }
 }

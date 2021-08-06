@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
+using UnityEngine.UI;
 
 public class OrigamiManager : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class OrigamiManager : MonoBehaviour
     private string numberName;
 
     public GameObject Canvas;
+    public GameObject SecondaryCanvas;
     public GameObject[] orgami;
     public Color[] colours;
     public string[] colourNames;
@@ -160,32 +162,66 @@ public class OrigamiManager : MonoBehaviour
 
     public void LoadPrimaryColourData(GameObject origami, string entryIndex)
     {
-        // Set Primary Colour.
-        // Bottom Left
-        origami.transform.GetChild(0).GetComponent<Renderer>().material.SetColor("Color_cc2877fbd4c8430591cd0e4dc9d8ad1a", colours[(int)PlayerPrefs.GetFloat("BottomLeftColourPrimary" + entryIndex)]);
-        // Bottom Right
-        origami.transform.GetChild(1).GetComponent<Renderer>().material.SetColor("Color_cc2877fbd4c8430591cd0e4dc9d8ad1a", colours[(int)PlayerPrefs.GetFloat("BottomRightColourPrimary" + entryIndex)]);
-        // Top Left
-        origami.transform.GetChild(2).GetComponent<Renderer>().material.SetColor("Color_cc2877fbd4c8430591cd0e4dc9d8ad1a", colours[(int)PlayerPrefs.GetFloat("TopLeftColourPrimary" + entryIndex)]);
-        // Top Right
-        origami.transform.GetChild(3).GetComponent<Renderer>().material.SetColor("Color_cc2877fbd4c8430591cd0e4dc9d8ad1a", colours[(int)PlayerPrefs.GetFloat("TopRightColourPrimary" + entryIndex)]);
+        if (entryIndex == "-1")
+        {
+            // Set Primary Colour.
+            // Bottom Left
+            origami.transform.GetChild(0).GetComponent<Renderer>().material.SetColor("Color_cc2877fbd4c8430591cd0e4dc9d8ad1a", colours[10]);
+            // Bottom Right
+            origami.transform.GetChild(1).GetComponent<Renderer>().material.SetColor("Color_cc2877fbd4c8430591cd0e4dc9d8ad1a", colours[7]);
+            // Top Left
+            origami.transform.GetChild(2).GetComponent<Renderer>().material.SetColor("Color_cc2877fbd4c8430591cd0e4dc9d8ad1a", colours[2]);
+            // Top Right
+            origami.transform.GetChild(3).GetComponent<Renderer>().material.SetColor("Color_cc2877fbd4c8430591cd0e4dc9d8ad1a", colours[4]);
+
+        }
+        else
+        {
+            // Set Primary Colour.
+            // Bottom Left
+            origami.transform.GetChild(0).GetComponent<Renderer>().material.SetColor("Color_cc2877fbd4c8430591cd0e4dc9d8ad1a", colours[(int)PlayerPrefs.GetFloat("BottomLeftColourPrimary" + entryIndex)]);
+            // Bottom Right
+            origami.transform.GetChild(1).GetComponent<Renderer>().material.SetColor("Color_cc2877fbd4c8430591cd0e4dc9d8ad1a", colours[(int)PlayerPrefs.GetFloat("BottomRightColourPrimary" + entryIndex)]);
+            // Top Left
+            origami.transform.GetChild(2).GetComponent<Renderer>().material.SetColor("Color_cc2877fbd4c8430591cd0e4dc9d8ad1a", colours[(int)PlayerPrefs.GetFloat("TopLeftColourPrimary" + entryIndex)]);
+            // Top Right
+            origami.transform.GetChild(3).GetComponent<Renderer>().material.SetColor("Color_cc2877fbd4c8430591cd0e4dc9d8ad1a", colours[(int)PlayerPrefs.GetFloat("TopRightColourPrimary" + entryIndex)]);
+        }
     }
 
     public void LoadSecondaryColourData(GameObject origami, string entryIndex)
     {
-        // Set Secondary Colour.
-        // Bottom Left
-        origami.transform.GetChild(0).GetComponent<Renderer>().material.SetColor("Color_27bc9690873845048adc1140e1c09a57", colours[(int)PlayerPrefs.GetFloat("BottomLeftColourSecondary" + entryIndex)]);
-        // Bottom Right
-        origami.transform.GetChild(1).GetComponent<Renderer>().material.SetColor("Color_27bc9690873845048adc1140e1c09a57", colours[(int)PlayerPrefs.GetFloat("BottomRightColourSecondary" + entryIndex)]);
-        // Top Left
-        origami.transform.GetChild(2).GetComponent<Renderer>().material.SetColor("Color_27bc9690873845048adc1140e1c09a57", colours[(int)PlayerPrefs.GetFloat("TopLeftColourSecondary" + entryIndex)]);
-        // Top Right
-        origami.transform.GetChild(3).GetComponent<Renderer>().material.SetColor("Color_27bc9690873845048adc1140e1c09a57", colours[(int)PlayerPrefs.GetFloat("TopRightColourSecondary" + entryIndex)]);
+        if (entryIndex == "-1")
+        {
+            // Set Secondary Colour.
+            // Bottom Left
+            origami.transform.GetChild(0).GetComponent<Renderer>().material.SetColor("Color_27bc9690873845048adc1140e1c09a57", colours[10]);
+            // Bottom Right
+            origami.transform.GetChild(1).GetComponent<Renderer>().material.SetColor("Color_27bc9690873845048adc1140e1c09a57", colours[7]);
+            // Top Left
+            origami.transform.GetChild(2).GetComponent<Renderer>().material.SetColor("Color_27bc9690873845048adc1140e1c09a57", colours[2]);
+            // Top Right
+            origami.transform.GetChild(3).GetComponent<Renderer>().material.SetColor("Color_27bc9690873845048adc1140e1c09a57", colours[4]);
+        }
+        else
+        {
+            // Set Secondary Colour.
+            // Bottom Left
+            origami.transform.GetChild(0).GetComponent<Renderer>().material.SetColor("Color_27bc9690873845048adc1140e1c09a57", colours[(int)PlayerPrefs.GetFloat("BottomLeftColourSecondary" + entryIndex)]);
+            // Bottom Right
+            origami.transform.GetChild(1).GetComponent<Renderer>().material.SetColor("Color_27bc9690873845048adc1140e1c09a57", colours[(int)PlayerPrefs.GetFloat("BottomRightColourSecondary" + entryIndex)]);
+            // Top Left
+            origami.transform.GetChild(2).GetComponent<Renderer>().material.SetColor("Color_27bc9690873845048adc1140e1c09a57", colours[(int)PlayerPrefs.GetFloat("TopLeftColourSecondary" + entryIndex)]);
+            // Top Right
+            origami.transform.GetChild(3).GetComponent<Renderer>().material.SetColor("Color_27bc9690873845048adc1140e1c09a57", colours[(int)PlayerPrefs.GetFloat("TopRightColourSecondary" + entryIndex)]);
+        }
     }
 
     public void LoadPrimaryTexData(GameObject origami, string entryIndex)
     {
+        if (entryIndex == "-1")
+            return;
+
         AssetReferenceTexture a = TextureRefs[(int)PlayerPrefs.GetFloat("BottomLeftTexPrimary" + entryIndex)];
         AssetReferenceTexture b = TextureRefs[(int)PlayerPrefs.GetFloat("BottomRightTexPrimary" + entryIndex)];
         AssetReferenceTexture c = TextureRefs[(int)PlayerPrefs.GetFloat("TopLeftTexPrimary" + entryIndex)];
@@ -195,10 +231,19 @@ public class OrigamiManager : MonoBehaviour
         LoadTexData(origami, 1, b, "Texture2D_b614431639584fc99463f96af57246a8");
         LoadTexData(origami, 2, c, "Texture2D_b614431639584fc99463f96af57246a8");
         LoadTexData(origami, 3, d, "Texture2D_b614431639584fc99463f96af57246a8");
+
+
+        origamiTextureHashPrimary[0] = (int)PlayerPrefs.GetFloat("BottomLeftTexPrimary" + entryIndex);
+        origamiTextureHashPrimary[1] = (int)PlayerPrefs.GetFloat("BottomRightTexPrimary" + entryIndex);
+        origamiTextureHashPrimary[2] = (int)PlayerPrefs.GetFloat("TopLeftTexPrimary" + entryIndex);
+        origamiTextureHashPrimary[3] = (int)PlayerPrefs.GetFloat("TopRightTexPrimary" + entryIndex);
     }
 
     public void LoadSecondaryTexData(GameObject origami, string entryIndex)
     {
+        if (entryIndex == "-1")
+            return;
+
         AssetReferenceTexture a = TextureRefs[(int)PlayerPrefs.GetFloat("BottomLeftTexSecondary" + entryIndex)];
         AssetReferenceTexture b = TextureRefs[(int)PlayerPrefs.GetFloat("BottomRightTexSecondary" + entryIndex)];
         AssetReferenceTexture c = TextureRefs[(int)PlayerPrefs.GetFloat("TopLeftTexSecondary" + entryIndex)];
@@ -208,10 +253,27 @@ public class OrigamiManager : MonoBehaviour
         LoadTexData(origami, 1, b, "Texture2D_62f72c9e26a6475faf78c7bf7415b950");
         LoadTexData(origami, 2, c, "Texture2D_62f72c9e26a6475faf78c7bf7415b950");
         LoadTexData(origami, 3, d, "Texture2D_62f72c9e26a6475faf78c7bf7415b950");
+
+        origamiTextureHashSecondary[0] = (int)PlayerPrefs.GetFloat("BottomLeftTexSecondary" + entryIndex);
+        origamiTextureHashSecondary[1] = (int)PlayerPrefs.GetFloat("BottomRightTexSecondary" + entryIndex);
+        origamiTextureHashSecondary[2] = (int)PlayerPrefs.GetFloat("TopLeftTexSecondary" + entryIndex);
+        origamiTextureHashSecondary[3] = (int)PlayerPrefs.GetFloat("TopRightTexSecondary" + entryIndex);
     }
 
     public void LoadStickerTexData(GameObject origami, string entryIndex)
     {
+        if (entryIndex == "-1")
+            return;
+
+        // Bottom Left
+        Color blColour = origami.transform.GetChild(0).GetComponent<Renderer>().material.GetColor("Color_cc2877fbd4c8430591cd0e4dc9d8ad1a");
+        // Bottom Right
+        Color brColour = origami.transform.GetChild(1).GetComponent<Renderer>().material.GetColor("Color_cc2877fbd4c8430591cd0e4dc9d8ad1a");
+        // Top Left
+        Color tlColour = origami.transform.GetChild(2).GetComponent<Renderer>().material.GetColor("Color_cc2877fbd4c8430591cd0e4dc9d8ad1a");
+        // Top Right
+        Color trColour = origami.transform.GetChild(3).GetComponent<Renderer>().material.GetColor("Color_cc2877fbd4c8430591cd0e4dc9d8ad1a");
+
         ChangeOrigamiSticker.CheckPosition(origami.transform.GetChild(12).gameObject, origami.transform.GetChild(13).gameObject, (int)PlayerPrefs.GetFloat("TopLeftStickerTexPos" + entryIndex));
         ChangeOrigamiSticker.CheckPosition(origami.transform.GetChild(14).gameObject, origami.transform.GetChild(15).gameObject, (int)PlayerPrefs.GetFloat("TopRightStickerTexPos" + entryIndex));
         ChangeOrigamiSticker.CheckPosition(origami.transform.GetChild(16).gameObject, origami.transform.GetChild(17).gameObject, (int)PlayerPrefs.GetFloat("BottomRightStickerTexPos" + entryIndex));
@@ -221,52 +283,56 @@ public class OrigamiManager : MonoBehaviour
         AssetReferenceT<Material> b = StickerMaterialRefs[(int)PlayerPrefs.GetFloat("TopRightStickerTex" + entryIndex)];
         AssetReferenceT<Material> c = StickerMaterialRefs[(int)PlayerPrefs.GetFloat("BottomRightStickerTex" + entryIndex)];
         AssetReferenceT<Material> d = StickerMaterialRefs[(int)PlayerPrefs.GetFloat("BottomLeftStickerTex" + entryIndex)];
+        
+        origamiStickerHash[0] = (int)PlayerPrefs.GetFloat("TopRightStickerTex" + entryIndex);
+        origamiStickerHash[1] = (int)PlayerPrefs.GetFloat("TopLeftStickerTex" + entryIndex);
+        origamiStickerHash[2] = (int)PlayerPrefs.GetFloat("BottomRightStickerTex" + entryIndex);
+        origamiStickerHash[3] = (int)PlayerPrefs.GetFloat("BottomLeftStickerTex" + entryIndex);
 
         // Top Left
         if (origami.transform.GetChild(12).gameObject.activeSelf)
         {
             LoadMaterialData(origami, 12, a);
+            origami.transform.GetChild(12).gameObject.GetComponent<Renderer>().material.SetColor("Color_a699c866f1d14065bc7b7abae9858103", tlColour);
         }
         if (origami.transform.GetChild(13).gameObject.activeSelf)
         {
             LoadMaterialData(origami, 13, a);
+            origami.transform.GetChild(13).gameObject.GetComponent<Renderer>().material.SetColor("Color_a699c866f1d14065bc7b7abae9858103", tlColour);
         }
         // Top Right
         if (origami.transform.GetChild(14).gameObject.activeSelf)
         {
             LoadMaterialData(origami, 14, b);
+            origami.transform.GetChild(14).gameObject.GetComponent<Renderer>().material.SetColor("Color_a699c866f1d14065bc7b7abae9858103", trColour);
         }
         if (origami.transform.GetChild(15).gameObject.activeSelf)
         {
             LoadMaterialData(origami, 15, b);
+            origami.transform.GetChild(15).gameObject.GetComponent<Renderer>().material.SetColor("Color_a699c866f1d14065bc7b7abae9858103", trColour);
         }
         // Bottom Right
         if (origami.transform.GetChild(16).gameObject.activeSelf)
         {
             LoadMaterialData(origami, 16, c);
+            origami.transform.GetChild(16).gameObject.GetComponent<Renderer>().material.SetColor("Color_a699c866f1d14065bc7b7abae9858103", brColour);
         }
         if (origami.transform.GetChild(17).gameObject.activeSelf)
         {
             LoadMaterialData(origami, 17, c);
+            origami.transform.GetChild(17).gameObject.GetComponent<Renderer>().material.SetColor("Color_a699c866f1d14065bc7b7abae9858103", brColour);
         }
         // Bottom Left
         if (origami.transform.GetChild(18).gameObject.activeSelf)
         {
             LoadMaterialData(origami, 18, d);
+            origami.transform.GetChild(18).gameObject.GetComponent<Renderer>().material.SetColor("Color_a699c866f1d14065bc7b7abae9858103", blColour);
         }
         if (origami.transform.GetChild(19).gameObject.activeSelf)
         {
             LoadMaterialData(origami, 19, d);
+            origami.transform.GetChild(19).gameObject.GetComponent<Renderer>().material.SetColor("Color_a699c866f1d14065bc7b7abae9858103", blColour);
         }
-
-        //origami.transform.GetChild(12).GetComponent<Renderer>().material = stickerMaterials[(int)PlayerPrefs.GetFloat("TopLeftStickerTex" + entryIndex)];
-        //origami.transform.GetChild(13).GetComponent<Renderer>().material = stickerMaterials[(int)PlayerPrefs.GetFloat("TopLeftStickerTex" + entryIndex)];
-        //origami.transform.GetChild(14).GetComponent<Renderer>().material = stickerMaterials[(int)PlayerPrefs.GetFloat("TopRightStickerTex" + entryIndex)];
-        //origami.transform.GetChild(15).GetComponent<Renderer>().material = stickerMaterials[(int)PlayerPrefs.GetFloat("TopRightStickerTex" + entryIndex)];
-        //origami.transform.GetChild(16).GetComponent<Renderer>().material = stickerMaterials[(int)PlayerPrefs.GetFloat("BottomRightStickerTex" + entryIndex)];
-        //origami.transform.GetChild(17).GetComponent<Renderer>().material = stickerMaterials[(int)PlayerPrefs.GetFloat("BottomRightStickerTex" + entryIndex)];
-        //origami.transform.GetChild(18).GetComponent<Renderer>().material = stickerMaterials[(int)PlayerPrefs.GetFloat("BottomLeftStickerTex" + entryIndex)];
-        //origami.transform.GetChild(19).GetComponent<Renderer>().material = stickerMaterials[(int)PlayerPrefs.GetFloat("BottomLeftStickerTex" + entryIndex)];
 
     }
 
@@ -333,16 +399,6 @@ public class OrigamiManager : MonoBehaviour
                 }
             };
         }
-
-
-        //if (texReference.OperationHandle.IsValid() && texReference.OperationHandle.Result != null)
-        //{
-        //    origami.transform.GetChild(childIndex).GetComponent<Renderer>().material.SetTexture(ID, texReference.OperationHandle.Convert<Texture>().Result);
-        //}
-        //else
-        //{
-        //    texReference.LoadAssetAsync<Texture>().Completed += (AsyncOperationHandle<Texture> obj) => { origami.transform.GetChild(childIndex).GetComponent<Renderer>().material.SetTexture(ID, obj.Result); };
-        //}
     }
 
     public Texture GetTextureFromMaterial(AssetReferenceT<Material> stickerRef)
@@ -378,9 +434,8 @@ public class OrigamiManager : MonoBehaviour
         return temp;
     }
 
-    public Sprite GetSpriteFromRef(AssetReferenceSprite stickerRef)
+    public void GetSpriteFromRef(AssetReferenceSprite stickerRef, Image image)
     {
-        Sprite temp = null;
         // If asset has already started being loaded into memory.
         if (stickerRef.OperationHandle.IsValid())
         {
@@ -391,14 +446,14 @@ public class OrigamiManager : MonoBehaviour
                 {
                     if (obj.IsValid() && obj.Result != null)
                     {
-                        temp = obj.Convert<Sprite>().Result;
+                        image.sprite = obj.Convert<Sprite>().Result;
                     }
                 };
             }
             // if loading is completed.
             else
             {
-                temp = stickerRef.OperationHandle.Convert<Sprite>().Result;
+                image.sprite = stickerRef.OperationHandle.Convert<Sprite>().Result;
             }
         }
         else
@@ -408,12 +463,10 @@ public class OrigamiManager : MonoBehaviour
             {
                 if (obj.IsValid() && obj.Result != null)
                 {
-                    temp = obj.Result;
+                    image.sprite = obj.Result;
                 }
             };
         }
-
-        return temp;
     }
 
     public int ColourIndex(Color colour)

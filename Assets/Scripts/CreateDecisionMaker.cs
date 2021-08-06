@@ -17,9 +17,16 @@ public class CreateDecisionMaker : MonoBehaviour
     {
         //DontDestroyOnLoad(this);
         //PlayerPrefs.DeleteAll();
+        RectTransform content = DecisionMakerTemplate.transform.parent.GetComponent<RectTransform>();
+        VerticalLayoutGroup layout = content.gameObject.GetComponent<VerticalLayoutGroup>();
 
         for (int i = 0; i < PlayerPrefs.GetFloat("numberOfSavedEntries"); i++)
         {
+            if(PlayerPrefs.GetInt("Deleted" + i.ToString()) == 1)
+            {
+                continue;
+            }
+
             GameObject newDecisionMaker = Instantiate(DecisionMakerTemplate);
             newDecisionMaker.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = PlayerPrefs.GetString("QuestionData0Entry" + i);
             newDecisionMaker.name = newDecisionMaker.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text;
@@ -37,11 +44,10 @@ public class CreateDecisionMaker : MonoBehaviour
             origami.GetChild(2).gameObject.GetComponent<Image>().sprite = sprites[(int)PlayerPrefs.GetFloat("BottomLeftTexPrimary" + i.ToString())];
             origami.GetChild(3).gameObject.GetComponent<Image>().sprite = sprites[(int)PlayerPrefs.GetFloat("BottomRightTexPrimary" + i.ToString())];
 
-            RectTransform content = newDecisionMaker.transform.parent.GetComponent<RectTransform>();
-            VerticalLayoutGroup layout = content.gameObject.GetComponent<VerticalLayoutGroup>();
-
             content.sizeDelta = new Vector2(content.sizeDelta.x, content.sizeDelta.y  + newDecisionMaker.GetComponent<RectTransform>().sizeDelta.y + layout.spacing);
-
+            newDecisionMaker.transform.GetChild(2).gameObject.GetComponent<Button>().interactable = true;
+            newDecisionMaker.transform.GetChild(3).gameObject.GetComponent<Button>().interactable = true;
+            newDecisionMaker.transform.GetChild(4).gameObject.GetComponent<Button>().interactable = true;
             int count = i;
             newDecisionMaker.GetComponent<Button>().onClick.AddListener(delegate { LoadEntry(count); });
             for(int j = 0; j < newDecisionMaker.transform.childCount; j++)
@@ -51,8 +57,64 @@ public class CreateDecisionMaker : MonoBehaviour
                     newDecisionMaker.transform.GetChild(j).GetComponent<Button>().onClick.AddListener(delegate { LoadEntry(count); });
                 }
             }
+
+            newDecisionMaker.transform.GetChild(newDecisionMaker.transform.childCount - 1).GetComponent<Button>().onClick.AddListener(delegate { Remove(count); });
+
             newDecisionMaker.SetActive(true);
         }
+    }
+
+    public void Remove(int index)
+    {
+        RectTransform content = DecisionMakerTemplate.transform.parent.GetComponent<RectTransform>();
+        VerticalLayoutGroup layout = content.gameObject.GetComponent<VerticalLayoutGroup>();
+
+        content.sizeDelta = new Vector2(content.sizeDelta.x, content.sizeDelta.y - DecisionMakerTemplate.GetComponent<RectTransform>().sizeDelta.y - layout.spacing);
+        string temp = index.ToString();
+
+        // Delete design data.
+        PlayerPrefs.DeleteKey("TopLeftColourPrimary" + temp);
+        PlayerPrefs.DeleteKey("TopRightColourPrimary" + temp);
+        PlayerPrefs.DeleteKey("BottomLeftColourPrimary" + temp);
+        PlayerPrefs.DeleteKey("BottomRightColourPrimary" + temp);
+
+        PlayerPrefs.DeleteKey("TopLeftColourSecondary" + temp);
+        PlayerPrefs.DeleteKey("TopRightColourSecondary" + temp);
+        PlayerPrefs.DeleteKey("BottomLeftColourSecondary" + temp);
+        PlayerPrefs.DeleteKey("BottomRightColourSecondary" + temp);
+
+        PlayerPrefs.DeleteKey("TopLeftTexPrimary" + temp);
+        PlayerPrefs.DeleteKey("TopRightTexPrimary" + temp);
+        PlayerPrefs.DeleteKey("BottomLeftTexPrimary" + temp);
+        PlayerPrefs.DeleteKey("BottomRightTexPrimary" + temp);
+
+        PlayerPrefs.DeleteKey("TopLeftTexSecondary" + temp);
+        PlayerPrefs.DeleteKey("TopRightTexSecondary" + temp);
+        PlayerPrefs.DeleteKey("BottomLeftTexSecondary" + temp);
+        PlayerPrefs.DeleteKey("BottomRightTexSecondary" + temp);
+
+        PlayerPrefs.DeleteKey("TopLeftStickerTex" + temp);
+        PlayerPrefs.DeleteKey("TopRightStickerTex" + temp);
+        PlayerPrefs.DeleteKey("BottomLeftStickerTex" + temp);
+        PlayerPrefs.DeleteKey("BottomRightStickerTex" + temp);
+
+        PlayerPrefs.DeleteKey("TopLeftStickerTexPos" + temp);
+        PlayerPrefs.DeleteKey("TopRightStickerTexPos" + temp);
+        PlayerPrefs.DeleteKey("BottomLeftStickerTexPos" + temp);
+        PlayerPrefs.DeleteKey("BottomRightStickerTexPos" + temp);
+
+        // Delete question data.
+        float dataSize = PlayerPrefs.GetFloat("QuestionDataSize" + temp);
+
+        for(int i = 0; i < dataSize; i++)
+        {
+            PlayerPrefs.DeleteKey("QuestionData" + i.ToString() + "Entry" + temp);
+        }
+
+        PlayerPrefs.SetInt("Deleted" + temp, 1);
+
+        Destroy(DecisionMakerTemplate.transform.parent.GetChild(index + 1).gameObject);
+
     }
 
     public void Create()

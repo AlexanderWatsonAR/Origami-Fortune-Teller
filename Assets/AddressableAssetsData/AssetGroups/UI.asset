@@ -33,8 +33,8 @@ MonoBehaviour:
     m_Address: Assets/Stickers/UI/Moon ui.png
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 2800000, guid: 738412f94ee536047be5021052f44578, type: 3}
-    m_TargetAsset: {fileID: 2800000, guid: 738412f94ee536047be5021052f44578, type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: 601dc099ef87fd44fb695f67a9c774a9
     m_Address: Assets/Stickers/UI/Pineapple ui.png
     m_ReadOnly: 0
@@ -57,8 +57,8 @@ MonoBehaviour:
     m_Address: Assets/Stickers/UI/Rainbow Gold ui.png
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 2800000, guid: 5cc2514b3646f814bbcbb97f5a9a1b48, type: 3}
-    m_TargetAsset: {fileID: 2800000, guid: 5cc2514b3646f814bbcbb97f5a9a1b48, type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: bfee4641fd81b114b8cd12c1debda52c
     m_Address: Assets/Stickers/UI/Panda ui.png
     m_ReadOnly: 0
@@ -139,6 +139,132 @@ MonoBehaviour:
     m_TargetAsset: {fileID: 0}
   - m_GUID: cb9480dd9bea7194cb2ba6e934bc45b4
     m_Address: Assets/Stickers/UI/Apple ui.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 0641ee671c114a642845825643a72707
+    m_Address: Assets/UI/brickwall cutout ui.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: e5a6521b04e984d4f91bc7e16bfe894b
+    m_Address: Assets/UI/cactus ui.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: b33376edcf4336a4e8380187d7f6d64b
+    m_Address: Assets/UI/Checkerboard ui.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 48a823727d47a8546ab209e476efc5b1
+    m_Address: Assets/UI/Cheetah ui.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 329d3d95512d77a419e0f7cd4900d1d1
+    m_Address: Assets/UI/Circles 1 ui.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: c692cf0dc0bca0b43861cf7ee1ebd000
+    m_Address: Assets/UI/Circles ui.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 04563042a04b099459440ca625f39f88
+    m_Address: Assets/UI/CircularPlus ui.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: df1977feb346f72478444fdf78c12bd3
+    m_Address: Assets/UI/CrescentMoon ui.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 4b0add49275102240a0a038cf6ecfdb6
+    m_Address: Assets/UI/Diamond ui.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 2ff096cd08afe9f468e95c82a2412452
+    m_Address: Assets/UI/Fish ui.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: fd183b242d437454fa7681af7af90298
+    m_Address: Assets/UI/grid ui.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 35d0c6ad18b31e94a8c886931ffc0429
+    m_Address: Assets/UI/Heart 2 ui.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: a4b0ae40d640b6e40a33fb7aad27cc45
+    m_Address: Assets/UI/Heart ui.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: fefe4562a024c1346b793d9c7c9a71b1
+    m_Address: Assets/UI/lips ui.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: fe72f6d5ff914524bbd96bc7204c6304
+    m_Address: Assets/UI/Paw ui.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: cb80512e74a96ab438223893c50c1236
+    m_Address: Assets/UI/qbertish ui.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 86d34b73ecb4afd49be9970aa57c7101
+    m_Address: Assets/UI/Polka Dot ui.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 1891fc31b39b8324baa75209b298f403
+    m_Address: Assets/UI/Star ui.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 91b9524207b9e844eb8ae9a8a1ba4358
+    m_Address: Assets/UI/Triangle ui.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 4aca83ba527daba4ea5f7f23dfa777a8
+    m_Address: Assets/Materials/Paws1.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 3ea297d9123177845ab68505e6459510
+    m_Address: Assets/UI/blank ui.png
     m_ReadOnly: 0
     m_SerializedLabels: []
     m_MainAsset: {fileID: 0}

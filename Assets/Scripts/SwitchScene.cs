@@ -56,7 +56,19 @@ public class SwitchScene : MonoBehaviour
 
         OrigamiManager.instance.orgami[0].SetActive(true);
         OrigamiManager.instance.Canvas.SetActive(true);
+        OrigamiManager.instance.SecondaryCanvas.SetActive(true);
 
         Destroy(gameObject);
+    }
+
+    public void AdjustLoadSpeed()
+    {
+        if(SceneManager.GetActiveScene().buildIndex == NextSceneIndex.nextSceneIndex)
+        {
+            if(GetComponent<Animator>() != null)
+            {
+                GetComponent<Animator>().speed = 1.5f;
+            }
+        }
     }
 }
