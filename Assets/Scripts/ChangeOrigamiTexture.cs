@@ -62,14 +62,14 @@ public class ChangeOrigamiTexture : MonoBehaviour
                 case "Top Right":
                     if (colourDropdown.options[colourDropdown.value].text == "Primary")
                     {
-                        OrigamiManager.instance.LoadTexData(origami, 3, texture, "Texture2D_b614431639584fc99463f96af57246a8");
+                        DataLoading.LoadTexData(origami, 3, texture, "Texture2D_b614431639584fc99463f96af57246a8");
                         //origami.transform.GetChild(3).GetComponent<Renderer>().material.SetTexture("Texture2D_b614431639584fc99463f96af57246a8", texture);
                         OrigamiManager.instance.origamiTextureHashPrimary[3] = textureHash;
                         DesignData.TopRightTexPrimary = textureIndex;
                     }
                     else
                     {
-                        OrigamiManager.instance.LoadTexData(origami, 3, texture, "Texture2D_62f72c9e26a6475faf78c7bf7415b950");
+                        DataLoading.LoadTexData(origami, 3, texture, "Texture2D_62f72c9e26a6475faf78c7bf7415b950");
                         //origami.transform.GetChild(3).GetComponent<Renderer>().material.SetTexture("Texture2D_62f72c9e26a6475faf78c7bf7415b950", texture);
                         OrigamiManager.instance.origamiTextureHashSecondary[3] = textureHash;
                         DesignData.TopRightTexSecondary = textureIndex;
@@ -78,14 +78,14 @@ public class ChangeOrigamiTexture : MonoBehaviour
                 case "Top Left":
                     if (colourDropdown.options[colourDropdown.value].text == "Primary")
                     {
-                        OrigamiManager.instance.LoadTexData(origami, 2, texture, "Texture2D_b614431639584fc99463f96af57246a8");
+                        DataLoading.LoadTexData(origami, 2, texture, "Texture2D_b614431639584fc99463f96af57246a8");
                         //origami.transform.GetChild(2).GetComponent<Renderer>().material.SetTexture("Texture2D_b614431639584fc99463f96af57246a8", texture);
                         OrigamiManager.instance.origamiTextureHashPrimary[2] = textureHash;
                         DesignData.TopLeftTexPrimary = textureIndex;
                     }
                     else
                     {
-                        OrigamiManager.instance.LoadTexData(origami, 2, texture, "Texture2D_62f72c9e26a6475faf78c7bf7415b950");
+                        DataLoading.LoadTexData(origami, 2, texture, "Texture2D_62f72c9e26a6475faf78c7bf7415b950");
                         //origami.transform.GetChild(2).GetComponent<Renderer>().material.SetTexture("Texture2D_62f72c9e26a6475faf78c7bf7415b950", texture);
                         OrigamiManager.instance.origamiTextureHashSecondary[2] = textureHash;
                         DesignData.TopLeftTexSecondary = textureIndex;
@@ -94,14 +94,14 @@ public class ChangeOrigamiTexture : MonoBehaviour
                 case "Bottom Right":
                     if (colourDropdown.options[colourDropdown.value].text == "Primary")
                     {
-                        OrigamiManager.instance.LoadTexData(origami, 1, texture, "Texture2D_b614431639584fc99463f96af57246a8");
+                        DataLoading.LoadTexData(origami, 1, texture, "Texture2D_b614431639584fc99463f96af57246a8");
                         //origami.transform.GetChild(1).GetComponent<Renderer>().material.SetTexture("Texture2D_b614431639584fc99463f96af57246a8", texture);
                         OrigamiManager.instance.origamiTextureHashPrimary[1] = textureHash;
                         DesignData.BottomRightTexPrimary = textureIndex;
                     }
                     else
                     {
-                        OrigamiManager.instance.LoadTexData(origami, 1, texture, "Texture2D_62f72c9e26a6475faf78c7bf7415b950");
+                        DataLoading.LoadTexData(origami, 1, texture, "Texture2D_62f72c9e26a6475faf78c7bf7415b950");
                         //origami.transform.GetChild(1).GetComponent<Renderer>().material.SetTexture("Texture2D_62f72c9e26a6475faf78c7bf7415b950", texture);
                         OrigamiManager.instance.origamiTextureHashSecondary[1] = textureHash;
                         DesignData.BottomRightTexSecondary = textureIndex;
@@ -110,14 +110,14 @@ public class ChangeOrigamiTexture : MonoBehaviour
                 case "Bottom Left":
                     if (colourDropdown.options[colourDropdown.value].text == "Primary")
                     {
-                        OrigamiManager.instance.LoadTexData(origami, 0, texture, "Texture2D_b614431639584fc99463f96af57246a8");
+                        DataLoading.LoadTexData(origami, 0, texture, "Texture2D_b614431639584fc99463f96af57246a8");
                         //origami.transform.GetChild(0).GetComponent<Renderer>().material.SetTexture("Texture2D_b614431639584fc99463f96af57246a8", texture);
                         OrigamiManager.instance.origamiTextureHashPrimary[0] = textureHash;
                         DesignData.BottomLeftTexPrimary = textureIndex;
                     }
                     else
                     {
-                        OrigamiManager.instance.LoadTexData(origami, 0, texture, "Texture2D_62f72c9e26a6475faf78c7bf7415b950");
+                        DataLoading.LoadTexData(origami, 0, texture, "Texture2D_62f72c9e26a6475faf78c7bf7415b950");
                         //origami.transform.GetChild(0).GetComponent<Renderer>().material.SetTexture("Texture2D_62f72c9e26a6475faf78c7bf7415b950", texture);
                         OrigamiManager.instance.origamiTextureHashSecondary[0] = textureHash;
                         DesignData.BottomLeftTexSecondary = textureIndex;
@@ -245,7 +245,7 @@ public class ChangeOrigamiTexture : MonoBehaviour
 
         if (isVisible)
         {
-            OrigamiManager.instance.GetSpriteFromRef(spriteRef, tempImage);
+            DataLoading.GetSpriteFromRef(spriteRef, tempImage);
             RemoveListener();
         }
     }

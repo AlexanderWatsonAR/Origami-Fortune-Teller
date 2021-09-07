@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: d65a15e3d9f1a5e4086d938ea1195a14
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - OpenMoji
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: c3fc7c6ad200bfb43ac4f39bb86727a1, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

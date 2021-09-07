@@ -16,17 +16,17 @@ public class CreateDecisionMaker : MonoBehaviour
     void Awake()
     {
         //DontDestroyOnLoad(this);
-        //PlayerPrefs.DeleteAll();
+        PlayerPrefs.DeleteAll();
         RectTransform content = DecisionMakerTemplate.transform.parent.GetComponent<RectTransform>();
         VerticalLayoutGroup layout = content.gameObject.GetComponent<VerticalLayoutGroup>();
-
+        int actualIndex = 0;
         for (int i = 0; i < PlayerPrefs.GetFloat("numberOfSavedEntries"); i++)
         {
             if(PlayerPrefs.GetInt("Deleted" + i.ToString()) == 1)
             {
                 continue;
             }
-
+            actualIndex++;
             GameObject newDecisionMaker = Instantiate(DecisionMakerTemplate);
             newDecisionMaker.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = PlayerPrefs.GetString("QuestionData0Entry" + i);
             newDecisionMaker.name = newDecisionMaker.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text;
@@ -59,7 +59,11 @@ public class CreateDecisionMaker : MonoBehaviour
             }
 
             newDecisionMaker.transform.GetChild(newDecisionMaker.transform.childCount - 1).GetComponent<Button>().onClick.AddListener(delegate { Remove(count); });
+            newDecisionMaker.transform.GetChild(newDecisionMaker.transform.childCount - 1).GetComponent<Button>().onClick.AddListener(delegate { DestroyDecisionMaker(actualIndex); });
 
+            newDecisionMaker.transform.localScale = DecisionMakerTemplate.transform.localScale;
+            RectTransform makerTransform = newDecisionMaker.transform as RectTransform;
+            makerTransform.anchoredPosition3D = Vector3.zero;
             newDecisionMaker.SetActive(true);
         }
     }
@@ -113,8 +117,11 @@ public class CreateDecisionMaker : MonoBehaviour
 
         PlayerPrefs.SetInt("Deleted" + temp, 1);
 
-        Destroy(DecisionMakerTemplate.transform.parent.GetChild(index + 1).gameObject);
+    }
 
+    public void DestroyDecisionMaker(int index)
+    {
+        Destroy(DecisionMakerTemplate.transform.parent.GetChild(index).gameObject);
     }
 
     public void Create()

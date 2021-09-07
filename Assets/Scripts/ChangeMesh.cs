@@ -37,6 +37,7 @@ public class ChangeMesh : MonoBehaviour
                 {
                     char[] colourChars = OrigamiManager.instance.ColourName.ToCharArray();
                     colourNameText.text += colourChars[(int)OrigamiManager.instance.FoldCount];
+                    OrigamiManager.instance.StartChangeColour(colourNameText, Color.white, OrigamiManager.instance.FindColourFromName(OrigamiManager.instance.ColourName));
                 }
                 else
                 {

@@ -99,7 +99,7 @@ Material:
     m_Floats:
     - Vector1_0d856e205469470eacc7fbf47e75cc52: 0.5
     - Vector1_1344359e2f0d41e7bf37c791151de6ef: 0
-    - Vector1_e15fd756d5ee4bfbb9d2d54db72e5cb7: 1
+    - Vector1_e15fd756d5ee4bfbb9d2d54db72e5cb7: 0
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1

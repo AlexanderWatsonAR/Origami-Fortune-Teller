@@ -6,6 +6,7 @@ using TMPro;
 
 public class LoadQuestionData : MonoBehaviour
 {
+    public GameObject adjustTextInputField;
     private GameObject questionData;
     private QuestionData data;
     private string question;
@@ -15,15 +16,16 @@ public class LoadQuestionData : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //data = FindObjectOfType<QuestionData>();
+        data = FindObjectOfType<QuestionData>();
 
         //writeSpeed = 0.05f;
 
-        float size = 0;
+        float size = 5;
 
         if (data == null)
         {
             questionData = new GameObject();
+            questionData.name = "Question_Data_Inside_Load_Question_Data_Script";
             questionData.AddComponent<QuestionData>();
             data = questionData.GetComponent<QuestionData>();
 
@@ -47,8 +49,18 @@ public class LoadQuestionData : MonoBehaviour
                 }
             }
         }
+        else
+        {
+            size = PlayerPrefs.GetFloat("QuestionDataSize" + CreateDecisionMaker.currentEntry.ToString());
+            data.data = new string[(int)size];
 
-        if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "DecisionMaterSetupScene")
+            for (int i = 0; i < size; i++)
+            {
+                data.data[i] = PlayerPrefs.GetString("QuestionData" + i.ToString() + "Entry" + CreateDecisionMaker.currentEntry.ToString());
+            }
+        }
+
+        if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "DecisionMaterSetupScene")
         {
             LoadTextInputField(size);
             return;
@@ -109,32 +121,46 @@ public class LoadQuestionData : MonoBehaviour
 
     private void LoadTextInputField(float size)
     {
-        TMP_InputField[] textInputFields = AdjustTextInputField.GetAllInputFieldsOrdered();
-        AdjustTextInputField adjust = GameObject.Find("Main Camera").GetComponent<AdjustTextInputField>();
+        TMP_InputField[] textInputFields = AdjustTextInputField.GetAllInputFieldsOrdered(); // including title.
+        AdjustTextInputField adjust = adjustTextInputField.GetComponent<AdjustTextInputField>();
+
+        int count = textInputFields.Length;
+
+        for (int i = 0; i < count; i++)
+        {
+            if (count > size)
+            {
+                Destroy(textInputFields[count - 1].gameObject);
+                count--;
+            }
+            else
+            {
+                break;
+            }
+        }
+        
+        for (int i = 0; i < size; i++)
+        {
+            if (count < size)
+            {
+                adjust.CreateTextInputField();
+                count++;
+            }
+            else
+            {
+                break;
+            }
+        }
+
+        textInputFields = AdjustTextInputField.GetAllInputFieldsOrdered();
 
         for (int i = 0; i < textInputFields.Length; i++)
         {
-            if (textInputFields.Length > size)
-            {
-                adjust.RemoveTextInput();
-            }
-        }
-
-        for (int i = 0; i < size; i++)
-        {
-            if (textInputFields.Length < size)
-            {
-                adjust.AddTextInput();
-            }
-        }
-
-        for (int i = 0; i < size; i++)
-        {
-            string test = PlayerPrefs.GetString("QuestionData" + i.ToString() + "Entry" + CreateDecisionMaker.EntryNumber());
+            string test = PlayerPrefs.GetString("QuestionData" + i.ToString() + "Entry" + CreateDecisionMaker.currentEntry);
             if (test == null)
                 return;
 
-            textInputFields[i].text = PlayerPrefs.GetString("QuestionData" + i.ToString() + "Entry" + CreateDecisionMaker.EntryNumber());
+            textInputFields[i].text = PlayerPrefs.GetString("QuestionData" + i.ToString() + "Entry" + CreateDecisionMaker.currentEntry);
         }
     }
 }

@@ -5,6 +5,29 @@ using System.Collections.Generic;
 
 public class SwitchScene : MonoBehaviour
 {
+    private static string sceneName;
+
+    public static string SceneName
+    {
+        get
+        {
+            return sceneName;
+        }
+        set
+        {
+            sceneName = value;
+        }
+    }
+
+    public void SetInternalSceneName(string name)
+    {
+        sceneName = name;
+    }
+
+    public void LoadInternalScene()
+    {
+        LoadScene(sceneName);
+    }
     public void LoadScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
@@ -57,7 +80,7 @@ public class SwitchScene : MonoBehaviour
         OrigamiManager.instance.orgami[0].SetActive(true);
         OrigamiManager.instance.Canvas.SetActive(true);
         OrigamiManager.instance.SecondaryCanvas.SetActive(true);
-
+        OrigamiManager.instance.orgami[0].GetComponent<Animator>().Play("NewFadeInTextureAnimation");
         Destroy(gameObject);
     }
 
@@ -69,6 +92,18 @@ public class SwitchScene : MonoBehaviour
             {
                 GetComponent<Animator>().speed = 1.5f;
             }
+        }
+    }
+
+    public void GoHome()
+    {
+        if(SceneManager.GetActiveScene().name == "IntroScene")
+        {
+            GameObject.Find("Secondary Canvas").GetComponent<Animator>().Play("NewSideBarAnimation");
+        }
+        else
+        {
+            LoadScene("IntroScene");
         }
     }
 }

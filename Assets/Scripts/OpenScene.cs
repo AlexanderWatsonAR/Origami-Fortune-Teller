@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class OpenScene : MonoBehaviour
 {
@@ -9,17 +10,13 @@ public class OpenScene : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        SceneManager.activeSceneChanged += Open;
         DontDestroyOnLoad(this);
     }
 
-    private void Update()
+    public void Open(Scene current, Scene next)
     {
-        Open();
-    }
-
-    public void Open()
-    {
-        if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name != SceneName)
+        if (SceneManager.GetActiveScene().name != SceneName)
             return;
         else
         {

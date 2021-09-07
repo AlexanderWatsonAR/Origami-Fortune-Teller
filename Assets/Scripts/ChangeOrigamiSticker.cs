@@ -9,16 +9,19 @@ public class ChangeOrigamiSticker : MonoBehaviour
 {
     public AssetReferenceSprite spriteRef;
     public AssetReferenceT<Material> stickerMatRef;
+    public GameObject Preview;
     public GameObject SegmentDropdown;
     public GameObject ColourDropdown;
     public GameObject ScrollView;
     public int stickerHash;
     public bool isBorderActive;
+    public bool startVisible;
 
     private TMP_Dropdown segmentDropdown;
     private TMP_Dropdown colourDropdown;
     private SelectStickerPostion stickerPos;
     private float stickerIndex;
+
 
     void Awake()
     {
@@ -29,23 +32,32 @@ public class ChangeOrigamiSticker : MonoBehaviour
         }
 
         isBorderActive = false;
-        segmentDropdown = SegmentDropdown.GetComponent<TMP_Dropdown>();
-        colourDropdown = ColourDropdown.GetComponent<TMP_Dropdown>();
 
-        segmentDropdown.onValueChanged.AddListener(delegate
+        if (SegmentDropdown != null || ColourDropdown != null)
         {
-            DropdownValueChanged(segmentDropdown);
-        });
+            segmentDropdown = SegmentDropdown.GetComponent<TMP_Dropdown>();
+            colourDropdown = ColourDropdown.GetComponent<TMP_Dropdown>();
 
-        colourDropdown.onValueChanged.AddListener(delegate
-        {
-            DropdownValueChanged(colourDropdown);
-        });
+            segmentDropdown.onValueChanged.AddListener(delegate
+            {
+                DropdownValueChanged(segmentDropdown);
+            });
+
+            colourDropdown.onValueChanged.AddListener(delegate
+            {
+                DropdownValueChanged(colourDropdown);
+            });
+        }
 
         stickerPos = FindObjectOfType<SelectStickerPostion>();
 
         if (spriteRef == null)
             return;
+
+        if(startVisible)
+        {
+            LoadSprite();
+        }
 
         ScrollView.GetComponent<ScrollRect>().onValueChanged.AddListener(delegate
         {
@@ -59,6 +71,11 @@ public class ChangeOrigamiSticker : MonoBehaviour
         ChangePositionText();
     }
 
+    public void ChangePreviewSticker()
+    {
+        DataLoading.LoadMaterialData(Preview, stickerMatRef, null);
+    }
+
     public void ChangeSticker()
     {
         for (int i = 0; i < OrigamiManager.instance.orgami.Length; i++)
@@ -68,32 +85,32 @@ public class ChangeOrigamiSticker : MonoBehaviour
             switch (segmentDropdown.options[segmentDropdown.value].text)
             {
                 case "Top Right":
-                    OrigamiManager.instance.LoadMaterialData(origami, 14, stickerMatRef);
-                    OrigamiManager.instance.LoadMaterialData(origami, 15, stickerMatRef);
+                    DataLoading.LoadMaterialData(origami.transform.GetChild(14).gameObject, stickerMatRef, OrigamiManager.instance.CheckAllStickerBorders);
+                    DataLoading.LoadMaterialData(origami.transform.GetChild(15).gameObject, stickerMatRef, OrigamiManager.instance.CheckAllStickerBorders);
                     CheckPosition(origami.transform.GetChild(14).gameObject, origami.transform.GetChild(15).gameObject);
                     OrigamiManager.instance.origamiStickerHash[0] = stickerHash;
                     DesignData.TopRightStickerTex = stickerIndex;
                     DesignData.TopRightStickerTexPos = CheckPosition();
                     break;
                 case "Top Left":
-                    OrigamiManager.instance.LoadMaterialData(origami, 12, stickerMatRef);
-                    OrigamiManager.instance.LoadMaterialData(origami, 13, stickerMatRef);
+                    DataLoading.LoadMaterialData(origami.transform.GetChild(12).gameObject, stickerMatRef, OrigamiManager.instance.CheckAllStickerBorders);
+                    DataLoading.LoadMaterialData(origami.transform.GetChild(13).gameObject, stickerMatRef, OrigamiManager.instance.CheckAllStickerBorders);
                     CheckPosition(origami.transform.GetChild(12).gameObject, origami.transform.GetChild(13).gameObject);
                     OrigamiManager.instance.origamiStickerHash[1] = stickerHash;
                     DesignData.TopLeftStickerTex = stickerIndex;
                     DesignData.TopLeftStickerTexPos = CheckPosition();
                     break;
                 case "Bottom Right":
-                    OrigamiManager.instance.LoadMaterialData(origami, 16, stickerMatRef);
-                    OrigamiManager.instance.LoadMaterialData(origami, 17, stickerMatRef);
+                    DataLoading.LoadMaterialData(origami.transform.GetChild(16).gameObject, stickerMatRef, OrigamiManager.instance.CheckAllStickerBorders);
+                    DataLoading.LoadMaterialData(origami.transform.GetChild(17).gameObject, stickerMatRef, OrigamiManager.instance.CheckAllStickerBorders);
                     CheckPosition(origami.transform.GetChild(16).gameObject, origami.transform.GetChild(17).gameObject);
                     OrigamiManager.instance.origamiStickerHash[2] = stickerHash;
                     DesignData.BottomRightStickerTex = stickerIndex;
                     DesignData.BottomRightStickerTexPos = CheckPosition();
                     break;
                 case "Bottom Left":
-                    OrigamiManager.instance.LoadMaterialData(origami, 18, stickerMatRef);
-                    OrigamiManager.instance.LoadMaterialData(origami, 19, stickerMatRef);
+                    DataLoading.LoadMaterialData(origami.transform.GetChild(18).gameObject, stickerMatRef, OrigamiManager.instance.CheckAllStickerBorders);
+                    DataLoading.LoadMaterialData(origami.transform.GetChild(19).gameObject, stickerMatRef, OrigamiManager.instance.CheckAllStickerBorders);
                     CheckPosition(origami.transform.GetChild(18).gameObject, origami.transform.GetChild(19).gameObject);
                     DesignData.BottomLeftStickerTex = stickerIndex;
                     OrigamiManager.instance.origamiStickerHash[3] = stickerHash;
@@ -201,7 +218,7 @@ public class ChangeOrigamiSticker : MonoBehaviour
     public void Border()
     {
         // First, Disable Border.
-        transform.GetChild(transform.childCount - 1).GetComponent<Image>().enabled = false;
+        transform.GetChild(transform.childCount - 2).GetComponent<Image>().enabled = false;
         isBorderActive = false;
 
         switch (segmentDropdown.options[segmentDropdown.value].text)
@@ -209,28 +226,28 @@ public class ChangeOrigamiSticker : MonoBehaviour
             case "Top Right":
                 if (OrigamiManager.instance.origamiStickerHash[0] == stickerHash)
                 {
-                    transform.GetChild(transform.childCount - 1).GetComponent<Image>().enabled = true;
+                    transform.GetChild(transform.childCount - 2).GetComponent<Image>().enabled = true;
                     isBorderActive = true;
                 }
                 break;
             case "Top Left":
                 if (OrigamiManager.instance.origamiStickerHash[1] == stickerHash)
                 {
-                    transform.GetChild(transform.childCount - 1).GetComponent<Image>().enabled = true;
+                    transform.GetChild(transform.childCount - 2).GetComponent<Image>().enabled = true;
                     isBorderActive = true;
                 }
                 break;
             case "Bottom Right":
                 if (OrigamiManager.instance.origamiStickerHash[2] == stickerHash)
                 {
-                    transform.GetChild(transform.childCount - 1).GetComponent<Image>().enabled = true;
+                    transform.GetChild(transform.childCount - 2).GetComponent<Image>().enabled = true;
                     isBorderActive = true;
                 }
                 break;
             case "Bottom Left":
                 if (OrigamiManager.instance.origamiStickerHash[3] == stickerHash)
                 {
-                    transform.GetChild(transform.childCount - 1).GetComponent<Image>().enabled = true;
+                    transform.GetChild(transform.childCount - 2).GetComponent<Image>().enabled = true;
                     isBorderActive = true;
                 }
                 break;
@@ -238,7 +255,10 @@ public class ChangeOrigamiSticker : MonoBehaviour
     }
     private void OnEnable()
     {
-        Border();
+        if(SegmentDropdown != null || ColourDropdown != null)
+        {
+            Border();
+        } 
     }
 
     public void IsThisVisible()
@@ -248,15 +268,20 @@ public class ChangeOrigamiSticker : MonoBehaviour
             RemoveListener();
             return;
         }
-            
-        Image tempImage = GetComponent<Image>();
+
         bool isVisible = RectTransformUtility.RectangleContainsScreenPoint(ScrollView.GetComponent<RectTransform>(), new Vector2(transform.position.x, transform.position.y));
 
         if (isVisible)
         {
-            OrigamiManager.instance.GetSpriteFromRef(spriteRef, tempImage);
+            LoadSprite();
             RemoveListener();
         }
+    }
+
+    private void LoadSprite()
+    {
+        Image tempImage = GetComponent<Image>();
+        DataLoading.GetSpriteFromRef(spriteRef, tempImage);
     }
 
     private void RemoveListener()

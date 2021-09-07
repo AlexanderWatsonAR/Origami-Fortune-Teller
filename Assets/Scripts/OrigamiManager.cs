@@ -195,13 +195,13 @@ public class OrigamiManager : MonoBehaviour
         {
             // Set Secondary Colour.
             // Bottom Left
-            origami.transform.GetChild(0).GetComponent<Renderer>().material.SetColor("Color_27bc9690873845048adc1140e1c09a57", colours[10]);
+            origami.transform.GetChild(0).GetComponent<Renderer>().material.SetColor("Color_27bc9690873845048adc1140e1c09a57", colours[14]);
             // Bottom Right
-            origami.transform.GetChild(1).GetComponent<Renderer>().material.SetColor("Color_27bc9690873845048adc1140e1c09a57", colours[7]);
+            origami.transform.GetChild(1).GetComponent<Renderer>().material.SetColor("Color_27bc9690873845048adc1140e1c09a57", colours[14]);
             // Top Left
-            origami.transform.GetChild(2).GetComponent<Renderer>().material.SetColor("Color_27bc9690873845048adc1140e1c09a57", colours[2]);
+            origami.transform.GetChild(2).GetComponent<Renderer>().material.SetColor("Color_27bc9690873845048adc1140e1c09a57", colours[14]);
             // Top Right
-            origami.transform.GetChild(3).GetComponent<Renderer>().material.SetColor("Color_27bc9690873845048adc1140e1c09a57", colours[4]);
+            origami.transform.GetChild(3).GetComponent<Renderer>().material.SetColor("Color_27bc9690873845048adc1140e1c09a57", colours[14]);
         }
         else
         {
@@ -227,10 +227,10 @@ public class OrigamiManager : MonoBehaviour
         AssetReferenceTexture c = TextureRefs[(int)PlayerPrefs.GetFloat("TopLeftTexPrimary" + entryIndex)];
         AssetReferenceTexture d = TextureRefs[(int)PlayerPrefs.GetFloat("TopRightTexPrimary" + entryIndex)];
 
-        LoadTexData(origami, 0, a, "Texture2D_b614431639584fc99463f96af57246a8");
-        LoadTexData(origami, 1, b, "Texture2D_b614431639584fc99463f96af57246a8");
-        LoadTexData(origami, 2, c, "Texture2D_b614431639584fc99463f96af57246a8");
-        LoadTexData(origami, 3, d, "Texture2D_b614431639584fc99463f96af57246a8");
+        DataLoading.LoadTexData(origami, 0, a, "Texture2D_b614431639584fc99463f96af57246a8");
+        DataLoading.LoadTexData(origami, 1, b, "Texture2D_b614431639584fc99463f96af57246a8");
+        DataLoading.LoadTexData(origami, 2, c, "Texture2D_b614431639584fc99463f96af57246a8");
+        DataLoading.LoadTexData(origami, 3, d, "Texture2D_b614431639584fc99463f96af57246a8");
 
 
         origamiTextureHashPrimary[0] = (int)PlayerPrefs.GetFloat("BottomLeftTexPrimary" + entryIndex);
@@ -249,10 +249,10 @@ public class OrigamiManager : MonoBehaviour
         AssetReferenceTexture c = TextureRefs[(int)PlayerPrefs.GetFloat("TopLeftTexSecondary" + entryIndex)];
         AssetReferenceTexture d = TextureRefs[(int)PlayerPrefs.GetFloat("TopRightTexSecondary" + entryIndex)];
 
-        LoadTexData(origami, 0, a, "Texture2D_62f72c9e26a6475faf78c7bf7415b950");
-        LoadTexData(origami, 1, b, "Texture2D_62f72c9e26a6475faf78c7bf7415b950");
-        LoadTexData(origami, 2, c, "Texture2D_62f72c9e26a6475faf78c7bf7415b950");
-        LoadTexData(origami, 3, d, "Texture2D_62f72c9e26a6475faf78c7bf7415b950");
+        DataLoading.LoadTexData(origami, 0, a, "Texture2D_62f72c9e26a6475faf78c7bf7415b950");
+        DataLoading.LoadTexData(origami, 1, b, "Texture2D_62f72c9e26a6475faf78c7bf7415b950");
+        DataLoading.LoadTexData(origami, 2, c, "Texture2D_62f72c9e26a6475faf78c7bf7415b950");
+        DataLoading.LoadTexData(origami, 3, d, "Texture2D_62f72c9e26a6475faf78c7bf7415b950");
 
         origamiTextureHashSecondary[0] = (int)PlayerPrefs.GetFloat("BottomLeftTexSecondary" + entryIndex);
         origamiTextureHashSecondary[1] = (int)PlayerPrefs.GetFloat("BottomRightTexSecondary" + entryIndex);
@@ -292,183 +292,49 @@ public class OrigamiManager : MonoBehaviour
         // Top Left
         if (origami.transform.GetChild(12).gameObject.activeSelf)
         {
-            LoadMaterialData(origami, 12, a);
+            DataLoading.LoadMaterialData(origami.transform.GetChild(12).gameObject, a, CheckAllStickerBorders);
             origami.transform.GetChild(12).gameObject.GetComponent<Renderer>().material.SetColor("Color_a699c866f1d14065bc7b7abae9858103", tlColour);
         }
         if (origami.transform.GetChild(13).gameObject.activeSelf)
         {
-            LoadMaterialData(origami, 13, a);
+            DataLoading.LoadMaterialData(origami.transform.GetChild(13).gameObject, a, CheckAllStickerBorders);
             origami.transform.GetChild(13).gameObject.GetComponent<Renderer>().material.SetColor("Color_a699c866f1d14065bc7b7abae9858103", tlColour);
         }
         // Top Right
         if (origami.transform.GetChild(14).gameObject.activeSelf)
         {
-            LoadMaterialData(origami, 14, b);
+            DataLoading.LoadMaterialData(origami.transform.GetChild(14).gameObject, b, CheckAllStickerBorders);
             origami.transform.GetChild(14).gameObject.GetComponent<Renderer>().material.SetColor("Color_a699c866f1d14065bc7b7abae9858103", trColour);
         }
         if (origami.transform.GetChild(15).gameObject.activeSelf)
         {
-            LoadMaterialData(origami, 15, b);
+            DataLoading.LoadMaterialData(origami.transform.GetChild(15).gameObject, b, CheckAllStickerBorders);
             origami.transform.GetChild(15).gameObject.GetComponent<Renderer>().material.SetColor("Color_a699c866f1d14065bc7b7abae9858103", trColour);
         }
         // Bottom Right
         if (origami.transform.GetChild(16).gameObject.activeSelf)
         {
-            LoadMaterialData(origami, 16, c);
+            DataLoading.LoadMaterialData(origami.transform.GetChild(16).gameObject, c, CheckAllStickerBorders);
             origami.transform.GetChild(16).gameObject.GetComponent<Renderer>().material.SetColor("Color_a699c866f1d14065bc7b7abae9858103", brColour);
         }
         if (origami.transform.GetChild(17).gameObject.activeSelf)
         {
-            LoadMaterialData(origami, 17, c);
+            DataLoading.LoadMaterialData(origami.transform.GetChild(17).gameObject, c, CheckAllStickerBorders);
             origami.transform.GetChild(17).gameObject.GetComponent<Renderer>().material.SetColor("Color_a699c866f1d14065bc7b7abae9858103", brColour);
         }
         // Bottom Left
         if (origami.transform.GetChild(18).gameObject.activeSelf)
         {
-            LoadMaterialData(origami, 18, d);
+            DataLoading.LoadMaterialData(origami.transform.GetChild(18).gameObject, d, CheckAllStickerBorders);
             origami.transform.GetChild(18).gameObject.GetComponent<Renderer>().material.SetColor("Color_a699c866f1d14065bc7b7abae9858103", blColour);
         }
         if (origami.transform.GetChild(19).gameObject.activeSelf)
         {
-            LoadMaterialData(origami, 19, d);
+            DataLoading.LoadMaterialData(origami.transform.GetChild(19).gameObject, d, CheckAllStickerBorders);
             origami.transform.GetChild(19).gameObject.GetComponent<Renderer>().material.SetColor("Color_a699c866f1d14065bc7b7abae9858103", blColour);
         }
 
     }
-
-    public void LoadMaterialData(GameObject origami, int childIndex, AssetReferenceT<Material> stickerRef)
-    {
-        if (stickerRef.OperationHandle.IsValid())
-        {
-            if (!stickerRef.OperationHandle.IsDone)
-            {
-                stickerRef.OperationHandle.Completed += (AsyncOperationHandle obj) =>
-                {
-                    if (obj.IsValid() && obj.Result != null)
-                    {
-                        origami.transform.GetChild(childIndex).GetComponent<Renderer>().material = obj.Convert<Material>().Result;
-                        CheckAllStickerBorders();
-                    }
-                };
-            }
-            else
-            {
-                origami.transform.GetChild(childIndex).GetComponent<Renderer>().material = stickerRef.OperationHandle.Convert<Material>().Result;
-                CheckAllStickerBorders();
-            }
-        }
-        else
-        {
-            stickerRef.LoadAssetAsync<Material>().Completed += (AsyncOperationHandle<Material> obj) =>
-            {
-                if (obj.IsValid() && obj.Result != null)
-                {
-                    origami.transform.GetChild(childIndex).GetComponent<Renderer>().material = obj.Result;
-                    CheckAllStickerBorders();
-                }
-            };
-        }
-    }
-
-    public void LoadTexData(GameObject origami, int childIndex, AssetReferenceTexture texReference, string ID)
-    {
-        if(texReference.OperationHandle.IsValid())
-        {
-            if(!texReference.OperationHandle.IsDone)
-            {
-                texReference.OperationHandle.Completed += (AsyncOperationHandle obj) =>
-                {
-                    if(obj.IsValid() && obj.Result != null)
-                    {
-                        origami.transform.GetChild(childIndex).GetComponent<Renderer>().material.SetTexture(ID, obj.Convert<Texture>().Result);
-                    }
-                };
-            }
-            else
-            {
-                origami.transform.GetChild(childIndex).GetComponent<Renderer>().material.SetTexture(ID, texReference.OperationHandle.Convert<Texture>().Result);
-            }
-        }
-        else
-        {
-            texReference.LoadAssetAsync<Texture>().Completed += (AsyncOperationHandle<Texture> obj) =>
-            {
-                if (obj.IsValid() && obj.Result != null)
-                {
-                    origami.transform.GetChild(childIndex).GetComponent<Renderer>().material.SetTexture(ID, obj.Result);
-                }
-            };
-        }
-    }
-
-    public Texture GetTextureFromMaterial(AssetReferenceT<Material> stickerRef)
-    {
-        Texture temp = null;
-        if (stickerRef.OperationHandle.IsValid())
-        {
-            if (!stickerRef.OperationHandle.IsDone)
-            {
-                stickerRef.OperationHandle.Completed += (AsyncOperationHandle obj) =>
-                {
-                    if (obj.IsValid() && obj.Result != null)
-                    {
-                        temp = obj.Convert<Material>().Result.mainTexture;
-                    }
-                };
-            }
-            else
-            {
-                temp = stickerRef.OperationHandle.Convert<Material>().Result.mainTexture;
-            }
-        }
-        else
-        {
-            stickerRef.LoadAssetAsync<Material>().Completed += (AsyncOperationHandle<Material> obj) =>
-            {
-                if (obj.IsValid() && obj.Result != null)
-                {
-                    temp = obj.Result.mainTexture;
-                }
-            };
-        }
-        return temp;
-    }
-
-    public void GetSpriteFromRef(AssetReferenceSprite stickerRef, Image image)
-    {
-        // If asset has already started being loaded into memory.
-        if (stickerRef.OperationHandle.IsValid())
-        {
-            // if loading is not already completed.
-            if (!stickerRef.OperationHandle.IsDone)
-            {
-                stickerRef.OperationHandle.Completed += (AsyncOperationHandle obj) =>
-                {
-                    if (obj.IsValid() && obj.Result != null)
-                    {
-                        image.sprite = obj.Convert<Sprite>().Result;
-                    }
-                };
-            }
-            // if loading is completed.
-            else
-            {
-                image.sprite = stickerRef.OperationHandle.Convert<Sprite>().Result;
-            }
-        }
-        else
-        {
-            // if loading hasn't started.
-            stickerRef.LoadAssetAsync<Sprite>().Completed += (AsyncOperationHandle<Sprite> obj) =>
-            {
-                if (obj.IsValid() && obj.Result != null)
-                {
-                    image.sprite = obj.Result;
-                }
-            };
-        }
-    }
-
     public int ColourIndex(Color colour)
     {
         for (int i = 0; i < colours.Length; i++)
@@ -503,13 +369,14 @@ public class OrigamiManager : MonoBehaviour
         }
     }
 
-    public void CheckAllStickerBorders()
+    public int CheckAllStickerBorders()
     {
         ChangeOrigamiSticker[] stickerObjects = FindObjectsOfType<ChangeOrigamiSticker>();
         for (int i = 0; i < stickerObjects.Length; i++)
         {
             stickerObjects[i].Border();
         }
+        return 0;
     }
 
     public void CheckAllStickerPositions()
@@ -522,4 +389,38 @@ public class OrigamiManager : MonoBehaviour
         }
     }
 
+    public Color FindColourFromName(string thisColourName)
+    {
+        for(int i = 0; i < colourNames.Length; i++)
+        {
+            if(thisColourName == colourNames[i])
+            {
+                return colours[i];
+            }
+        }
+        return Color.white;
+    }
+
+    public void StartChangeColour(TMPro.TextMeshProUGUI text, Color startColour, Color endColour)
+    {
+        StartCoroutine(ChangeColour(text, startColour, endColour));
+    }
+
+    public IEnumerator ChangeColour(TMPro.TextMeshProUGUI text, Color startColour, Color endColour)
+    {
+        float onePercent = 0.01666666666f;
+        Vector3 from = new Vector3(startColour.r, startColour.g, startColour.b);
+        Vector3 to = new Vector3(endColour.r, endColour.g, endColour.b);
+        float interp = 1.0f;
+
+        while (interp > 0.0f)
+        {
+            Vector3 result = Vector3.Lerp(from, to, interp);
+            Color newColour = new Color(result.x, result.y, result.z, 1.0f);
+            interp -= onePercent;
+            text.color = newColour;
+
+            yield return new WaitForSeconds(0.02f);
+        }
+    }
 }

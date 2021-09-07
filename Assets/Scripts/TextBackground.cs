@@ -94,7 +94,7 @@ public class TextBackground : MonoBehaviour
                 preferedSize.x += 10;
 
             newText.GetComponent<RectTransform>().sizeDelta = preferedSize;
-            newText.transform.SetParent(questionContainer.transform, true);
+            newText.transform.SetParent(questionContainer.transform, false);
             newText.transform.localScale = Vector3.one;
         }
 
@@ -128,7 +128,7 @@ public class TextBackground : MonoBehaviour
             prefferedSize.x -= (prefferedSize.x * 0.33f);
 
             newBorder.GetComponent<RectTransform>().sizeDelta = prefferedSize;
-            newBorder.transform.SetParent(borderContainer.transform, true);
+            newBorder.transform.SetParent(borderContainer.transform, false);
             newBorder.transform.localScale = Vector3.one;
 
             if (i != questionContainer.transform.childCount - 1)
