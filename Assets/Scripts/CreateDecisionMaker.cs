@@ -16,7 +16,7 @@ public class CreateDecisionMaker : MonoBehaviour
     void Awake()
     {
         //DontDestroyOnLoad(this);
-        PlayerPrefs.DeleteAll();
+        //PlayerPrefs.DeleteAll();
         RectTransform content = DecisionMakerTemplate.transform.parent.GetComponent<RectTransform>();
         VerticalLayoutGroup layout = content.gameObject.GetComponent<VerticalLayoutGroup>();
         int actualIndex = 0;

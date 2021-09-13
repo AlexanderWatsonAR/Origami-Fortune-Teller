@@ -374,7 +374,8 @@ public class OrigamiManager : MonoBehaviour
         ChangeOrigamiSticker[] stickerObjects = FindObjectsOfType<ChangeOrigamiSticker>();
         for (int i = 0; i < stickerObjects.Length; i++)
         {
-            stickerObjects[i].Border();
+            if(stickerObjects[i].ColourDropdown != null)
+                stickerObjects[i].Border();
         }
         return 0;
     }

@@ -9,10 +9,10 @@ using UnityEngine.Purchasing;
 public class IAPShop : MonoBehaviour
 {
     [SerializeField]
-    private const string kawaiiStickerCollection1 = "com.OnlyInvalid.OrigamiDecisionMaker.KawaiiCollectionOne";
+    private const string kawaiiStickerCollection1 = "com.onlyinvalid.origamidecisionmaker.kawaiicollectionone";
 
     [SerializeField]
-    private const string removeAds = "com.OnlyInvalid.OrigamiDecisionMaker.RemoveAds";
+    private const string removeAds = "com.onlyinvalid.origamidecisionmaker.removeads";
 
     public GameObject KawaiiCollection1StickerPicker;
     public GameObject KawaiiCollection1PurchaseButton;

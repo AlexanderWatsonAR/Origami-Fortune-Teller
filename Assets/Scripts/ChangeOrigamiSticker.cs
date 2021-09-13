@@ -19,7 +19,7 @@ public class ChangeOrigamiSticker : MonoBehaviour
 
     private TMP_Dropdown segmentDropdown;
     private TMP_Dropdown colourDropdown;
-    private SelectStickerPostion stickerPos;
+    public SelectStickerPostion stickerPos;
     private float stickerIndex;
 
 
@@ -48,8 +48,6 @@ public class ChangeOrigamiSticker : MonoBehaviour
                 DropdownValueChanged(colourDropdown);
             });
         }
-
-        stickerPos = FindObjectOfType<SelectStickerPostion>();
 
         if (spriteRef == null)
             return;
@@ -255,7 +253,7 @@ public class ChangeOrigamiSticker : MonoBehaviour
     }
     private void OnEnable()
     {
-        if(SegmentDropdown != null || ColourDropdown != null)
+        if(segmentDropdown != null || colourDropdown != null)
         {
             Border();
         } 

@@ -48,7 +48,7 @@ public class SwitchScene : MonoBehaviour
         LoadScene(sceneName);
     }
 
-    IEnumerator LoadSceneAsync(int levelIndex)
+    public IEnumerator LoadSceneAsync(int levelIndex)
     {
         if(SceneManager.GetActiveScene().name == "Load")
         {
@@ -78,10 +78,10 @@ public class SwitchScene : MonoBehaviour
         }
 
         OrigamiManager.instance.orgami[0].SetActive(true);
-        OrigamiManager.instance.Canvas.SetActive(true);
         OrigamiManager.instance.SecondaryCanvas.SetActive(true);
+        OrigamiManager.instance.Canvas.SetActive(true);
+        
         OrigamiManager.instance.orgami[0].GetComponent<Animator>().Play("NewFadeInTextureAnimation");
-        Destroy(gameObject);
     }
 
     public void AdjustLoadSpeed()

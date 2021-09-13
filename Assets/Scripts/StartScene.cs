@@ -35,6 +35,7 @@ public class StartScene : MonoBehaviour
     // Awake is called before Start
     void Awake()
     {
+        //Time.timeScale = 0.25f;
         Application.backgroundLoadingPriority = ThreadPriority.Low;
         ConfigureUI();
 //#if UNITY_EDITOR
