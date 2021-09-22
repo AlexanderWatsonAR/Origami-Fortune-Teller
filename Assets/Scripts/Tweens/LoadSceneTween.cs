@@ -25,7 +25,7 @@ public class LoadSceneTween : MonoBehaviour
     {
         // Reveal paper
         StartCoroutine(switchScene.LoadSceneAsync(4));
-        Origami_1.transform.DOMoveY(1f, 1f / divider);
+        Origami_1.transform.DOMoveY(0.95f, 1f / divider);
 
         yield return new WaitForSeconds(1f / divider);
 

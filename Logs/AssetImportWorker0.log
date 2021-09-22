@@ -15,11 +15,11 @@ D:/UnityProjects/OrigamiFortuneTeller/Origami-Fortune-Teller
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60330
+65275
 Successfully changed project path to: D:/UnityProjects/OrigamiFortuneTeller/Origami-Fortune-Teller
 D:/UnityProjects/OrigamiFortuneTeller/Origami-Fortune-Teller
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 115.54 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 111.40 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.0f1 (3721df5a8b28)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.0f1/Editor/Data/Resources/UnitySubsystems
@@ -36,221 +36,509 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.0f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.0f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56244
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56308
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.0f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004150 seconds.
+Registered in 0.004396 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 86.90 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 90.84 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.389 seconds
+- Completed reload, in  3.798 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007113 seconds.
+Registered in 0.007960 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 92.56 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 93.22 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.711 seconds
+- Completed reload, in  1.744 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 1.33 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3744 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 164.3 MB.
-System memory in use after: 164.5 MB.
-
-Unloading 53 unused Assets to reduce memory usage. Loaded Objects now: 4196.
-Total: 6.965100 ms (FindLiveObjects: 0.387300 ms CreateObjectMapping: 0.235900 ms MarkObjects: 6.223600 ms  DeleteObjects: 0.116500 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Scenes/Main.unity
-  artifactKey: Guid(3051d0bb43cbf574a845e91a096e677d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Main.unity using Guid(3051d0bb43cbf574a845e91a096e677d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f18f457127d8f627014aae22f29b8c20') in 0.066925 seconds
-  Import took 0.075783 seconds .
-
-========================================================================
-Received Prepare
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 26.38 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 47 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 86.3 MB.
-System memory in use after: 86.5 MB.
-
-Unloading 46 unused Assets to reduce memory usage. Loaded Objects now: 4196.
-Total: 9.642600 ms (FindLiveObjects: 0.915500 ms CreateObjectMapping: 0.632000 ms MarkObjects: 7.986500 ms  DeleteObjects: 0.105300 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 26.717016 seconds.
-  path: Assets/Scenes/IntroScene.unity
-  artifactKey: Guid(66ee0de336ec1fa44aca6a2ef7b923a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/IntroScene.unity using Guid(66ee0de336ec1fa44aca6a2ef7b923a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ec4e405e7093e06097e73ef67b38cc5') in 0.063823 seconds
-  Import took 0.072885 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 71.949907 seconds.
-  path: Assets/Scenes/Main.unity
-  artifactKey: Guid(3051d0bb43cbf574a845e91a096e677d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Main.unity using Guid(3051d0bb43cbf574a845e91a096e677d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12cef7e299828516ad677f695becfd60') in 0.005711 seconds
-  Import took 0.015888 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008339 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 2.50 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.702 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.48 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3578 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 157.3 MB.
-System memory in use after: 157.6 MB.
-
-Unloading 48 unused Assets to reduce memory usage. Loaded Objects now: 4198.
-Total: 7.356900 ms (FindLiveObjects: 0.557400 ms CreateObjectMapping: 0.449500 ms MarkObjects: 6.246600 ms  DeleteObjects: 0.101200 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008261 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.45 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.016 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.37 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3579 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 157.4 MB.
-System memory in use after: 157.6 MB.
-
-Unloading 48 unused Assets to reduce memory usage. Loaded Objects now: 4200.
-Total: 8.488400 ms (FindLiveObjects: 0.470400 ms CreateObjectMapping: 0.303600 ms MarkObjects: 7.600700 ms  DeleteObjects: 0.111700 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007413 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.13 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.503 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
 Refreshing native plugins compatible for Editor in 1.15 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3579 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 157.5 MB.
-System memory in use after: 157.7 MB.
+Unloading 3750 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 165.3 MB.
+System memory in use after: 165.5 MB.
 
-Unloading 48 unused Assets to reduce memory usage. Loaded Objects now: 4202.
-Total: 6.804100 ms (FindLiveObjects: 0.389100 ms CreateObjectMapping: 0.179700 ms MarkObjects: 6.146800 ms  DeleteObjects: 0.087000 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 545.442400 seconds.
-  path: Assets/Scenes/Design.unity
-  artifactKey: Guid(7fcc502a0ec47b046bac47a8811c7e7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Design.unity using Guid(7fcc502a0ec47b046bac47a8811c7e7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f459ef3cb090f2b0909a60cd3d69d53') in 0.311007 seconds
-  Import took 0.318986 seconds .
+Unloading 53 unused Assets to reduce memory usage. Loaded Objects now: 4202.
+Total: 7.215000 ms (FindLiveObjects: 0.568700 ms CreateObjectMapping: 0.205000 ms MarkObjects: 6.321300 ms  DeleteObjects: 0.118200 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 128.890832 seconds.
   path: Assets/Scenes/Main.unity
   artifactKey: Guid(3051d0bb43cbf574a845e91a096e677d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Main.unity using Guid(3051d0bb43cbf574a845e91a096e677d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4d2ce323d38d5ca492db8ddcda7552c') in 0.005581 seconds
-  Import took 0.013955 seconds .
+Start importing Assets/Scenes/Main.unity using Guid(3051d0bb43cbf574a845e91a096e677d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '451a45f723e1663a110043a18d02da5f') in 0.028370 seconds
+  Import took 0.070763 seconds .
 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007393 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.45 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.515 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.15 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3579 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 157.5 MB.
-System memory in use after: 157.7 MB.
-
-Unloading 48 unused Assets to reduce memory usage. Loaded Objects now: 4204.
-Total: 6.843900 ms (FindLiveObjects: 0.436000 ms CreateObjectMapping: 0.247200 ms MarkObjects: 6.028400 ms  DeleteObjects: 0.130800 ms)
+Received Import Request.
+  Time since last request: 49.390094 seconds.
+  path: Assets/Prefabs/Fbx/origami sixth fold.fbx
+  artifactKey: Guid(05ae5560b1fc7b441a4dc47bd8ffcf35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fbx/origami sixth fold.fbx using Guid(05ae5560b1fc7b441a4dc47bd8ffcf35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba6856578a8357ea5f21475ca575c3cc') in 0.484138 seconds
+  Import took 0.535562 seconds .
 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007758 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.35 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.772 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.16 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3579 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 157.5 MB.
-System memory in use after: 157.7 MB.
+Received Import Request.
+  Time since last request: 76.395706 seconds.
+  path: Assets/Prefabs/Textures/Bottom Left.png
+  artifactKey: Guid(0765c1b4f7b63a249a3886ec9c31bb7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Textures/Bottom Left.png using Guid(0765c1b4f7b63a249a3886ec9c31bb7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7a6b966493e7189589a971f36367609') in 0.104613 seconds
+  Import took 0.137640 seconds .
 
-Unloading 48 unused Assets to reduce memory usage. Loaded Objects now: 4206.
-Total: 6.522000 ms (FindLiveObjects: 0.418600 ms CreateObjectMapping: 0.240000 ms MarkObjects: 5.779000 ms  DeleteObjects: 0.082900 ms)
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/Prefabs/Textures/Bottom Right.png
+  artifactKey: Guid(12e18643268d73b4a98777abd9811970) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Textures/Bottom Right.png using Guid(12e18643268d73b4a98777abd9811970) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9910a9f0a404abaf29e569ad1743d90') in 0.058477 seconds
+  Import took 0.084555 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000323 seconds.
+  path: Assets/Prefabs/Textures/Top Left.png
+  artifactKey: Guid(694b5eb1b68a70a4fb97d8613a8052c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Textures/Top Left.png using Guid(694b5eb1b68a70a4fb97d8613a8052c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4974d9b602be75d6e4a3bcdc7709099') in 0.056754 seconds
+  Import took 0.084992 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/Prefabs/Textures/Two.png
+  artifactKey: Guid(0e0e43170ea9e24409cc8aa1c0d130d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Textures/Two.png using Guid(0e0e43170ea9e24409cc8aa1c0d130d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e463697b88853d361f637c7f2bb4a22') in 0.027763 seconds
+  Import took 0.051958 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000378 seconds.
+  path: Assets/Prefabs/Textures/One.png
+  artifactKey: Guid(cdc02076e2f26e84b96d0e5fc025bc76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Textures/One.png using Guid(cdc02076e2f26e84b96d0e5fc025bc76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b7ab5bb46009866dc3cf6ef5f4d7aaa') in 0.126282 seconds
+  Import took 0.163861 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Assets/Prefabs/Textures/Top.png
+  artifactKey: Guid(06ffde82fafba6444a5ce170fc2ea82c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Textures/Top.png using Guid(06ffde82fafba6444a5ce170fc2ea82c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fbf9e2bdc0ddff031f15c58164292a0') in 0.054640 seconds
+  Import took 0.070685 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000308 seconds.
+  path: Assets/Prefabs/Textures/Bottom.png
+  artifactKey: Guid(6dcc0e38348624246ab5cc89faa6e6e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Textures/Bottom.png using Guid(6dcc0e38348624246ab5cc89faa6e6e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36ef0c65b1b32abdf7805d4a5ce506ed') in 0.066536 seconds
+  Import took 0.092834 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000248 seconds.
+  path: Assets/Prefabs/Textures/Top Right.png
+  artifactKey: Guid(83f7d9f1f65a55244810619d5b53c513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Textures/Top Right.png using Guid(83f7d9f1f65a55244810619d5b53c513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1ffdf672fe603f8f48721251e8f2fd0') in 0.054798 seconds
+  Import took 0.084136 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/Prefabs/Textures/Plane.png
+  artifactKey: Guid(7f557cbd4b742a845a48d5b5766c34fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Textures/Plane.png using Guid(7f557cbd4b742a845a48d5b5766c34fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc8b4b47ad8f8f99f2a0b15c2f6a176a') in 0.115721 seconds
+  Import took 0.136693 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 781.414205 seconds.
+  path: Assets/Prefabs/Fbx/origami sixth fold.fbx
+  artifactKey: Guid(05ae5560b1fc7b441a4dc47bd8ffcf35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fbx/origami sixth fold.fbx using Guid(05ae5560b1fc7b441a4dc47bd8ffcf35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cfb08c6a90d29a6d073d88768517161') in 0.069655 seconds
+  Import took 0.104700 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 164.979459 seconds.
+  path: Assets/Prefabs/Fbx/origami sixth fold.fbx
+  artifactKey: Guid(05ae5560b1fc7b441a4dc47bd8ffcf35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fbx/origami sixth fold.fbx using Guid(05ae5560b1fc7b441a4dc47bd8ffcf35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf26fe7c2aff82ea7fa791b94145e4e8') in 0.061205 seconds
+  Import took 0.082662 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015338 seconds.
+  path: Assets/Prefabs/Fbx/origami sixth fold.fbx
+  artifactKey: Guid(05ae5560b1fc7b441a4dc47bd8ffcf35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fbx/origami sixth fold.fbx using Guid(05ae5560b1fc7b441a4dc47bd8ffcf35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf26fe7c2aff82ea7fa791b94145e4e8') in 0.069199 seconds
+  Import took 0.077961 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 95.909944 seconds.
+  path: Assets/Prefabs/Main/origami 4.prefab
+  artifactKey: Guid(a4722fcce9d03de42bbad6910b80f35f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Main/origami 4.prefab using Guid(a4722fcce9d03de42bbad6910b80f35f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00878ecd092c3b72c93b3ce4ac84ca51') in 0.154881 seconds
+  Import took 0.183873 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.126135 seconds.
+  path: Assets/Prefabs/Main/origami 4.prefab
+  artifactKey: Guid(a4722fcce9d03de42bbad6910b80f35f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Main/origami 4.prefab using Guid(a4722fcce9d03de42bbad6910b80f35f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31140e26d1cea593d3c60713961ebc50') in 0.133147 seconds
+  Import took 0.157874 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.496012 seconds.
+  path: Assets/Prefabs/Main/origami 4.prefab
+  artifactKey: Guid(a4722fcce9d03de42bbad6910b80f35f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Main/origami 4.prefab using Guid(a4722fcce9d03de42bbad6910b80f35f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99f634917c7aec7a7630efe08ae0a6b3') in 0.088869 seconds
+  Import took 0.132426 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 54.316975 seconds.
+  path: Assets/Prefabs/Main/origami 4.prefab
+  artifactKey: Guid(a4722fcce9d03de42bbad6910b80f35f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Main/origami 4.prefab using Guid(a4722fcce9d03de42bbad6910b80f35f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05074cb7732f3367dde2298cbcbfc472') in 0.091248 seconds
+  Import took 0.112138 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.361702 seconds.
+  path: Assets/Prefabs/Main/origami 4.prefab
+  artifactKey: Guid(a4722fcce9d03de42bbad6910b80f35f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Main/origami 4.prefab using Guid(a4722fcce9d03de42bbad6910b80f35f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f1aa3850bd0680f592791a031ee673f') in 0.091182 seconds
+  Import took 0.131421 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 121.624260 seconds.
+  path: Assets/Prefabs/Fbx/origami Fifth fold.fbx
+  artifactKey: Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fbx/origami Fifth fold.fbx using Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f374634e518a4c2d67d1aa24d5818300') in 0.056441 seconds
+  Import took 0.099390 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.045818 seconds.
+  path: Assets/Prefabs/Fbx/origami Fifth fold.fbx
+  artifactKey: Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fbx/origami Fifth fold.fbx using Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f55535b5b2cf6127f4bbf95b982fc2e') in 0.055878 seconds
+  Import took 0.081444 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.594895 seconds.
+  path: Assets/Prefabs/Fbx/origami Fifth fold.fbx
+  artifactKey: Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fbx/origami Fifth fold.fbx using Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e06cf113c79aa0e2ced6b4b460674c90') in 0.053089 seconds
+  Import took 0.082115 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.445971 seconds.
+  path: Assets/Prefabs/Fbx/origami Fifth fold.fbx
+  artifactKey: Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fbx/origami Fifth fold.fbx using Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ffdcc7b2cc6b77f4cbbae92acdc5741') in 0.053620 seconds
+  Import took 0.075874 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 267.184015 seconds.
+  path: Assets/Prefabs/Fbx/origami Fifth fold.fbx
+  artifactKey: Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fbx/origami Fifth fold.fbx using Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aae7352b2c50c917914f56d4d65eafee') in 0.053091 seconds
+  Import took 0.083052 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.854206 seconds.
+  path: Assets/Prefabs/Fbx/origami Fifth fold.fbx
+  artifactKey: Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fbx/origami Fifth fold.fbx using Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dea757b22319d41c8fc7d301a0ab6fc0') in 0.053110 seconds
+  Import took 0.074948 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.697989 seconds.
+  path: Assets/Prefabs/Fbx/origami Fifth fold.fbx
+  artifactKey: Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fbx/origami Fifth fold.fbx using Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4064951d09453a1717eb8fd92537d04') in 0.052604 seconds
+  Import took 0.086175 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.743497 seconds.
+  path: Assets/Prefabs/Fbx/origami Fifth fold.fbx
+  artifactKey: Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fbx/origami Fifth fold.fbx using Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e42c2c727aaba19604d0a42810e8104') in 0.058636 seconds
+  Import took 0.087048 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.382286 seconds.
+  path: Assets/Prefabs/Fbx/origami Fifth fold.fbx
+  artifactKey: Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fbx/origami Fifth fold.fbx using Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b737414b3200ff9fcd8f35bee2b338c') in 0.053498 seconds
+  Import took 0.074655 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.616408 seconds.
+  path: Assets/Prefabs/Fbx/origami Fifth fold.fbx
+  artifactKey: Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fbx/origami Fifth fold.fbx using Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5314b64c09b563762f3e2434f58b659f') in 0.052040 seconds
+  Import took 0.078806 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.525956 seconds.
+  path: Assets/Prefabs/Fbx/origami Fifth fold.fbx
+  artifactKey: Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fbx/origami Fifth fold.fbx using Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69fa2712e9d970d90ffa4e0032b98d02') in 0.057605 seconds
+  Import took 0.071249 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.260041 seconds.
+  path: Assets/Prefabs/Fbx/origami Fifth fold.fbx
+  artifactKey: Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fbx/origami Fifth fold.fbx using Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9258da77801b844627434ea45d9169d7') in 0.054164 seconds
+  Import took 0.067652 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.607200 seconds.
+  path: Assets/Prefabs/Fbx/origami Fifth fold.fbx
+  artifactKey: Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fbx/origami Fifth fold.fbx using Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fa1f5bf2cc998ab46caac8bd49ae8c4') in 0.052426 seconds
+  Import took 0.079451 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.388803 seconds.
+  path: Assets/Prefabs/Fbx/origami Fifth fold.fbx
+  artifactKey: Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fbx/origami Fifth fold.fbx using Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88dd39215dadc8ea99275ec1bf017032') in 0.054746 seconds
+  Import took 0.081013 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.060516 seconds.
+  path: Assets/Prefabs/Fbx/origami Fifth fold.fbx
+  artifactKey: Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fbx/origami Fifth fold.fbx using Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4aa624a3e1cbe3b53dd8f412a5336d1a') in 0.057346 seconds
+  Import took 0.074089 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.441863 seconds.
+  path: Assets/Prefabs/Fbx/origami Fifth fold.fbx
+  artifactKey: Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fbx/origami Fifth fold.fbx using Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7527d50b70cab52d3f779a870493c353') in 0.053248 seconds
+  Import took 0.080390 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.997356 seconds.
+  path: Assets/Prefabs/Fbx/origami Fifth fold.fbx
+  artifactKey: Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fbx/origami Fifth fold.fbx using Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae9faf96a888285b785ae21280475a23') in 0.055163 seconds
+  Import took 0.068995 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.976333 seconds.
+  path: Assets/Prefabs/Fbx/origami Fifth fold.fbx
+  artifactKey: Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fbx/origami Fifth fold.fbx using Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34833973f22c548910385118e135cdc7') in 0.060006 seconds
+  Import took 0.081940 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.565129 seconds.
+  path: Assets/Prefabs/Fbx/origami Fifth fold.fbx
+  artifactKey: Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fbx/origami Fifth fold.fbx using Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c64a87c6ec1b90a9b696f2030110b6fc') in 0.055449 seconds
+  Import took 0.072962 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.348433 seconds.
+  path: Assets/Prefabs/Fbx/origami Fifth fold.fbx
+  artifactKey: Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fbx/origami Fifth fold.fbx using Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7649dce96aba7e09e7d462a2c7df9859') in 0.056431 seconds
+  Import took 0.081472 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.100023 seconds.
+  path: Assets/Prefabs/Fbx/origami Fifth fold.fbx
+  artifactKey: Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fbx/origami Fifth fold.fbx using Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac043ef70078b71b08465104d01d0299') in 0.053378 seconds
+  Import took 0.093785 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.990110 seconds.
+  path: Assets/Prefabs/Fbx/origami Fifth fold.fbx
+  artifactKey: Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fbx/origami Fifth fold.fbx using Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb9a4072b22d43c9f675170dac656c6c') in 0.051674 seconds
+  Import took 0.080683 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.795522 seconds.
+  path: Assets/Prefabs/Fbx/origami Fifth fold.fbx
+  artifactKey: Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fbx/origami Fifth fold.fbx using Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '047e0304eb55d683474e7f98b7ff412d') in 0.054681 seconds
+  Import took 0.087127 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.578512 seconds.
+  path: Assets/Prefabs/Fbx/origami Fifth fold.fbx
+  artifactKey: Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fbx/origami Fifth fold.fbx using Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7237956685edf2eeb4cfb6ac385f99e0') in 0.054097 seconds
+  Import took 0.075850 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.371578 seconds.
+  path: Assets/Prefabs/Fbx/origami Fifth fold.fbx
+  artifactKey: Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fbx/origami Fifth fold.fbx using Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0e40d94c374b3b6dc08ad9bca5c9c18') in 0.053199 seconds
+  Import took 0.070612 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.019377 seconds.
+  path: Assets/Prefabs/Fbx/origami Fifth fold.fbx
+  artifactKey: Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fbx/origami Fifth fold.fbx using Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0e40d94c374b3b6dc08ad9bca5c9c18') in 0.047189 seconds
+  Import took 0.056353 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.466627 seconds.
+  path: Assets/Prefabs/Fbx/origami Fifth fold.fbx
+  artifactKey: Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fbx/origami Fifth fold.fbx using Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2154d9921b06e301cad04654bd08cbb1') in 0.054728 seconds
+  Import took 0.073976 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.303921 seconds.
+  path: Assets/Prefabs/Fbx/origami Fifth fold.fbx
+  artifactKey: Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fbx/origami Fifth fold.fbx using Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0cb5ebfc1fdfe469a095e2d83bd7337') in 0.058457 seconds
+  Import took 0.099246 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.964982 seconds.
+  path: Assets/Prefabs/Fbx/origami Fifth fold.fbx
+  artifactKey: Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fbx/origami Fifth fold.fbx using Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '596e14bba61bcb3696307b6bf0727f25') in 0.057925 seconds
+  Import took 0.074187 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.259000 seconds.
+  path: Assets/Prefabs/Fbx/origami Fifth fold.fbx
+  artifactKey: Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fbx/origami Fifth fold.fbx using Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db598675c6e7b720ae03a8f21dcf668a') in 0.056121 seconds
+  Import took 0.077755 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 69.415659 seconds.
+  path: Assets/Prefabs/Fbx/origami Fifth fold.fbx
+  artifactKey: Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fbx/origami Fifth fold.fbx using Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39dff028f56251745499d56449d11a0c') in 0.054166 seconds
+  Import took 0.073542 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.582851 seconds.
+  path: Assets/Prefabs/Fbx/origami Fifth fold.fbx
+  artifactKey: Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fbx/origami Fifth fold.fbx using Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17537bd730f61fd58f89f11e6f4ac28f') in 0.054860 seconds
+  Import took 0.073221 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 41.124200 seconds.
+  path: Assets/Prefabs/Fbx/origami Fifth fold.fbx
+  artifactKey: Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fbx/origami Fifth fold.fbx using Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'defa4c13b0de230cbfc7e546ef3fa2fd') in 0.053733 seconds
+  Import took 0.067149 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.850929 seconds.
+  path: Assets/Prefabs/Fbx/origami Fifth fold.fbx
+  artifactKey: Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fbx/origami Fifth fold.fbx using Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '866f95e472ee68af56422a685d044ad1') in 0.055699 seconds
+  Import took 0.078921 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.170691 seconds.
+  path: Assets/Prefabs/Fbx/origami Fifth fold.fbx
+  artifactKey: Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fbx/origami Fifth fold.fbx using Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '092ea6494f610fa0c699c47a9675f8b9') in 0.055244 seconds
+  Import took 0.078961 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 290.813022 seconds.
+  path: Assets/Prefabs/Fbx/origami Fifth fold.fbx
+  artifactKey: Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fbx/origami Fifth fold.fbx using Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c27ed86a69fca53946b19d27b4734786') in 0.056386 seconds
+  Import took 0.078640 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.014828 seconds.
+  path: Assets/Prefabs/Fbx/origami Fifth fold.fbx
+  artifactKey: Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fbx/origami Fifth fold.fbx using Guid(64397aa03c395e646bc23fdedd954f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c27ed86a69fca53946b19d27b4734786') in 0.049277 seconds
+  Import took 0.058101 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2794.877169 seconds.
+  path: Assets/Prefabs/Blender/origami fold seventh.blend
+  artifactKey: Guid(15b3320f22cb8cd4e95b89ae5b14d3f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Blender/origami fold seventh.blend using Guid(15b3320f22cb8cd4e95b89ae5b14d3f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f0316a3d29fe983e56b21b7c137edfb') in 0.112823 seconds
+  Import took 0.338177 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 797.798040 seconds.
+  path: Assets/Scenes/Main.unity
+  artifactKey: Guid(3051d0bb43cbf574a845e91a096e677d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Main.unity using Guid(3051d0bb43cbf574a845e91a096e677d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c355fbffc8abb046f033f56e07f22247') in 0.004023 seconds
+  Import took 0.045173 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

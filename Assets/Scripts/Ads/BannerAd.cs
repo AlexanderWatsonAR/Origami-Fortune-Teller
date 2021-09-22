@@ -27,10 +27,6 @@ public class BannerAd : MonoBehaviour
         Advertisement.Banner.SetPosition(bannerPosition);
         StartCoroutine(ShowBanner());
         StartCoroutine(CloseBannerAd(246.0f));
-
-        float myvalue = 0;
-
-        
     }
 
     private IEnumerator ShowBanner()

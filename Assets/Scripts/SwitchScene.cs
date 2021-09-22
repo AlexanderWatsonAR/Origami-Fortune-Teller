@@ -82,6 +82,17 @@ public class SwitchScene : MonoBehaviour
         OrigamiManager.instance.Canvas.SetActive(true);
         
         OrigamiManager.instance.orgami[0].GetComponent<Animator>().Play("NewFadeInTextureAnimation");
+
+        if (SceneManager.GetActiveScene().name == "Main")
+        {
+            OrigamiManager.instance.orgami[0].transform.GetChild(0).GetComponent<Renderer>().material.SetInt("Vector1_1866b2cf3a5d44f69aa3bc86840b54d5", 1);
+            OrigamiManager.instance.orgami[0].transform.GetChild(1).GetComponent<Renderer>().material.SetInt("Vector1_1866b2cf3a5d44f69aa3bc86840b54d5", 1);
+            OrigamiManager.instance.orgami[0].transform.GetChild(2).GetComponent<Renderer>().material.SetInt("Vector1_1866b2cf3a5d44f69aa3bc86840b54d5", 1);
+            OrigamiManager.instance.orgami[0].transform.GetChild(3).GetComponent<Renderer>().material.SetInt("Vector1_1866b2cf3a5d44f69aa3bc86840b54d5", 1);
+
+            ChangeOrigamiColour.ChangeLastOrigami();
+            ChangeOrigamiTexture.ChangeLastOrigami();
+        }
     }
 
     public void AdjustLoadSpeed()

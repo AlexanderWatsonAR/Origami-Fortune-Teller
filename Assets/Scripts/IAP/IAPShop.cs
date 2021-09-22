@@ -20,7 +20,7 @@ public class IAPShop : MonoBehaviour
 
     private void Awake()
     {
-        if(PlayerPrefs.GetInt("KawaiiCollection1Purchased") == 1)
+        if (PlayerPrefs.GetInt("KawaiiCollection1Purchased") == 1)
         {
             Unlock();
         }
@@ -33,7 +33,7 @@ public class IAPShop : MonoBehaviour
 
     public void OnPurchaseComplete(Product product)
     {
-        switch(product.definition.id)
+        switch (product.definition.id)
         {
             case kawaiiStickerCollection1:
                 Debug.Log("Purchase of " + product.definition.id + " has been successful");
@@ -60,7 +60,7 @@ public class IAPShop : MonoBehaviour
             KawaiiCollection1StickerPicker.transform.GetChild(i).transform.GetChild(1).gameObject.SetActive(false);
         }
 
-        for(int i = 0; i < KawaiiCollection1PurchaseButton.transform.childCount; i++)
+        for (int i = 0; i < KawaiiCollection1PurchaseButton.transform.childCount; i++)
         {
             if (KawaiiCollection1PurchaseButton.transform.GetChild(i).gameObject.GetComponent<TextMeshProUGUI>() != null)
             {
@@ -73,7 +73,7 @@ public class IAPShop : MonoBehaviour
     private void RemoveAds()
     {
         AdsManager.instance.RemoveAds();
-        if(removeAdsButton != null)
+        if (removeAdsButton != null)
         {
             removeAdsButton.GetComponent<Button>().interactable = false;
             removeAdsButton.transform.GetChild(0).gameObject.GetComponent<Renderer>().material = null;

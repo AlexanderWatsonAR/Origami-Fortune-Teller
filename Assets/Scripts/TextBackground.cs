@@ -114,6 +114,7 @@ public class TextBackground : MonoBehaviour
                 break;
 
             case 4:
+                questionContainer.GetComponent<VerticalLayoutGroup>().spacing = 2.5f;
                 borderContainer.GetComponent<VerticalLayoutGroup>().spacing = -6.2f;
                 break;
         }

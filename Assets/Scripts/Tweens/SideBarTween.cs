@@ -33,7 +33,7 @@ public class SideBarTween : MonoBehaviour
         sidePanelTransform.DOSizeDelta(new Vector2(-200, sidePanelTransform.sizeDelta.y), 0.33f, false).SetAutoKill(false).Pause();
 
         // Restore Purchase.
-        restoreImageTransform.DORotate(new Vector3(0.0f, 0.0f, -360.0f), 0.5f, RotateMode.FastBeyond360).SetAutoKill(false).Pause();
+        //restoreImageTransform.DORotate(new Vector3(0.0f, 0.0f, -360.0f), 0.5f, RotateMode.FastBeyond360).SetAutoKill(false).Pause().OnComplete( delegate() { restoreImageTransform.eulerAngles = Vector3.zero; });
 
         // Shop Window
         shopWindowCanvasGroup.DOFade(1.0f, 0.33f).SetAutoKill(false).Pause();
@@ -63,7 +63,8 @@ public class SideBarTween : MonoBehaviour
 
     public void RestorePurchaseTween()
     {
-        restoreImageTransform.DOPlay();
+        restoreImageTransform.DORotate(new Vector3(0.0f, 0.0f, -360.0f), 0.5f, RotateMode.FastBeyond360).OnComplete(delegate () { restoreImageTransform.eulerAngles = Vector3.zero; });
+        //restoreImageTransform.DOPlay();
     }
 
     public void OpenShowWindow()

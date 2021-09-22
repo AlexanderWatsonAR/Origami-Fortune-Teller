@@ -19,6 +19,9 @@ public class MainSceneTween : MonoBehaviour
         {
             origami.transform.DOMoveX(-6.0f, 1.0f).SetAutoKill(false).Pause();
         }
+
+
+        GameObject zeroOrigami = OrigamiManager.instance.orgami[0];
     }
 
     public void Play()
@@ -39,7 +42,7 @@ public class MainSceneTween : MonoBehaviour
             origami.transform.DOPlay();
         }
 
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(1.1f);
 
         switchScene.LoadScene("IntroScene");
     }

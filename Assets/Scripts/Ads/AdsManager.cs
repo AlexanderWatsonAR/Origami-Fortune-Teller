@@ -18,10 +18,15 @@ public class AdsManager : MonoBehaviour, IUnityAdsInitializationListener
 
     void Awake()
     {
-        PlayerPrefs.SetInt("RemoveAdsPurchased", 0);
+        ///PlayerPrefs.SetInt("RemoveAdsPurchased", 0);
         if (instance == null)
         {
             instance = this;
+            instance.interAd = interAd;
+            instance.bannerAd = bannerAd;
+            int adCount = PlayerPrefs.GetInt("interstitialAdCount");
+            adCount++;
+            PlayerPrefs.SetInt("interstitialAdCount", adCount);
         }
         else
         {
@@ -56,5 +61,18 @@ public class AdsManager : MonoBehaviour, IUnityAdsInitializationListener
     public void RemoveAds()
     {
         bannerAd.HideBannerAd();
+    }
+
+    public void PlayInterstialAd()
+    {
+        int adCount = PlayerPrefs.GetInt("interstitialAdCount");
+        adCount++;
+        PlayerPrefs.SetInt("interstitialAdCount", adCount);
+
+        if (adCount % 10 == 0)
+        {
+            instance.interAd.LoadAd();
+            instance.interAd.ShowAd();
+        }
     }
 }

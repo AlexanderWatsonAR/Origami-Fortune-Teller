@@ -126,8 +126,8 @@ public class ChangeOrigamiTexture : MonoBehaviour
             }
         }
 
-        if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Main")
-            ChangeLastOrigami();
+        //if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Main")
+        //    ChangeLastOrigami();
     }
 
     public static void ChangeLastOrigami()
@@ -139,10 +139,13 @@ public class ChangeOrigamiTexture : MonoBehaviour
         secondaryTextures[2] = OrigamiManager.instance.orgami[0].transform.GetChild(2).GetComponent<Renderer>().material.GetTexture("Texture2D_62f72c9e26a6475faf78c7bf7415b950"); // Top Left
         secondaryTextures[3] = OrigamiManager.instance.orgami[0].transform.GetChild(3).GetComponent<Renderer>().material.GetTexture("Texture2D_62f72c9e26a6475faf78c7bf7415b950"); // Top Right
 
+        if (secondaryTextures[0] == null)
+            return;
+
         int last = OrigamiManager.instance.orgami.Length - 1;
 
-        OrigamiManager.instance.orgami[last].transform.GetChild(0).GetComponent<Renderer>().material.SetTexture("Texture2D_62f72c9e26a6475faf78c7bf7415b950", secondaryTextures[0]); // Bottom Right 2
-        OrigamiManager.instance.orgami[last].transform.GetChild(0).GetComponent<Renderer>().material.SetTexture("Texture2D_b614431639584fc99463f96af57246a8", secondaryTextures[1]); // Bottom Left 1
+        OrigamiManager.instance.orgami[last].transform.GetChild(0).GetComponent<Renderer>().material.SetTexture("Texture2D_62f72c9e26a6475faf78c7bf7415b950", secondaryTextures[0]); // Bottom Right 2 - P
+        OrigamiManager.instance.orgami[last].transform.GetChild(0).GetComponent<Renderer>().material.SetTexture("Texture2D_b614431639584fc99463f96af57246a8", secondaryTextures[1]); // Bottom Left 1  - S
 
         OrigamiManager.instance.orgami[last].transform.GetChild(1).GetComponent<Renderer>().material.SetTexture("Texture2D_62f72c9e26a6475faf78c7bf7415b950", secondaryTextures[2]); // Left Top 2 Correct 
         OrigamiManager.instance.orgami[last].transform.GetChild(1).GetComponent<Renderer>().material.SetTexture("Texture2D_b614431639584fc99463f96af57246a8", secondaryTextures[0]); // Left Bottom 1 Correct
@@ -152,6 +155,20 @@ public class ChangeOrigamiTexture : MonoBehaviour
 
         OrigamiManager.instance.orgami[last].transform.GetChild(3).GetComponent<Renderer>().material.SetTexture("Texture2D_62f72c9e26a6475faf78c7bf7415b950", secondaryTextures[3]); // Top Left 2
         OrigamiManager.instance.orgami[last].transform.GetChild(3).GetComponent<Renderer>().material.SetTexture("Texture2D_b614431639584fc99463f96af57246a8", secondaryTextures[2]); // Top Right 1
+
+
+        //// Double Triangle
+        //OrigamiManager.instance.orgami[last].transform.GetChild(16).GetComponent<Renderer>().material.SetTexture("Texture2D_62f72c9e26a6475faf78c7bf7415b950", secondaryTextures[0]); // Bottom Right 2
+        //OrigamiManager.instance.orgami[last].transform.GetChild(16).GetComponent<Renderer>().material.SetTexture("Texture2D_b614431639584fc99463f96af57246a8", secondaryTextures[1]); // Bottom Left 1
+
+        //OrigamiManager.instance.orgami[last].transform.GetChild(17).GetComponent<Renderer>().material.SetTexture("Texture2D_62f72c9e26a6475faf78c7bf7415b950", secondaryTextures[2]); // Left Top 2 Correct 
+        //OrigamiManager.instance.orgami[last].transform.GetChild(17).GetComponent<Renderer>().material.SetTexture("Texture2D_b614431639584fc99463f96af57246a8", secondaryTextures[0]); // Left Bottom 1 Correct
+
+        //OrigamiManager.instance.orgami[last].transform.GetChild(18).GetComponent<Renderer>().material.SetTexture("Texture2D_62f72c9e26a6475faf78c7bf7415b950", secondaryTextures[1]); // Right Bottom 2 Correct
+        //OrigamiManager.instance.orgami[last].transform.GetChild(18).GetComponent<Renderer>().material.SetTexture("Texture2D_b614431639584fc99463f96af57246a8", secondaryTextures[3]); // Right Top 1 Correct
+
+        //OrigamiManager.instance.orgami[last].transform.GetChild(19).GetComponent<Renderer>().material.SetTexture("Texture2D_62f72c9e26a6475faf78c7bf7415b950", secondaryTextures[3]); // Top Left 2
+        //OrigamiManager.instance.orgami[last].transform.GetChild(19).GetComponent<Renderer>().material.SetTexture("Texture2D_b614431639584fc99463f96af57246a8", secondaryTextures[2]); // Top Right 1
     }
 
     public void Border()

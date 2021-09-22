@@ -50,7 +50,10 @@ public class ChangeMesh : MonoBehaviour
         }
         else
         {
-            colourNameText.text = OrigamiManager.instance.ColourName;
+            if (colourNameText.text != OrigamiManager.instance.ColourName)
+            { 
+                colourNameText.text = OrigamiManager.instance.ColourName;
+            }
 
             if (numberNameText.text == "" && OrigamiManager.instance.FoldCount == 1)
             {
@@ -61,6 +64,14 @@ public class ChangeMesh : MonoBehaviour
             {
                 numberButtons.SetActive(true);
                 selectText.GetComponent<TextMeshProUGUI>().text = "Select a number";
+                OrigamiManager.instance.orgami[1].transform.GetChild(0).GetComponent<Renderer>().material.SetInt("Vector1_6e971680b014436d860396f3153e093b", 1);
+                OrigamiManager.instance.orgami[1].transform.GetChild(1).GetComponent<Renderer>().material.SetInt("Vector1_6e971680b014436d860396f3153e093b", 1);
+                OrigamiManager.instance.orgami[1].transform.GetChild(2).GetComponent<Renderer>().material.SetInt("Vector1_6e971680b014436d860396f3153e093b", 1);
+                OrigamiManager.instance.orgami[1].transform.GetChild(3).GetComponent<Renderer>().material.SetInt("Vector1_6e971680b014436d860396f3153e093b", 1);
+                OrigamiManager.instance.orgami[2].transform.GetChild(0).GetComponent<Renderer>().material.SetInt("Vector1_6e971680b014436d860396f3153e093b", 1);
+                OrigamiManager.instance.orgami[2].transform.GetChild(1).GetComponent<Renderer>().material.SetInt("Vector1_6e971680b014436d860396f3153e093b", 1);
+                OrigamiManager.instance.orgami[2].transform.GetChild(2).GetComponent<Renderer>().material.SetInt("Vector1_6e971680b014436d860396f3153e093b", 1);
+                OrigamiManager.instance.orgami[2].transform.GetChild(3).GetComponent<Renderer>().material.SetInt("Vector1_6e971680b014436d860396f3153e093b", 1);
             }
             else
             {

@@ -28,8 +28,12 @@ public class QuestionData : MonoBehaviour
         TMPro.TMP_InputField[] textInputs = AdjustTextInputField.GetAllInputFieldsOrdered();
         data[index] = textInputs[index].text;
 
-        PlayerPrefs.SetString("QuestionData" + index.ToString() + "Entry" + CreateDecisionMaker.currentEntry, data[index]);
+        if (index == 0 && textInputs[0].text.Length > textInputs[0].characterLimit)
+        {
+            return;
+        }
 
+        PlayerPrefs.SetString("QuestionData" + index.ToString() + "Entry" + CreateDecisionMaker.currentEntry, data[index]);
     }
 
     public void RemoveData(int index)

@@ -11,6 +11,11 @@ public class AnimationSpeedController : MonoBehaviour
 
     private void Start()
     {
+        Init();
+    }
+
+    public void Init()
+    {
         animationSlider = GetComponent<Slider>();
         animationSlider.onValueChanged.AddListener(delegate { AdjustAnimationSpeed(); });
     }

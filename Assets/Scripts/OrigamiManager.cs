@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class OrigamiManager : MonoBehaviour
 {
@@ -137,27 +138,39 @@ public class OrigamiManager : MonoBehaviour
 
     public void LoadOrigamiDesignData()
     {
+        if (SceneManager.GetActiveScene().name == "Main")
+        {
+            SceneManager.sceneLoaded += ChangeLast;
+        }
+
         string entryIndex = CreateDecisionMaker.currentEntry.ToString();
         GameObject[] origami = { instance.orgami[0] };
 
         if(orgami.Length > 1)
             origami = new GameObject[] { instance.orgami[0], instance.orgami[1], instance.orgami[2], instance.orgami[3]};
 
-        foreach (GameObject go in origami)
+        foreach (GameObject go in instance.orgami)
         {
             LoadPrimaryColourData(go, entryIndex);
             LoadSecondaryColourData(go, entryIndex);
             LoadPrimaryTexData(go, entryIndex);
             LoadSecondaryTexData(go, entryIndex);
-            LoadStickerTexData(go, entryIndex);
-
-            if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Main")
-            {
-                ChangeOrigamiColour.ChangeLastOrigami();
-                ChangeOrigamiTexture.ChangeLastOrigami();
-            }
-
+            if(go.name != "origami 4")
+                LoadStickerTexData(go, entryIndex);
         }
+
+
+    }
+
+    public void ChangeLast()
+    {
+        ChangeOrigamiColour.ChangeLastOrigami();
+        ChangeOrigamiTexture.ChangeLastOrigami();
+    }
+
+    private void ChangeLast(Scene current, LoadSceneMode mode)
+    {
+        ChangeLast();
     }
 
     public void LoadPrimaryColourData(GameObject origami, string entryIndex)
@@ -421,7 +434,7 @@ public class OrigamiManager : MonoBehaviour
             interp -= onePercent;
             text.color = newColour;
 
-            yield return new WaitForSeconds(0.02f);
+            yield return new WaitForSeconds(Time.fixedDeltaTime);
         }
     }
 }

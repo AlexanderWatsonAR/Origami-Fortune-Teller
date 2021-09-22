@@ -13,7 +13,7 @@ Material:
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
+  m_DoubleSidedGI: 1
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
@@ -95,6 +95,9 @@ Material:
     m_Floats:
     - Vector1_0d856e205469470eacc7fbf47e75cc52: 0.5
     - Vector1_1344359e2f0d41e7bf37c791151de6ef: 0
+    - Vector1_1866b2cf3a5d44f69aa3bc86840b54d5: 0
+    - Vector1_6e971680b014436d860396f3153e093b: 0
+    - Vector1_e15fd756d5ee4bfbb9d2d54db72e5cb7: 0
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -124,6 +127,8 @@ Material:
     m_Colors:
     - Color_27bc9690873845048adc1140e1c09a57: {r: 1, g: 1, b: 1, a: 1}
     - Color_cc2877fbd4c8430591cd0e4dc9d8ad1a: {r: 1, g: 0, b: 0, a: 1}
+    - Vector2_5f217dc8f4d8461ea4b1cc2e4f3c1fb9: {r: 1, g: 1, b: 0, a: 0}
+    - Vector2_6ae5e73927ad4556a40b52c797a35db6: {r: 1, g: 1, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
