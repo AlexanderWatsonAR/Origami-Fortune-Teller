@@ -171,6 +171,7 @@ public class OrigamiManager : MonoBehaviour
     private void ChangeLast(Scene current, LoadSceneMode mode)
     {
         ChangeLast();
+        SceneManager.sceneLoaded -= ChangeLast;
     }
 
     public void LoadPrimaryColourData(GameObject origami, string entryIndex)
@@ -275,7 +276,7 @@ public class OrigamiManager : MonoBehaviour
 
     public void LoadStickerTexData(GameObject origami, string entryIndex)
     {
-        if (entryIndex == "-1")
+        if (entryIndex == "-1" || PlayerPrefs.GetInt("KawaiiCollection1Purchased") != 1)
             return;
 
         // Bottom Left

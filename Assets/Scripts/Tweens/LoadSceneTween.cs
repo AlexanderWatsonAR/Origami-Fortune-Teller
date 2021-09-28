@@ -9,6 +9,11 @@ public class LoadSceneTween : MonoBehaviour
     public GameObject Origami_2;
     public GameObject Origami_3;
 
+    private bool isOnePaused;
+    private bool isTwoPaused;
+    private bool isThreePaused;
+    private bool isTweenEventInProgress;
+
     private SwitchScene switchScene;
     private float divider;
 
@@ -18,6 +23,7 @@ public class LoadSceneTween : MonoBehaviour
         divider = 1.0f;
         DontDestroyOnLoad(gameObject);
         switchScene = GetComponent<SwitchScene>();
+
         StartCoroutine(Origami1Setup());
     }
 
@@ -30,6 +36,12 @@ public class LoadSceneTween : MonoBehaviour
         yield return new WaitForSeconds(1f / divider);
 
         divider = IsMainSceneLoaded();
+
+        if (isOnePaused)
+            yield return null;
+
+        if (Origami_1 == null)
+            yield return null;
 
         // Rotate 45d
         Origami_1.transform.DORotate(new Vector3(90.0f, -90.0f, 90.0f), 1.0f / divider, RotateMode.Fast);
@@ -113,6 +125,12 @@ public class LoadSceneTween : MonoBehaviour
 
     private IEnumerator Origami2Setup()
     {
+        if (isTwoPaused)
+            yield return null;
+
+        if (Origami_2 == null)
+            yield return null;
+
         divider = IsMainSceneLoaded();
         // Move Forward
         Origami_2.transform.DOLocalMoveZ(-5f, 2.5f / divider);
@@ -142,6 +160,12 @@ public class LoadSceneTween : MonoBehaviour
 
     private IEnumerator Origami3Setup()
     {
+        if (isThreePaused)
+            yield return null;
+
+        if (Origami_3 == null)
+            yield return null;
+
         divider = IsMainSceneLoaded();
 
         GameObject bottomLeft = Origami_3.transform.GetChild(0).gameObject;
@@ -169,7 +193,11 @@ public class LoadSceneTween : MonoBehaviour
 
     public IEnumerator TweenEvent(int eventIndex, float time)
     {
+        isTweenEventInProgress = true;
         yield return new WaitForSeconds(time);
+
+        if (Origami_1 == null)
+            yield return null;
 
         switch(eventIndex)
         {
@@ -193,5 +221,50 @@ public class LoadSceneTween : MonoBehaviour
             return 2.0f;
         }
         return 1.0f;
+    }
+
+    public void StopTweens()
+    {
+        if (isTweenEventInProgress)
+        {
+            StopCoroutine(TweenEvent(0, 0));
+            isTweenEventInProgress = false;
+        }
+
+        if (Origami_1 != null)
+        {
+            isOnePaused = true;
+            Origami_1.transform.DOPause();
+            Origami_1.transform.GetChild(0).gameObject.GetComponent<SkinnedMeshRenderer>().DOPause();
+            Origami_1.transform.GetChild(1).gameObject.GetComponent<SkinnedMeshRenderer>().DOPause();
+            Origami_1.transform.GetChild(2).gameObject.GetComponent<SkinnedMeshRenderer>().DOPause();
+            Origami_1.transform.GetChild(3).gameObject.GetComponent<SkinnedMeshRenderer>().DOPause();
+            StopCoroutine(Origami1Setup());
+            Destroy(Origami_1);
+        }    
+
+        if(Origami_2 != null)
+        {
+            isTwoPaused = true;
+            Origami_2.transform.DOPause();
+            Origami_2.transform.GetChild(0).gameObject.GetComponent<SkinnedMeshRenderer>().DOPause();
+            Origami_2.transform.GetChild(1).gameObject.GetComponent<SkinnedMeshRenderer>().DOPause();
+            Origami_2.transform.GetChild(2).gameObject.GetComponent<SkinnedMeshRenderer>().DOPause();
+            Origami_2.transform.GetChild(3).gameObject.GetComponent<SkinnedMeshRenderer>().DOPause();
+            StopCoroutine(Origami2Setup());
+            Destroy(Origami_2);
+        }
+        
+        if(Origami_3 != null)
+        {
+            isThreePaused = true;
+            Origami_3.transform.DOPause();
+            Origami_3.transform.GetChild(0).gameObject.GetComponent<SkinnedMeshRenderer>().DOPause();
+            Origami_3.transform.GetChild(1).gameObject.GetComponent<SkinnedMeshRenderer>().DOPause();
+            Origami_3.transform.GetChild(2).gameObject.GetComponent<SkinnedMeshRenderer>().DOPause();
+            Origami_3.transform.GetChild(3).gameObject.GetComponent<SkinnedMeshRenderer>().DOPause();
+            StopCoroutine(Origami3Setup());
+            Destroy(Origami_3);
+        }
     }
 }

@@ -5,8 +5,8 @@ using UnityEngine.Advertisements;
 
 public class AdsManager : MonoBehaviour, IUnityAdsInitializationListener
 {
-    [SerializeField] string androidGameId;
-    [SerializeField] string appleGameId;
+    [SerializeField] string androidGameId = "4238669";
+    [SerializeField] string appleGameId = "4238668";
     [SerializeField] bool testMode = true;
     [SerializeField] bool enablePerPlacementMode = true;
     private string gameId;

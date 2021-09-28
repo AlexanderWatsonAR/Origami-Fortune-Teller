@@ -48,7 +48,7 @@ public class StartScene : MonoBehaviour
 //#endif
 
         ApplicationChrome.statusBarState =  ApplicationChrome.States.Hidden;
-        ApplicationChrome.navigationBarState = ApplicationChrome.States.Hidden;
+        ApplicationChrome.navigationBarState = ApplicationChrome.States.TranslucentOverContent;
     }
 
     private void ConfigureUI()

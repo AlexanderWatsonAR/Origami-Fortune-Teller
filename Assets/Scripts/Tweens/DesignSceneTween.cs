@@ -6,9 +6,15 @@ using DG.Tweening;
 
 public class DesignSceneTween : MonoBehaviour
 {
+    public GameObject MainCanvas;
     public CanvasGroup secondaryCanvasGroup;
     public GameObject mainSceneButton;
+    public GameObject ColourPalette;
+    public GameObject SelectPositionWindow;
+    public GameObject Buttons;
+    public OpenScene openMainScene;
     public Image colourPaletteImage;
+    public SwitchScene switchScene;
 
     private bool isCanvasVisible;
     private CanvasGroup mainCanvasGroup;
@@ -140,6 +146,47 @@ public class DesignSceneTween : MonoBehaviour
                 origami.GetComponent<Animator>().enabled = true;
                 break;
 
+        }
+    }
+
+    public void GoHome()
+    {
+        if(MainCanvas.activeSelf)
+            StartCoroutine(DesignToHome());
+    }
+
+    public IEnumerator DesignToHome()
+    {
+        Destroy(openMainScene);
+        ColourPalette.transform.DOLocalMoveX(-615.8f, 0.75f).SetDelay(0.4f);
+        SelectPositionWindow.transform.DOLocalMoveX(-1231.6f, 0.75f).SetDelay(0.4f);
+        Buttons.transform.DOMoveX(-1231.6f, 0.75f).SetDelay(0.4f);
+        origami.transform.DOMoveX(-5.0f, 0.75f).SetDelay(0.4f);
+
+        yield return new WaitForSeconds(1f);
+        switchScene.LoadScene("IntroScene");
+    }
+
+    public void StopTweens()
+    {
+        GameObject loadTweens = GameObject.Find("LoadSceneTween");
+
+        if (loadTweens != null)
+        {
+            loadTweens.GetComponent<LoadSceneTween>().StopTweens();
+            Destroy(loadTweens);
+        }
+        DestroyLoadOrigami();
+    }
+
+    private void DestroyLoadOrigami()
+    {
+        GameObject orig1 = GameObject.Find("Load Origami 1");
+
+        if (orig1 != null)
+        {
+            Destroy(orig1.GetComponent<PersistObject>().dependents[0]);
+            Destroy(orig1);
         }
     }
 

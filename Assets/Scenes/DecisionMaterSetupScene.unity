@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.17905276, g: 0.21854432, b: 0.27339256, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5588,6 +5588,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0648f737ff3ef344a8642610ad9a4e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextSceneName: Load
   VerticalLayout: {fileID: 410982126}
   nextSceneButton: {fileID: 1504121031}
   switchScene: {fileID: 860806190}
@@ -8276,6 +8277,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5355850966779083947, guid: d40701dc54754b542910d4a0c0991819,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5364038721049067498, guid: d40701dc54754b542910d4a0c0991819,
         type: 3}
       propertyPath: m_Enabled
@@ -8916,6 +8922,41 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7495844516930544252, guid: d40701dc54754b542910d4a0c0991819,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -60
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495844518137920256, guid: d40701dc54754b542910d4a0c0991819,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.84705883
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495844518137920256, guid: d40701dc54754b542910d4a0c0991819,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.84705883
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495844518137920256, guid: d40701dc54754b542910d4a0c0991819,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.84705883
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495844518145320097, guid: d40701dc54754b542910d4a0c0991819,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495844518159708190, guid: d40701dc54754b542910d4a0c0991819,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495844518245366260, guid: d40701dc54754b542910d4a0c0991819,
+        type: 3}
+      propertyPath: m_IsOn
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7495844518245366262, guid: d40701dc54754b542910d4a0c0991819,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -8954,6 +8995,11 @@ PrefabInstance:
     - target: {fileID: 7634637935748025386, guid: d40701dc54754b542910d4a0c0991819,
         type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7969139189024866578, guid: d40701dc54754b542910d4a0c0991819,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8016607216376716066, guid: d40701dc54754b542910d4a0c0991819,
@@ -9487,6 +9533,30 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.UI.Graphic, UnityEngine.UI
         m_MethodName: set_raycastTarget
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1047710375}
+        m_TargetAssemblyTypeName: DecisionMakerSceneTween, Assembly-CSharp
+        m_MethodName: SetSceneName
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: IntroScene
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1047710375}
+        m_TargetAssemblyTypeName: DecisionMakerSceneTween, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -10550,7 +10620,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.0008242137}
+  m_AnchoredPosition: {x: 0, y: 0.000029111096}
   m_SizeDelta: {x: 0, y: 640}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1772246261

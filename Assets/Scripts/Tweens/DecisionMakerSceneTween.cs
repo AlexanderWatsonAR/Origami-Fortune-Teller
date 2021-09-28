@@ -5,6 +5,8 @@ using DG.Tweening;
 
 public class DecisionMakerSceneTween : MonoBehaviour
 {
+    public string nextSceneName = "Load";
+
     public GameObject VerticalLayout;
     public GameObject nextSceneButton;
     public SwitchScene switchScene;
@@ -12,6 +14,10 @@ public class DecisionMakerSceneTween : MonoBehaviour
     private RectTransform verticalLayoutTransform;
     private bool areOptionsAvailable;
     
+    public void SetSceneName(string name)
+    {
+        nextSceneName = name;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +39,11 @@ public class DecisionMakerSceneTween : MonoBehaviour
 
     public IEnumerator PlayTween()
     {
+        if(nextSceneName == "IntroScene")
+        {
+            yield return new WaitForSeconds(0.5f);
+        }
+
         if(areOptionsAvailable == false)
         {
             verticalLayoutTransform.DOPlayForward();
@@ -44,7 +55,7 @@ public class DecisionMakerSceneTween : MonoBehaviour
             nextSceneButton.GetComponent<CanvasGroup>().DOPlayBackwards();
             verticalLayoutTransform.DOPlayBackwards();
             yield return new WaitForSeconds(0.5f);
-            switchScene.LoadScene("Load");
+            switchScene.LoadScene(nextSceneName);
         }
 
         areOptionsAvailable = !areOptionsAvailable;

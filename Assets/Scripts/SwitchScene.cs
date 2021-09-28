@@ -69,13 +69,7 @@ public class SwitchScene : MonoBehaviour
 
     public void CloseLoadingScene()
     {
-        GameObject orig1 = GameObject.Find("Load Origami 1");
-
-        if (orig1 != null)
-        {
-            Destroy(orig1.GetComponent<PersistObject>().dependents[0]);
-            Destroy(orig1);
-        }
+        DestroyLoadOrigami();
 
         OrigamiManager.instance.orgami[0].SetActive(true);
         OrigamiManager.instance.SecondaryCanvas.SetActive(true);
@@ -115,6 +109,17 @@ public class SwitchScene : MonoBehaviour
         else
         {
             LoadScene("IntroScene");
+        }
+    }
+
+    public void DestroyLoadOrigami()
+    {
+        GameObject orig1 = GameObject.Find("Load Origami 1");
+
+        if (orig1 != null)
+        {
+            Destroy(orig1.GetComponent<PersistObject>().dependents[0]);
+            Destroy(orig1);
         }
     }
 }

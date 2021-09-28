@@ -31,6 +31,16 @@ public class MainSceneTween : MonoBehaviour
 
     public IEnumerator PlayTween()
     {
+        GameObject loadTweens = GameObject.Find("LoadSceneTween");
+
+        if (loadTweens != null)
+        {
+            loadTweens.GetComponent<LoadSceneTween>().StopTweens();
+            Destroy(loadTweens);
+        }
+
+        DestroyLoadOrigami();
+
         yield return new WaitForSeconds(0.33f);
 
         MainCanvas.GetComponent<CanvasGroup>().DOPlay();
@@ -45,5 +55,16 @@ public class MainSceneTween : MonoBehaviour
         yield return new WaitForSeconds(1.1f);
 
         switchScene.LoadScene("IntroScene");
+    }
+
+    private void DestroyLoadOrigami()
+    {
+        GameObject orig1 = GameObject.Find("Load Origami 1");
+
+        if (orig1 != null)
+        {
+            Destroy(orig1.GetComponent<PersistObject>().dependents[0]);
+            Destroy(orig1);
+        }
     }
 }
