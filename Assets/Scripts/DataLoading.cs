@@ -23,7 +23,6 @@ public class DataLoading : MonoBehaviour
                         {
                             function();
                         }
-                        //CheckAllStickerBorders();
                     }
                 };
             }
@@ -34,7 +33,6 @@ public class DataLoading : MonoBehaviour
                 {
                     function();
                 }
-                //CheckAllStickerBorders();
             }
         }
         else
@@ -48,7 +46,6 @@ public class DataLoading : MonoBehaviour
                     {
                         function();
                     }
-                    //CheckAllStickerBorders();
                 }
             };
         }

@@ -37,7 +37,7 @@ public class StartScene : MonoBehaviour
     {
         //Time.timeScale = 0.25f;
         Application.backgroundLoadingPriority = ThreadPriority.Low;
-        ConfigureUI();
+        //ConfigureUI();
 //#if UNITY_EDITOR
 //        PlayerSettings.statusBarHidden = false;
 //#endif
@@ -47,74 +47,66 @@ public class StartScene : MonoBehaviour
 //        Debug.unityLogger.logEnabled = true;
 //#endif
 
-        ApplicationChrome.statusBarState =  ApplicationChrome.States.Hidden;
-        ApplicationChrome.navigationBarState = ApplicationChrome.States.TranslucentOverContent;
+        //ApplicationChrome.statusBarState =  ApplicationChrome.States.Hidden;
+        //ApplicationChrome.navigationBarState = ApplicationChrome.States.TranslucentOverContent;
     }
 
-    private void ConfigureUI()
-    {
-        float height = Screen.height;
-        float width = Screen.width;
+    //private void ConfigureUI()
+    //{
+    //    float height = Screen.height;
+    //    float width = Screen.width;
 
-        float aspectRatio = height / width;
+    //    float aspectRatio = height / width;
 
-        RectTransform scrollRect = scrollView.transform as RectTransform;
-        RectTransform emptyRect = emptySpace.transform as RectTransform;
-        //a.sizeDelta = new Vector2(a.sizeDelta.x, Screen.height * 0.6f);
+    //    RectTransform scrollRect = scrollView.transform as RectTransform;
+    //    RectTransform emptyRect = emptySpace.transform as RectTransform;
+    //    //a.sizeDelta = new Vector2(a.sizeDelta.x, Screen.height * 0.6f);
 
-        if (aspectRatio > 1.32f && aspectRatio < 1.34f)
-        {
-            scrollRect.sizeDelta = new Vector2(scrollRect.sizeDelta.x, height * 0.33f);
-            emptySpace.SetActive(false);
-            secondaryCanvas.GetComponent<CanvasScaler>().matchWidthOrHeight = 0.15f;
+    //    if (aspectRatio > 1.32f && aspectRatio < 1.34f)
+    //    {
+    //        scrollRect.sizeDelta = new Vector2(scrollRect.sizeDelta.x, height * 0.33f);
+    //        emptySpace.SetActive(false);
+    //        secondaryCanvas.GetComponent<CanvasScaler>().matchWidthOrHeight = 0.15f;
 
-        }
+    //    }
 
-        if (aspectRatio > 1.42f && aspectRatio < 1.44f)
-        {
-            scrollRect.sizeDelta = new Vector2(scrollRect.sizeDelta.x, height * 0.275f);
-            emptySpace.SetActive(false);
-            secondaryCanvas.GetComponent<CanvasScaler>().matchWidthOrHeight = 0.15f;
-            mainCanvasMask.GetComponent<RectTransform>().offsetMin = new Vector2(0.0f, 1400.0f);
-            secondaryCanvas.transform.GetChild(0).GetComponent<RectTransform>().offsetMin = new Vector2(30.0f, 0.0f);
+    //    if (aspectRatio > 1.42f && aspectRatio < 1.44f)
+    //    {
+    //        scrollRect.sizeDelta = new Vector2(scrollRect.sizeDelta.x, height * 0.275f);
+    //        emptySpace.SetActive(false);
+    //        secondaryCanvas.GetComponent<CanvasScaler>().matchWidthOrHeight = 0.15f;
+    //        mainCanvasMask.GetComponent<RectTransform>().offsetMin = new Vector2(0.0f, 1400.0f);
+    //        secondaryCanvas.transform.GetChild(0).GetComponent<RectTransform>().offsetMin = new Vector2(30.0f, 0.0f);
 
-        }
+    //    }
 
-        if (aspectRatio > 1.7f && aspectRatio < 1.8f)
-        {
-            // HTC10 - 1.777778
-            // iPhone 8 - 1.778667
+    //    if (aspectRatio > 1.7f && aspectRatio < 1.8f)
+    //    {
+    //        // HTC10 - 1.777778
+    //        // iPhone 8 - 1.778667
 
-            scrollRect.sizeDelta = new Vector2(scrollRect.sizeDelta.x, height * 0.46f);
+    //        scrollRect.sizeDelta = new Vector2(scrollRect.sizeDelta.x, height * 0.46f);
 
-            if (aspectRatio > 1.778f && aspectRatio < 1.779f)
-            {
-                scrollRect.sizeDelta = new Vector2(scrollRect.sizeDelta.x, height * 0.72f);
-            }
+    //        if (aspectRatio > 1.778f && aspectRatio < 1.779f)
+    //        {
+    //            scrollRect.sizeDelta = new Vector2(scrollRect.sizeDelta.x, height * 0.72f);
+    //        }
 
             
-            emptyRect.sizeDelta = new Vector2(scrollRect.sizeDelta.x, 350.0f);
-        }
+    //        emptyRect.sizeDelta = new Vector2(scrollRect.sizeDelta.x, 350.0f);
+    //    }
 
-        if (aspectRatio > 2.0f && aspectRatio < 2.12f)
-        {
-            scrollRect.sizeDelta = new Vector2(scrollRect.sizeDelta.x, Screen.height * 0.44f);
-        }
+    //    if (aspectRatio > 2.0f && aspectRatio < 2.12f)
+    //    {
+    //        scrollRect.sizeDelta = new Vector2(scrollRect.sizeDelta.x, Screen.height * 0.44f);
+    //    }
 
-        if (aspectRatio > 2.14f && aspectRatio < 2.17f)
-        {
-            // iPhone 12
-            scrollRect.sizeDelta = new Vector2(scrollRect.sizeDelta.x, Screen.height * 0.52f);
-        }
+    //    if (aspectRatio > 2.14f && aspectRatio < 2.17f)
+    //    {
+    //        // iPhone 12
+    //        scrollRect.sizeDelta = new Vector2(scrollRect.sizeDelta.x, Screen.height * 0.52f);
+    //    }
 
 
-    }
-
-    public void OpenUrl()
-    {
-        //if (Application.platform == RuntimePlatform.IPhonePlayer)
-        //    UnityEngine.iOS.Device.RequestStoreReview();
-        if (Application.platform == RuntimePlatform.Android)
-            Application.OpenURL("market://details?id=" + Application.identifier);
-    }
+    //}
 }

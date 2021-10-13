@@ -29,7 +29,6 @@ public class OpenScene : MonoBehaviour
             OrigamiManager.instance.orgami[0].transform.GetChild(3).GetComponent<Renderer>().material.SetInt("Vector1_1866b2cf3a5d44f69aa3bc86840b54d5", 1);
             ChangeOrigamiTexture.ChangeLastOrigami();
             ChangeOrigamiColour.ChangeLastOrigami();
-            SceneManager.activeSceneChanged -= Open;
             Destroy(this);
         }
     }
@@ -37,5 +36,10 @@ public class OpenScene : MonoBehaviour
     public void SetSceneName(string name)
     {
         SceneName = name;
+    }
+
+    private void OnDestroy()
+    {
+        SceneManager.activeSceneChanged -= Open;
     }
 }

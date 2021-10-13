@@ -12,17 +12,28 @@ public class CreateDecisionMaker : MonoBehaviour
 
     public static int currentEntry;
 
+    private RectTransform content;
+    private VerticalLayoutGroup layout;
+    private Vector2 originalSize;
+
     // Start is called before the first frame update
     void Awake()
     {
         //DontDestroyOnLoad(this);
         //PlayerPrefs.DeleteAll();
-        RectTransform content = DecisionMakerTemplate.transform.parent.GetComponent<RectTransform>();
-        VerticalLayoutGroup layout = content.gameObject.GetComponent<VerticalLayoutGroup>();
+        content = DecisionMakerTemplate.transform.parent.GetComponent<RectTransform>();
+        layout = content.gameObject.GetComponent<VerticalLayoutGroup>();
+        DrawDecisionMakers();
+    }
+
+    public void DrawDecisionMakers()
+    {
         int actualIndex = 0;
+        originalSize = new Vector2(content.sizeDelta.x, content.sizeDelta.y);
+
         for (int i = 0; i < PlayerPrefs.GetFloat("numberOfSavedEntries"); i++)
         {
-            if(PlayerPrefs.GetInt("Deleted" + i.ToString()) == 1)
+            if (PlayerPrefs.GetInt("Deleted" + i.ToString()) == 1)
             {
                 continue;
             }
@@ -44,15 +55,15 @@ public class CreateDecisionMaker : MonoBehaviour
             origami.GetChild(2).gameObject.GetComponent<Image>().sprite = sprites[(int)PlayerPrefs.GetFloat("BottomLeftTexPrimary" + i.ToString())];
             origami.GetChild(3).gameObject.GetComponent<Image>().sprite = sprites[(int)PlayerPrefs.GetFloat("BottomRightTexPrimary" + i.ToString())];
 
-            content.sizeDelta = new Vector2(content.sizeDelta.x, content.sizeDelta.y  + newDecisionMaker.GetComponent<RectTransform>().sizeDelta.y + layout.spacing);
+            content.sizeDelta = new Vector2(content.sizeDelta.x, content.sizeDelta.y + newDecisionMaker.GetComponent<RectTransform>().sizeDelta.y + layout.spacing);
             newDecisionMaker.transform.GetChild(2).gameObject.GetComponent<Button>().interactable = true;
             newDecisionMaker.transform.GetChild(3).gameObject.GetComponent<Button>().interactable = true;
             newDecisionMaker.transform.GetChild(4).gameObject.GetComponent<Button>().interactable = true;
             int count = i;
             newDecisionMaker.GetComponent<Button>().onClick.AddListener(delegate { LoadEntry(count); });
-            for(int j = 0; j < newDecisionMaker.transform.childCount; j++)
+            for (int j = 0; j < newDecisionMaker.transform.childCount; j++)
             {
-                if(newDecisionMaker.transform.GetChild(j).GetComponent<Button>() != null)
+                if (newDecisionMaker.transform.GetChild(j).GetComponent<Button>() != null)
                 {
                     newDecisionMaker.transform.GetChild(j).GetComponent<Button>().onClick.AddListener(delegate { LoadEntry(count); });
                 }
@@ -68,12 +79,15 @@ public class CreateDecisionMaker : MonoBehaviour
         }
     }
 
+    //Clears Decision Maker scrollview and redraws.
     public void Remove(int index)
     {
-        RectTransform content = DecisionMakerTemplate.transform.parent.GetComponent<RectTransform>();
-        VerticalLayoutGroup layout = content.gameObject.GetComponent<VerticalLayoutGroup>();
-
-        content.sizeDelta = new Vector2(content.sizeDelta.x, content.sizeDelta.y - DecisionMakerTemplate.GetComponent<RectTransform>().sizeDelta.y - layout.spacing);
+        // Skip example decision maker
+        for (int i = 1; i < content.transform.childCount; i++)
+        {
+            Destroy(content.transform.GetChild(i).gameObject);
+        }
+        content.sizeDelta = originalSize;
         string temp = index.ToString();
 
         // Delete design data.
@@ -117,6 +131,7 @@ public class CreateDecisionMaker : MonoBehaviour
 
         PlayerPrefs.SetInt("Deleted" + temp, 1);
 
+        DrawDecisionMakers();
     }
 
     public void DestroyDecisionMaker(int index)
