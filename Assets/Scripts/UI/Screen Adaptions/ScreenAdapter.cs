@@ -29,7 +29,7 @@ using UnityEngine;
 
 public enum ScreenType
 {
-    OnePointSix, OnePointSevenSeven, OnePointThreeThree, OnePointFourThree, OnePointNineSeven, TwoPointZeroFive, TwoPointOneSix
+    OnePointSix, OnePointSevenSeven, OnePointThreeThree, OnePointFourThree, OnePointNineSeven, TwoPointZeroFive, TwoPointOneSix, TwoPointTwoTwo
 }
 
 public class ScreenAdapter : MonoBehaviour
@@ -80,6 +80,11 @@ public class ScreenAdapter : MonoBehaviour
             configuration = ScreenType.TwoPointOneSix;
         }
 
+        if (aspectRatio > 2.17f)
+        {
+            configuration = ScreenType.TwoPointTwoTwo;
+        }
+
         switch (configuration)
         {
             case ScreenType.OnePointSix:
@@ -102,6 +107,9 @@ public class ScreenAdapter : MonoBehaviour
                 break;
             case ScreenType.TwoPointOneSix:
                 TwoPointOneSix();
+                break;
+            case ScreenType.TwoPointTwoTwo:
+                TwoPointTwoTwo();
                 break;
         }
     }
@@ -135,6 +143,10 @@ public class ScreenAdapter : MonoBehaviour
     protected virtual void TwoPointOneSix()
     {
         // Samsung Galaxy S8, Google Pixel 3 XL
+    }
+    protected virtual void TwoPointTwoTwo()
+    {
+
     }
 
     public void OpenUrl()

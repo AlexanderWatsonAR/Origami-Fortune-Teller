@@ -163,6 +163,12 @@ public class Design : ScreenAdapter
         }
 
     }
-
-
+    protected override void TwoPointTwoTwo()
+    {
+        mainCameraTransform.position = new Vector3(mainCameraTransform.position.x, 0.8f, mainCameraTransform.position.z);
+        Preview.transform.position = new Vector3(Preview.transform.position.x, 1.2f, Preview.transform.position.z);
+        sidePanelLayout.enabled = false;
+        emptyRect.sizeDelta = new Vector2(emptyRect.sizeDelta.x, 875.0f);
+        sidePanelLayout.enabled = true;
+    }
 }

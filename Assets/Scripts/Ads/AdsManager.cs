@@ -10,7 +10,7 @@ public class AdsManager : MonoBehaviour, IUnityAdsInitializationListener
     [SerializeField] bool testMode = true;
     [SerializeField] bool enablePerPlacementMode = true;
     private string gameId;
-
+    private int interstitialAdCount;
 
     public static AdsManager instance;
     public InterstitialAd interAd;
@@ -18,7 +18,6 @@ public class AdsManager : MonoBehaviour, IUnityAdsInitializationListener
 
     void Awake()
     {
-        ///PlayerPrefs.SetInt("RemoveAdsPurchased", 0);
         if (instance == null)
         {
             instance = this;
@@ -27,6 +26,7 @@ public class AdsManager : MonoBehaviour, IUnityAdsInitializationListener
             int adCount = PlayerPrefs.GetInt("interstitialAdCount");
             adCount++;
             PlayerPrefs.SetInt("interstitialAdCount", adCount);
+            interstitialAdCount = adCount;
         }
         else
         {
@@ -51,6 +51,11 @@ public class AdsManager : MonoBehaviour, IUnityAdsInitializationListener
     {
         Debug.Log("Unity Ads initialization complete.");
         interAd.LoadAd();
+
+        if (interstitialAdCount % 10 == 0)
+        {
+            instance.interAd.ShowAd();
+        }
     }
 
     public void OnInitializationFailed(UnityAdsInitializationError error, string message)
@@ -68,8 +73,9 @@ public class AdsManager : MonoBehaviour, IUnityAdsInitializationListener
         int adCount = PlayerPrefs.GetInt("interstitialAdCount");
         adCount++;
         PlayerPrefs.SetInt("interstitialAdCount", adCount);
+        interstitialAdCount = adCount;
 
-        if (adCount % 10 == 0)
+        if (adCount % 6 == 0)
         {
             instance.interAd.LoadAd();
             instance.interAd.ShowAd();

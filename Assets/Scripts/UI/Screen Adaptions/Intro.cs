@@ -148,4 +148,14 @@ public class Intro : ScreenAdapter
         mainVerticalLayout.enabled = true;
     }
 
+    protected override void TwoPointTwoTwo()
+    {
+        Preview.transform.position = new Vector3(Preview.transform.position.x, 0.4f, Preview.transform.position.z);
+        mainVerticalLayout.enabled = false;
+        sidePanelLayout.enabled = false;
+        emptyRect.sizeDelta = new Vector2(emptyRect.sizeDelta.x, 875.0f);
+        scrollRect.sizeDelta = new Vector2(scrollRect.sizeDelta.x, 1500.0f);
+        sidePanelLayout.enabled = true;
+        mainVerticalLayout.enabled = true;
+    }
 }

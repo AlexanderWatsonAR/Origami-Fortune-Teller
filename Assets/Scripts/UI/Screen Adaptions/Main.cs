@@ -160,7 +160,6 @@ public class Main : ScreenAdapter
 
         sidePanelLayout.enabled = true;
     }
-
     protected override void TwoPointOneSix()
     {
         Preview.transform.position = new Vector3(Preview.transform.position.x, 1.25f, Preview.transform.position.z);
@@ -176,5 +175,16 @@ public class Main : ScreenAdapter
         {
             mainCameraTransform.position = new Vector3(mainCameraTransform.position.x, 0.85f, mainCameraTransform.position.z);
         }
+    }
+    protected override void TwoPointTwoTwo()
+    {
+        mainCameraTransform.position = new Vector3(mainCameraTransform.position.x, 0.8f, mainCameraTransform.position.z);
+        AnimationSpeedToggle.GetComponent<RectTransform>().anchoredPosition = new Vector2(AnimationSpeedToggle.GetComponent<RectTransform>().anchoredPosition.x, -915f);
+        ColourButtons.transform.localPosition = new Vector3(ColourButtons.transform.localPosition.x, 60.0f, ColourButtons.transform.localPosition.z);
+        numberButtons.transform.position = new Vector3(numberButtons.transform.position.x, 1.38f, numberButtons.transform.position.z);
+        Preview.transform.position = new Vector3(Preview.transform.position.x, 1.2f, Preview.transform.position.z);
+        sidePanelLayout.enabled = false;
+        emptyRect.sizeDelta = new Vector2(emptyRect.sizeDelta.x, 875.0f);
+        sidePanelLayout.enabled = true;
     }
 }

@@ -1,0 +1,1917 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.18f1 (a7d1c678663c) revision 10998214'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19042.1288; Version 2009; 64bit' Language: 'en' Physical Memory: 16303 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.18f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/UnityProjects/OrigamiFortuneTeller/Origami-Fortune-Teller
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+65215
+Successfully changed project path to: D:/UnityProjects/OrigamiFortuneTeller/Origami-Fortune-Teller
+D:/UnityProjects/OrigamiFortuneTeller/Origami-Fortune-Teller
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 846.62 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.18f1 (a7d1c678663c)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/UnityProjects/OrigamiFortuneTeller/Origami-Fortune-Teller/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 860M (ID=0x1392)
+    Vendor:   
+    VRAM:     2010 MB
+    Driver:   27.21.14.6677
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56844
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.005156 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 146.90 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in 11.625 seconds
+Domain Reload Profiling:
+	ReloadAssembly (11625ms)
+		BeginReloadAssembly (204ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (821ms)
+			LoadAssemblies (192ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (258ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (367ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (147ms)
+				BeforeProcessingInitializeOnLoad (26ms)
+				ProcessInitializeOnLoadAttributes (138ms)
+				ProcessInitializeOnLoadMethodAttributes (49ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.013312 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of UnityEngine.Advertisements.Editor.PostProcessBuildPlist:PlistContainsAdNetworkId due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+Error: Could not load signature of UnityEditor.Purchasing.AppleCapabilities:AddInAppPurchasingCapability due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+Unloading broken assembly Library/ScriptAssemblies/UnityEngine.Advertisements.Editor.dll, this assembly can cause crashes in the runtime
+Unloading broken assembly Library/ScriptAssemblies/UnityEditor.Purchasing.dll, this assembly can cause crashes in the runtime
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 138.51 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.449 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2451ms)
+		BeginReloadAssembly (287ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (2054ms)
+			LoadAssemblies (217ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (568ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (118ms)
+			SetupLoadedEditorAssemblies (969ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (139ms)
+				BeforeProcessingInitializeOnLoad (210ms)
+				ProcessInitializeOnLoadAttributes (578ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
+				AfterProcessingInitializeOnLoad (18ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 1.46 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4134 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 173.1 MB.
+System memory in use after: 173.3 MB.
+
+Unloading 59 unused Assets to reduce memory usage. Loaded Objects now: 4580.
+Total: 6.902500 ms (FindLiveObjects: 0.639400 ms CreateObjectMapping: 0.448000 ms MarkObjects: 5.686100 ms  DeleteObjects: 0.127700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Scripts/Ads/AdsManager.cs
+  artifactKey: Guid(18e9f6f95a130bb4392f43953b8163a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Ads/AdsManager.cs using Guid(18e9f6f95a130bb4392f43953b8163a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '237784727d469a321f9d0c382da82591') in 0.066516 seconds 
+  Import took 0.076289 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000349 seconds.
+  path: Assets/Scripts/Ads/BannerAd.cs
+  artifactKey: Guid(f4c7ad35aa45dc740b9fcb55fd392045) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Ads/BannerAd.cs using Guid(f4c7ad35aa45dc740b9fcb55fd392045) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfa05a7af483c4e5f6ffc37a3fceb8b0') in 0.009411 seconds 
+  Import took 0.018482 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012221 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of UnityEngine.Advertisements.Editor.PostProcessBuildPlist:PlistContainsAdNetworkId due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+Error: Could not load signature of UnityEditor.Purchasing.AppleCapabilities:AddInAppPurchasingCapability due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+Unloading broken assembly Library/ScriptAssemblies/UnityEngine.Advertisements.Editor.dll, this assembly can cause crashes in the runtime
+Unloading broken assembly Library/ScriptAssemblies/UnityEditor.Purchasing.dll, this assembly can cause crashes in the runtime
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.32 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.684 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1684ms)
+		BeginReloadAssembly (157ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (51ms)
+		EndReloadAssembly (1443ms)
+			LoadAssemblies (154ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (423ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (92ms)
+			SetupLoadedEditorAssemblies (559ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (163ms)
+				ProcessInitializeOnLoadAttributes (356ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
+				AfterProcessingInitializeOnLoad (16ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (44ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.47 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3964 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 160.6 MB.
+System memory in use after: 160.8 MB.
+
+Unloading 54 unused Assets to reduce memory usage. Loaded Objects now: 4582.
+Total: 5.634100 ms (FindLiveObjects: 0.540400 ms CreateObjectMapping: 0.224500 ms MarkObjects: 4.819900 ms  DeleteObjects: 0.048000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011632 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of UnityEngine.Advertisements.Editor.PostProcessBuildPlist:PlistContainsAdNetworkId due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+Error: Could not load signature of UnityEditor.Purchasing.AppleCapabilities:AddInAppPurchasingCapability due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+Unloading broken assembly Library/ScriptAssemblies/UnityEngine.Advertisements.Editor.dll, this assembly can cause crashes in the runtime
+Unloading broken assembly Library/ScriptAssemblies/UnityEditor.Purchasing.dll, this assembly can cause crashes in the runtime
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.43 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.886 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1886ms)
+		BeginReloadAssembly (173ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (59ms)
+		EndReloadAssembly (1611ms)
+			LoadAssemblies (161ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (488ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (104ms)
+			SetupLoadedEditorAssemblies (613ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (174ms)
+				ProcessInitializeOnLoadAttributes (396ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (15ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (47ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.35 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3964 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 160.6 MB.
+System memory in use after: 160.9 MB.
+
+Unloading 54 unused Assets to reduce memory usage. Loaded Objects now: 4584.
+Total: 5.038600 ms (FindLiveObjects: 0.402700 ms CreateObjectMapping: 0.203700 ms MarkObjects: 4.393700 ms  DeleteObjects: 0.037400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010150 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of UnityEngine.Advertisements.Editor.PostProcessBuildPlist:PlistContainsAdNetworkId due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+Error: Could not load signature of UnityEditor.Purchasing.AppleCapabilities:AddInAppPurchasingCapability due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+Unloading broken assembly Library/ScriptAssemblies/UnityEngine.Advertisements.Editor.dll, this assembly can cause crashes in the runtime
+Unloading broken assembly Library/ScriptAssemblies/UnityEditor.Purchasing.dll, this assembly can cause crashes in the runtime
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.39 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.681 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1682ms)
+		BeginReloadAssembly (156ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (52ms)
+		EndReloadAssembly (1442ms)
+			LoadAssemblies (153ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (423ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (100ms)
+			SetupLoadedEditorAssemblies (533ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (162ms)
+				ProcessInitializeOnLoadAttributes (334ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (41ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.34 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3964 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 160.7 MB.
+System memory in use after: 160.9 MB.
+
+Unloading 54 unused Assets to reduce memory usage. Loaded Objects now: 4586.
+Total: 6.307200 ms (FindLiveObjects: 0.568100 ms CreateObjectMapping: 0.444000 ms MarkObjects: 5.253900 ms  DeleteObjects: 0.040000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.014132 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of UnityEngine.Advertisements.Editor.PostProcessBuildPlist:PlistContainsAdNetworkId due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+Error: Could not load signature of UnityEditor.Purchasing.AppleCapabilities:AddInAppPurchasingCapability due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+Unloading broken assembly Library/ScriptAssemblies/UnityEngine.Advertisements.Editor.dll, this assembly can cause crashes in the runtime
+Unloading broken assembly Library/ScriptAssemblies/UnityEditor.Purchasing.dll, this assembly can cause crashes in the runtime
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.35 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.705 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1705ms)
+		BeginReloadAssembly (164ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (53ms)
+		EndReloadAssembly (1453ms)
+			LoadAssemblies (148ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (422ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (93ms)
+			SetupLoadedEditorAssemblies (541ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (167ms)
+				ProcessInitializeOnLoadAttributes (337ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (40ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.45 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3964 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 160.7 MB.
+System memory in use after: 160.9 MB.
+
+Unloading 54 unused Assets to reduce memory usage. Loaded Objects now: 4588.
+Total: 6.408800 ms (FindLiveObjects: 0.558900 ms CreateObjectMapping: 0.480000 ms MarkObjects: 5.314100 ms  DeleteObjects: 0.054100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009873 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of UnityEngine.Advertisements.Editor.PostProcessBuildPlist:PlistContainsAdNetworkId due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+Error: Could not load signature of UnityEditor.Purchasing.AppleCapabilities:AddInAppPurchasingCapability due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+Unloading broken assembly Library/ScriptAssemblies/UnityEngine.Advertisements.Editor.dll, this assembly can cause crashes in the runtime
+Unloading broken assembly Library/ScriptAssemblies/UnityEditor.Purchasing.dll, this assembly can cause crashes in the runtime
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.35 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.753 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1753ms)
+		BeginReloadAssembly (167ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (53ms)
+		EndReloadAssembly (1504ms)
+			LoadAssemblies (152ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (440ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (90ms)
+			SetupLoadedEditorAssemblies (552ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (168ms)
+				ProcessInitializeOnLoadAttributes (347ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (41ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.33 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3964 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 160.7 MB.
+System memory in use after: 161.0 MB.
+
+Unloading 54 unused Assets to reduce memory usage. Loaded Objects now: 4590.
+Total: 4.827200 ms (FindLiveObjects: 0.387900 ms CreateObjectMapping: 0.221300 ms MarkObjects: 4.177200 ms  DeleteObjects: 0.039500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010980 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of UnityEngine.Advertisements.Editor.PostProcessBuildPlist:PlistContainsAdNetworkId due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+Error: Could not load signature of UnityEditor.Purchasing.AppleCapabilities:AddInAppPurchasingCapability due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+Unloading broken assembly Library/ScriptAssemblies/UnityEngine.Advertisements.Editor.dll, this assembly can cause crashes in the runtime
+Unloading broken assembly Library/ScriptAssemblies/UnityEditor.Purchasing.dll, this assembly can cause crashes in the runtime
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.34 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.829 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1830ms)
+		BeginReloadAssembly (167ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (57ms)
+		EndReloadAssembly (1569ms)
+			LoadAssemblies (155ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (467ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (93ms)
+			SetupLoadedEditorAssemblies (577ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (179ms)
+				ProcessInitializeOnLoadAttributes (360ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (41ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.49 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3964 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 160.7 MB.
+System memory in use after: 161.0 MB.
+
+Unloading 54 unused Assets to reduce memory usage. Loaded Objects now: 4592.
+Total: 5.428900 ms (FindLiveObjects: 0.502500 ms CreateObjectMapping: 0.435700 ms MarkObjects: 4.450700 ms  DeleteObjects: 0.038700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012222 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of UnityEngine.Advertisements.Editor.PostProcessBuildPlist:PlistContainsAdNetworkId due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+Error: Could not load signature of UnityEditor.Purchasing.AppleCapabilities:AddInAppPurchasingCapability due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+Unloading broken assembly Library/ScriptAssemblies/UnityEngine.Advertisements.Editor.dll, this assembly can cause crashes in the runtime
+Unloading broken assembly Library/ScriptAssemblies/UnityEditor.Purchasing.dll, this assembly can cause crashes in the runtime
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.56 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.794 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1795ms)
+		BeginReloadAssembly (161ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (50ms)
+		EndReloadAssembly (1550ms)
+			LoadAssemblies (155ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (447ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (91ms)
+			SetupLoadedEditorAssemblies (558ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (169ms)
+				ProcessInitializeOnLoadAttributes (352ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (44ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.44 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3964 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 160.8 MB.
+System memory in use after: 161.0 MB.
+
+Unloading 54 unused Assets to reduce memory usage. Loaded Objects now: 4594.
+Total: 5.380600 ms (FindLiveObjects: 0.533600 ms CreateObjectMapping: 0.446100 ms MarkObjects: 4.356300 ms  DeleteObjects: 0.043200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009855 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of UnityEngine.Advertisements.Editor.PostProcessBuildPlist:PlistContainsAdNetworkId due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+Error: Could not load signature of UnityEditor.Purchasing.AppleCapabilities:AddInAppPurchasingCapability due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+Unloading broken assembly Library/ScriptAssemblies/UnityEngine.Advertisements.Editor.dll, this assembly can cause crashes in the runtime
+Unloading broken assembly Library/ScriptAssemblies/UnityEditor.Purchasing.dll, this assembly can cause crashes in the runtime
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.27 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.812 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1812ms)
+		BeginReloadAssembly (184ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (56ms)
+		EndReloadAssembly (1526ms)
+			LoadAssemblies (175ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (428ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (88ms)
+			SetupLoadedEditorAssemblies (538ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (168ms)
+				ProcessInitializeOnLoadAttributes (334ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (40ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.32 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3964 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 160.8 MB.
+System memory in use after: 161.0 MB.
+
+Unloading 54 unused Assets to reduce memory usage. Loaded Objects now: 4596.
+Total: 5.067300 ms (FindLiveObjects: 0.369700 ms CreateObjectMapping: 0.195300 ms MarkObjects: 4.459600 ms  DeleteObjects: 0.040900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010245 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of UnityEngine.Advertisements.Editor.PostProcessBuildPlist:PlistContainsAdNetworkId due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+Error: Could not load signature of UnityEditor.Purchasing.AppleCapabilities:AddInAppPurchasingCapability due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+Unloading broken assembly Library/ScriptAssemblies/UnityEngine.Advertisements.Editor.dll, this assembly can cause crashes in the runtime
+Unloading broken assembly Library/ScriptAssemblies/UnityEditor.Purchasing.dll, this assembly can cause crashes in the runtime
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.34 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.745 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1745ms)
+		BeginReloadAssembly (154ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (51ms)
+		EndReloadAssembly (1505ms)
+			LoadAssemblies (150ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (418ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (87ms)
+			SetupLoadedEditorAssemblies (529ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (164ms)
+				ProcessInitializeOnLoadAttributes (329ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (40ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.39 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3964 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 160.8 MB.
+System memory in use after: 161.0 MB.
+
+Unloading 54 unused Assets to reduce memory usage. Loaded Objects now: 4598.
+Total: 6.222100 ms (FindLiveObjects: 0.502900 ms CreateObjectMapping: 0.442000 ms MarkObjects: 5.228400 ms  DeleteObjects: 0.047000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009806 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of UnityEngine.Advertisements.Editor.PostProcessBuildPlist:PlistContainsAdNetworkId due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+Error: Could not load signature of UnityEditor.Purchasing.AppleCapabilities:AddInAppPurchasingCapability due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+Unloading broken assembly Library/ScriptAssemblies/UnityEngine.Advertisements.Editor.dll, this assembly can cause crashes in the runtime
+Unloading broken assembly Library/ScriptAssemblies/UnityEditor.Purchasing.dll, this assembly can cause crashes in the runtime
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.41 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.796 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1797ms)
+		BeginReloadAssembly (158ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (51ms)
+		EndReloadAssembly (1556ms)
+			LoadAssemblies (150ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (430ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (91ms)
+			SetupLoadedEditorAssemblies (547ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (177ms)
+				ProcessInitializeOnLoadAttributes (334ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (39ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.33 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3964 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 160.8 MB.
+System memory in use after: 161.0 MB.
+
+Unloading 54 unused Assets to reduce memory usage. Loaded Objects now: 4600.
+Total: 6.008000 ms (FindLiveObjects: 0.584200 ms CreateObjectMapping: 0.253500 ms MarkObjects: 5.110900 ms  DeleteObjects: 0.058400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009801 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of UnityEngine.Advertisements.Editor.PostProcessBuildPlist:PlistContainsAdNetworkId due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+Error: Could not load signature of UnityEditor.Purchasing.AppleCapabilities:AddInAppPurchasingCapability due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+Unloading broken assembly Library/ScriptAssemblies/UnityEngine.Advertisements.Editor.dll, this assembly can cause crashes in the runtime
+Unloading broken assembly Library/ScriptAssemblies/UnityEditor.Purchasing.dll, this assembly can cause crashes in the runtime
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.29 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.006 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2007ms)
+		BeginReloadAssembly (156ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (52ms)
+		EndReloadAssembly (1751ms)
+			LoadAssemblies (157ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (471ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (91ms)
+			SetupLoadedEditorAssemblies (652ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (180ms)
+				ProcessInitializeOnLoadAttributes (429ms)
+				ProcessInitializeOnLoadMethodAttributes (19ms)
+				AfterProcessingInitializeOnLoad (15ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (47ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 2.55 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3964 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 160.8 MB.
+System memory in use after: 161.0 MB.
+
+Unloading 54 unused Assets to reduce memory usage. Loaded Objects now: 4602.
+Total: 5.247500 ms (FindLiveObjects: 0.425600 ms CreateObjectMapping: 0.224400 ms MarkObjects: 4.553700 ms  DeleteObjects: 0.042200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013454 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of UnityEngine.Advertisements.Editor.PostProcessBuildPlist:PlistContainsAdNetworkId due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+Error: Could not load signature of UnityEditor.Purchasing.AppleCapabilities:AddInAppPurchasingCapability due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+Unloading broken assembly Library/ScriptAssemblies/UnityEngine.Advertisements.Editor.dll, this assembly can cause crashes in the runtime
+Unloading broken assembly Library/ScriptAssemblies/UnityEditor.Purchasing.dll, this assembly can cause crashes in the runtime
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.69 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.330 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2330ms)
+		BeginReloadAssembly (198ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (60ms)
+		EndReloadAssembly (2021ms)
+			LoadAssemblies (195ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (534ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (115ms)
+			SetupLoadedEditorAssemblies (689ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (213ms)
+				ProcessInitializeOnLoadAttributes (429ms)
+				ProcessInitializeOnLoadMethodAttributes (19ms)
+				AfterProcessingInitializeOnLoad (17ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (52ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.56 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3964 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 160.8 MB.
+System memory in use after: 161.1 MB.
+
+Unloading 54 unused Assets to reduce memory usage. Loaded Objects now: 4604.
+Total: 10.574300 ms (FindLiveObjects: 0.605400 ms CreateObjectMapping: 0.486900 ms MarkObjects: 9.372500 ms  DeleteObjects: 0.106800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010683 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of UnityEngine.Advertisements.Editor.PostProcessBuildPlist:PlistContainsAdNetworkId due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+Error: Could not load signature of UnityEditor.Purchasing.AppleCapabilities:AddInAppPurchasingCapability due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+Unloading broken assembly Library/ScriptAssemblies/UnityEngine.Advertisements.Editor.dll, this assembly can cause crashes in the runtime
+Unloading broken assembly Library/ScriptAssemblies/UnityEditor.Purchasing.dll, this assembly can cause crashes in the runtime
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.52 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.307 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2307ms)
+		BeginReloadAssembly (191ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (59ms)
+		EndReloadAssembly (2008ms)
+			LoadAssemblies (197ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (542ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (112ms)
+			SetupLoadedEditorAssemblies (683ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (212ms)
+				ProcessInitializeOnLoadAttributes (425ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (16ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (52ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.53 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3964 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 160.8 MB.
+System memory in use after: 161.1 MB.
+
+Unloading 54 unused Assets to reduce memory usage. Loaded Objects now: 4606.
+Total: 6.662500 ms (FindLiveObjects: 0.575100 ms CreateObjectMapping: 0.255900 ms MarkObjects: 5.783700 ms  DeleteObjects: 0.046300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 3952.717910 seconds.
+  path: Assets/UI/Ads.png
+  artifactKey: Guid(71299806f53e0d14ca0ce43c580eab91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Ads.png using Guid(71299806f53e0d14ca0ce43c580eab91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee409446dd3c2339f802fc835e4528ad') in 0.130977 seconds 
+  Import took 0.141374 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/UI/Circles 1 ui.png
+  artifactKey: Guid(329d3d95512d77a419e0f7cd4900d1d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Circles 1 ui.png using Guid(329d3d95512d77a419e0f7cd4900d1d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '556cd0d6526e3426dad74d797da9b53b') in 0.025643 seconds 
+  Import took 0.033642 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/UI/Cheetah ui.png
+  artifactKey: Guid(48a823727d47a8546ab209e476efc5b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Cheetah ui.png using Guid(48a823727d47a8546ab209e476efc5b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2aa7013ff04f63e80fcc2aee0c823d84') in 0.109157 seconds 
+  Import took 0.116998 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/UI/ArrowFilled.png
+  artifactKey: Guid(a3ebf9aba549eaf49b67054c50213b95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/ArrowFilled.png using Guid(a3ebf9aba549eaf49b67054c50213b95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e715109cadbadd12e6bf94457bd062e') in 0.048889 seconds 
+  Import took 0.055988 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/UI/Home Button.png
+  artifactKey: Guid(84ea5e0521020df4182c2a619b025aa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Home Button.png using Guid(84ea5e0521020df4182c2a619b025aa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74f0823667196446914daccef4552271') in 0.053617 seconds 
+  Import took 0.061002 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000324 seconds.
+  path: Assets/UI/Lock.png
+  artifactKey: Guid(7a28166eeb372c849be1aff2f8caeeeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Lock.png using Guid(7a28166eeb372c849be1aff2f8caeeeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cf7c8b2dddbc52e7b00acfc344029fe') in 0.023382 seconds 
+  Import took 0.031305 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000315 seconds.
+  path: Assets/UI/cactus ui.png
+  artifactKey: Guid(e5a6521b04e984d4f91bc7e16bfe894b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/cactus ui.png using Guid(e5a6521b04e984d4f91bc7e16bfe894b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71a67849c2d9ba63f8786ea717f25690') in 0.024395 seconds 
+  Import took 0.032154 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/UI/PalletteRainbow.png
+  artifactKey: Guid(e737421136e0425429bcdd4deaf473bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/PalletteRainbow.png using Guid(e737421136e0425429bcdd4deaf473bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c376b652f69abb0854b7cd39a59a71ae') in 0.040207 seconds 
+  Import took 0.047964 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/UI/Banner.png
+  artifactKey: Guid(204353173d983ee48b9b5037ab5a699a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Banner.png using Guid(204353173d983ee48b9b5037ab5a699a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42246b895bad758853bbf7a5af4e83b9') in 0.129266 seconds 
+  Import took 0.137599 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/UI/Diamond ui.png
+  artifactKey: Guid(4b0add49275102240a0a038cf6ecfdb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Diamond ui.png using Guid(4b0add49275102240a0a038cf6ecfdb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca74757426c25b619d00a4c97bbda9e1') in 0.025875 seconds 
+  Import took 0.034557 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000326 seconds.
+  path: Assets/UI/pattern repeating flat.png
+  artifactKey: Guid(b5e955b7bcb14c1459baf455d18370de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/pattern repeating flat.png using Guid(b5e955b7bcb14c1459baf455d18370de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3445b67306a50feb617348878701376c') in 0.027683 seconds 
+  Import took 0.036754 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/UI/border 1.png
+  artifactKey: Guid(cc0eb78610bcaa944a28ed567f40284a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/border 1.png using Guid(cc0eb78610bcaa944a28ed567f40284a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bac0ed79a2ef426c5b027fd34857aa99') in 0.036597 seconds 
+  Import took 0.045154 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/UI/Heart ui.png
+  artifactKey: Guid(a4b0ae40d640b6e40a33fb7aad27cc45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Heart ui.png using Guid(a4b0ae40d640b6e40a33fb7aad27cc45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c09b5418ce9e3d11a957d3c1899dfb4') in 0.026950 seconds 
+  Import took 0.035538 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/UI/background ui.png
+  artifactKey: Guid(d2c990b66ee57304c80742da698f273e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/background ui.png using Guid(d2c990b66ee57304c80742da698f273e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0cdac0f6c51854c83252c56006e2519') in 0.023383 seconds 
+  Import took 0.031691 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/UI/Triangle ui.png
+  artifactKey: Guid(91b9524207b9e844eb8ae9a8a1ba4358) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Triangle ui.png using Guid(91b9524207b9e844eb8ae9a8a1ba4358) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c58c4c44be00d9ab1f163d39c46b2f8') in 0.030881 seconds 
+  Import took 0.039910 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/UI/background with border ui.png
+  artifactKey: Guid(98ede7f879e908d45baed9fdd57f7e1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/background with border ui.png using Guid(98ede7f879e908d45baed9fdd57f7e1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f996e69fd953fa41ceccc42f7781314') in 0.026896 seconds 
+  Import took 0.036580 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/UI/qbertish ui.png
+  artifactKey: Guid(cb80512e74a96ab438223893c50c1236) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/qbertish ui.png using Guid(cb80512e74a96ab438223893c50c1236) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8116b27d32ff5934ec6d109cdccd1fb9') in 0.029361 seconds 
+  Import took 0.038494 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/UI/Triangle_1.png
+  artifactKey: Guid(c781e33d8efd0064daae85dab2b39fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Triangle_1.png using Guid(c781e33d8efd0064daae85dab2b39fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8471c5de97a8be7c75556ba70022fbd9') in 0.038411 seconds 
+  Import took 0.062932 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/UI/Arrow.png
+  artifactKey: Guid(96be67436da43774798db3d7c1588cbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Arrow.png using Guid(96be67436da43774798db3d7c1588cbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a575bd71047cbf41ebbc7e2103b452fb') in 0.052374 seconds 
+  Import took 0.060663 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/UI/Speaker.png
+  artifactKey: Guid(ca410abebd5bb0f4d9e5e9ee21267cee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Speaker.png using Guid(ca410abebd5bb0f4d9e5e9ee21267cee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fde8029299d5335f87175c730b5b7b68') in 0.026558 seconds 
+  Import took 0.047447 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/UI/Star ui.png
+  artifactKey: Guid(1891fc31b39b8324baa75209b298f403) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Star ui.png using Guid(1891fc31b39b8324baa75209b298f403) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47c8dc69525931f8d0dc23841269b078') in 0.026464 seconds 
+  Import took 0.034556 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/UI/SharpeBorder.png
+  artifactKey: Guid(47c4a67f4a44928408be95a869779667) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/SharpeBorder.png using Guid(47c4a67f4a44928408be95a869779667) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd7b0e85140112957fb8440878375ac3') in 0.021086 seconds 
+  Import took 0.030441 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/UI/Home Button Black.png
+  artifactKey: Guid(08c22c45dd5673d4aa7e9e78846e376d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Home Button Black.png using Guid(08c22c45dd5673d4aa7e9e78846e376d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cadce7d43e06726c3cffcd2f09e27c6') in 0.041962 seconds 
+  Import took 0.050742 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/UI/Cash Register.png
+  artifactKey: Guid(38d885ff276bcf240bca90de36f6b6ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Cash Register.png using Guid(38d885ff276bcf240bca90de36f6b6ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a0235e3257258d58242a06bee34be44') in 0.027326 seconds 
+  Import took 0.036194 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/UI/blank ui.png
+  artifactKey: Guid(3ea297d9123177845ab68505e6459510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/blank ui.png using Guid(3ea297d9123177845ab68505e6459510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dc95dbf0a81f970f590b9adf5f37709') in 0.047278 seconds 
+  Import took 0.056216 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/UI/brickwall cutout ui.png
+  artifactKey: Guid(0641ee671c114a642845825643a72707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/brickwall cutout ui.png using Guid(0641ee671c114a642845825643a72707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efbfd4c77c5bfe8c9be1fda904291c18') in 0.027949 seconds 
+  Import took 0.036636 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000321 seconds.
+  path: Assets/UI/Banner770x230.png
+  artifactKey: Guid(3b9e1efdb0e489248b27b53240be124c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Banner770x230.png using Guid(3b9e1efdb0e489248b27b53240be124c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74d2e32db1ea14850d38d88cb1313b2e') in 0.109443 seconds 
+  Import took 0.117569 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/UI/CircleOutlineOne.png
+  artifactKey: Guid(3dc4c89c1dd88524197c876eda3da540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/CircleOutlineOne.png using Guid(3dc4c89c1dd88524197c876eda3da540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fed0dd24ef5e4797f519cc2492618c5a') in 0.021055 seconds 
+  Import took 0.029935 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/UI/Stopwatch.png
+  artifactKey: Guid(1d784734fbe61174ab4999be1eb001bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Stopwatch.png using Guid(1d784734fbe61174ab4999be1eb001bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac4fabaa8d03da887cb645dd5a468a0e') in 0.052450 seconds 
+  Import took 0.060704 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/UI/Heart 2 ui.png
+  artifactKey: Guid(35d0c6ad18b31e94a8c886931ffc0429) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Heart 2 ui.png using Guid(35d0c6ad18b31e94a8c886931ffc0429) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1789259d5ce08f1bd0d12d749b84adb4') in 0.026336 seconds 
+  Import took 0.034397 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/UI/Circle.png
+  artifactKey: Guid(87acf133371a05a4393026d798bc44f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Circle.png using Guid(87acf133371a05a4393026d798bc44f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65632450a3be9698b03752bac5cfaf55') in 0.021600 seconds 
+  Import took 0.040750 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/UI/Stopwatch1.png
+  artifactKey: Guid(b92df42b885a43849b779717b4d0f7a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Stopwatch1.png using Guid(b92df42b885a43849b779717b4d0f7a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b1835dc889abbd2d62823061dc9fabb') in 0.040033 seconds 
+  Import took 0.049485 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/UI/pattern repeating flat bevel.png
+  artifactKey: Guid(040c2cdfcb84d38448a26d30c3e75ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/pattern repeating flat bevel.png using Guid(040c2cdfcb84d38448a26d30c3e75ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04a4e8724c8d83a8ab71c46e27e2aff5') in 0.026675 seconds 
+  Import took 0.035461 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000346 seconds.
+  path: Assets/UI/grid ui.png
+  artifactKey: Guid(fd183b242d437454fa7681af7af90298) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/grid ui.png using Guid(fd183b242d437454fa7681af7af90298) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '753dba3671d5e1333f06ff2669493af1') in 0.026576 seconds 
+  Import took 0.046021 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/UI/Cross.png
+  artifactKey: Guid(4d6d7ca7c2563a04e8fe331722844e7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Cross.png using Guid(4d6d7ca7c2563a04e8fe331722844e7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f39e5528005154e15984fab0637263f3') in 0.024910 seconds 
+  Import took 0.040137 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/UI/Home Button 1.png
+  artifactKey: Guid(3cb297c478d3e26428757301b76b31ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Home Button 1.png using Guid(3cb297c478d3e26428757301b76b31ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd15d5b7e0712ebb45597c11954e35cc') in 0.041795 seconds 
+  Import took 0.051647 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/UI/CrescentMoon ui.png
+  artifactKey: Guid(df1977feb346f72478444fdf78c12bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/CrescentMoon ui.png using Guid(df1977feb346f72478444fdf78c12bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abda91e21cda439ef78602c51cba5b55') in 0.026562 seconds 
+  Import took 0.034783 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/UI/Speaker Mute.png
+  artifactKey: Guid(d65a48ed4009a60479c3671f93d009a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Speaker Mute.png using Guid(d65a48ed4009a60479c3671f93d009a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c05f9c9e138f225c21db52b8ebf19bb5') in 0.028062 seconds 
+  Import took 0.036236 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000285 seconds.
+  path: Assets/UI/lips ui.png
+  artifactKey: Guid(fefe4562a024c1346b793d9c7c9a71b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/lips ui.png using Guid(fefe4562a024c1346b793d9c7c9a71b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5d8ddba98515cbb7b6bc9777521ac1a') in 0.027403 seconds 
+  Import took 0.036175 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/UI/Paw ui.png
+  artifactKey: Guid(fe72f6d5ff914524bbd96bc7204c6304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Paw ui.png using Guid(fe72f6d5ff914524bbd96bc7204c6304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87cd5d56bc6453b45417c73026942cbe') in 0.027512 seconds 
+  Import took 0.036105 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000299 seconds.
+  path: Assets/UI/Mail.png
+  artifactKey: Guid(4694e6d2874956e409f9d2a8f5f11ac5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Mail.png using Guid(4694e6d2874956e409f9d2a8f5f11ac5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3af6aa8c3b197baa140f393f4546988a') in 0.026969 seconds 
+  Import took 0.037089 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/UI/Star Icon.png
+  artifactKey: Guid(f447ee66c0fe4864cb5bffe4b29c9373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Star Icon.png using Guid(f447ee66c0fe4864cb5bffe4b29c9373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0237b34c0f54efe5ed692db59305758f') in 0.025810 seconds 
+  Import took 0.034463 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/UI/CircularPlus ui.png
+  artifactKey: Guid(04563042a04b099459440ca625f39f88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/CircularPlus ui.png using Guid(04563042a04b099459440ca625f39f88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '201239157454f301fbf12127e37998dc') in 0.030910 seconds 
+  Import took 0.040028 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/UI/Fish ui.png
+  artifactKey: Guid(2ff096cd08afe9f468e95c82a2412452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Fish ui.png using Guid(2ff096cd08afe9f468e95c82a2412452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dcadecc15df68cd5f670208d4a2f668') in 0.026593 seconds 
+  Import took 0.035144 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/UI/Pallette.png
+  artifactKey: Guid(812f4babaa070674287518aeaf42ade8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Pallette.png using Guid(812f4babaa070674287518aeaf42ade8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ac070ccf1a9feec65cf4e9fb63a8a27') in 0.042604 seconds 
+  Import took 0.083652 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/UI/Polka Dot ui.png
+  artifactKey: Guid(86d34b73ecb4afd49be9970aa57c7101) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Polka Dot ui.png using Guid(86d34b73ecb4afd49be9970aa57c7101) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '152009b119d39efca33a6f21ca509325') in 0.026624 seconds 
+  Import took 0.054594 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/UI/Circles ui.png
+  artifactKey: Guid(c692cf0dc0bca0b43861cf7ee1ebd000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Circles ui.png using Guid(c692cf0dc0bca0b43861cf7ee1ebd000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37fc78be5b990830b96af42c651a355a') in 0.028012 seconds 
+  Import took 0.042550 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/UI/Settings.png
+  artifactKey: Guid(c8ed4b678136a9f45b3fbea0090b62b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Settings.png using Guid(c8ed4b678136a9f45b3fbea0090b62b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13884e017388439afd9e0edb6ada6e5a') in 0.041989 seconds 
+  Import took 0.060316 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/UI/Refresh.png
+  artifactKey: Guid(e1dd40e72f6d70b44b173073aeabaf7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Refresh.png using Guid(e1dd40e72f6d70b44b173073aeabaf7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce764c9a6cc2a2ff4eae6fb438c9b68b') in 0.026633 seconds 
+  Import took 0.034809 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/UI/border.png
+  artifactKey: Guid(4f3776da1437e9c44a64ed3daaf19416) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/border.png using Guid(4f3776da1437e9c44a64ed3daaf19416) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d27bac057e2857c57c9ac9e783fbde5') in 0.039134 seconds 
+  Import took 0.047975 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/UI/Checkerboard ui.png
+  artifactKey: Guid(b33376edcf4336a4e8380187d7f6d64b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Checkerboard ui.png using Guid(b33376edcf4336a4e8380187d7f6d64b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e2771a3595c68b89a252ccb9662fffa') in 0.029641 seconds 
+  Import took 0.039017 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.000912 seconds.
+  path: Assets/UI/background with border ui.png
+  artifactKey: Guid(98ede7f879e908d45baed9fdd57f7e1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/background with border ui.png using Guid(98ede7f879e908d45baed9fdd57f7e1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9aa02f89a6ccaff1295cc604042a56be') in 0.019987 seconds 
+  Import took 0.028626 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.081373 seconds.
+  path: Assets/UI/background with border ui.png
+  artifactKey: Guid(98ede7f879e908d45baed9fdd57f7e1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/background with border ui.png using Guid(98ede7f879e908d45baed9fdd57f7e1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '481bb2709221b44fc22a6bad833d82c8') in 0.023116 seconds 
+  Import took 0.035925 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010448 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of UnityEngine.Advertisements.Editor.PostProcessBuildPlist:PlistContainsAdNetworkId due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+Error: Could not load signature of UnityEditor.Purchasing.AppleCapabilities:AddInAppPurchasingCapability due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+Unloading broken assembly Library/ScriptAssemblies/UnityEngine.Advertisements.Editor.dll, this assembly can cause crashes in the runtime
+Unloading broken assembly Library/ScriptAssemblies/UnityEditor.Purchasing.dll, this assembly can cause crashes in the runtime
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.40 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.895 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1896ms)
+		BeginReloadAssembly (185ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (71ms)
+		EndReloadAssembly (1621ms)
+			LoadAssemblies (157ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (424ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (91ms)
+			SetupLoadedEditorAssemblies (560ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (175ms)
+				ProcessInitializeOnLoadAttributes (347ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (42ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 2.05 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3964 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 163.8 MB.
+System memory in use after: 164.1 MB.
+
+Unloading 54 unused Assets to reduce memory usage. Loaded Objects now: 4618.
+Total: 4.986600 ms (FindLiveObjects: 0.408100 ms CreateObjectMapping: 0.218200 ms MarkObjects: 4.288100 ms  DeleteObjects: 0.070700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 3006.042208 seconds.
+  path: Assets/UI/background with border ui.png
+  artifactKey: Guid(98ede7f879e908d45baed9fdd57f7e1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/background with border ui.png using Guid(98ede7f879e908d45baed9fdd57f7e1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b427d6af42c50eadc2f62d3289332857') in 0.128380 seconds 
+  Import took 0.138600 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 95.713750 seconds.
+  path: Assets/UI/background with border ui.png
+  artifactKey: Guid(98ede7f879e908d45baed9fdd57f7e1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/background with border ui.png using Guid(98ede7f879e908d45baed9fdd57f7e1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da669919a8c61d29873e9630c77d1d94') in 0.029933 seconds 
+  Import took 0.042256 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.014195 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of UnityEngine.Advertisements.Editor.PostProcessBuildPlist:PlistContainsAdNetworkId due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+Error: Could not load signature of UnityEditor.Purchasing.AppleCapabilities:AddInAppPurchasingCapability due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+Unloading broken assembly Library/ScriptAssemblies/UnityEngine.Advertisements.Editor.dll, this assembly can cause crashes in the runtime
+Unloading broken assembly Library/ScriptAssemblies/UnityEditor.Purchasing.dll, this assembly can cause crashes in the runtime
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.27 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.881 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1881ms)
+		BeginReloadAssembly (173ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (52ms)
+		EndReloadAssembly (1622ms)
+			LoadAssemblies (159ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (422ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (88ms)
+			SetupLoadedEditorAssemblies (552ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (172ms)
+				ProcessInitializeOnLoadAttributes (343ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (42ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.32 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3964 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 163.8 MB.
+System memory in use after: 164.1 MB.
+
+Unloading 54 unused Assets to reduce memory usage. Loaded Objects now: 4621.
+Total: 7.398200 ms (FindLiveObjects: 0.516200 ms CreateObjectMapping: 0.231400 ms MarkObjects: 6.584600 ms  DeleteObjects: 0.064700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012891 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of UnityEngine.Advertisements.Editor.PostProcessBuildPlist:PlistContainsAdNetworkId due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+Error: Could not load signature of UnityEditor.Purchasing.AppleCapabilities:AddInAppPurchasingCapability due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+Unloading broken assembly Library/ScriptAssemblies/UnityEngine.Advertisements.Editor.dll, this assembly can cause crashes in the runtime
+Unloading broken assembly Library/ScriptAssemblies/UnityEditor.Purchasing.dll, this assembly can cause crashes in the runtime
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.32 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.876 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1876ms)
+		BeginReloadAssembly (171ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (51ms)
+		EndReloadAssembly (1622ms)
+			LoadAssemblies (160ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (423ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (91ms)
+			SetupLoadedEditorAssemblies (539ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (167ms)
+				ProcessInitializeOnLoadAttributes (336ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (42ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.39 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3964 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 163.8 MB.
+System memory in use after: 164.1 MB.
+
+Unloading 54 unused Assets to reduce memory usage. Loaded Objects now: 4623.
+Total: 5.220100 ms (FindLiveObjects: 0.605500 ms CreateObjectMapping: 0.489800 ms MarkObjects: 4.068300 ms  DeleteObjects: 0.054200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 314.035560 seconds.
+  path: Assets/UI/background with border ui.png
+  artifactKey: Guid(98ede7f879e908d45baed9fdd57f7e1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/background with border ui.png using Guid(98ede7f879e908d45baed9fdd57f7e1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '860f6396fad215cb5931d958c3ed63d9') in 0.087231 seconds 
+  Import took 0.095319 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.023118 seconds.
+  path: Assets/UI/background with border ui.png
+  artifactKey: Guid(98ede7f879e908d45baed9fdd57f7e1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/background with border ui.png using Guid(98ede7f879e908d45baed9fdd57f7e1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '860f6396fad215cb5931d958c3ed63d9') in 0.025549 seconds 
+  Import took 0.035368 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 866.970338 seconds.
+  path: Assets/UI/Triangle_2.png
+  artifactKey: Guid(40bfc300241860c4bb8113ac10a348f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Triangle_2.png using Guid(40bfc300241860c4bb8113ac10a348f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fa5181960d66bb236ef164da03c5892') in 0.258485 seconds 
+  Import took 0.271284 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001129 seconds.
+  path: Assets/UI/UISprite 6.png
+  artifactKey: Guid(b63e94cdb45229d4dba56c75f208333b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/UISprite 6.png using Guid(b63e94cdb45229d4dba56c75f208333b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2297a6db7dbd3c025fe00b869162167') in 0.029702 seconds 
+  Import took 0.042211 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/UI/UISprite 8.png
+  artifactKey: Guid(61c803091432b854b901349a56c970e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/UISprite 8.png using Guid(61c803091432b854b901349a56c970e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e74b8d4b26bf4ef420ee3bcff857bdfa') in 0.037541 seconds 
+  Import took 0.045884 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000387 seconds.
+  path: Assets/UI/UISprite 9.png
+  artifactKey: Guid(d134c7d474f368d498afa833635f51a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/UISprite 9.png using Guid(d134c7d474f368d498afa833635f51a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21d196c7e50fa0cd08b0d05e6de5345c') in 0.021830 seconds 
+  Import took 0.031963 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/UI/UISprite 3.png
+  artifactKey: Guid(cf08322f58ff5e04888f384788aa225b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/UISprite 3.png using Guid(cf08322f58ff5e04888f384788aa225b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0245792cb3e21a71f404f6eb741bc45') in 0.032256 seconds 
+  Import took 0.041037 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/UI/UISprite 1.png
+  artifactKey: Guid(67c49334370d5e349a11a2786f291ec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/UISprite 1.png using Guid(67c49334370d5e349a11a2786f291ec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40fbcff1bb128b356ac373e05569e08d') in 0.024202 seconds 
+  Import took 0.032309 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/UI/UISprite.png
+  artifactKey: Guid(b75d60372f645cc4693b1fc0a4a3f70b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/UISprite.png using Guid(b75d60372f645cc4693b1fc0a4a3f70b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b96ee0930ec6dcff4d6b30d4f966992') in 0.027616 seconds 
+  Import took 0.036406 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/UI/UISprite 4.png
+  artifactKey: Guid(fe243c56268ecf64e8bbd076db518a23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/UISprite 4.png using Guid(fe243c56268ecf64e8bbd076db518a23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bf84e74b53258acceb9ab65743494e5') in 0.028593 seconds 
+  Import took 0.037330 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/UI/UIBoxSprite.png
+  artifactKey: Guid(9ea6cbdf3ef9d4c44ae207841b99b928) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/UIBoxSprite.png using Guid(9ea6cbdf3ef9d4c44ae207841b99b928) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08af3978f60ff8533f3a5543f8293d17') in 0.023090 seconds 
+  Import took 0.032354 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/UI/UISprite 7.png
+  artifactKey: Guid(e20ec9d89ec7eb64f8d31be96e7ad4fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/UISprite 7.png using Guid(e20ec9d89ec7eb64f8d31be96e7ad4fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8d4467b1f37b34fff6f837fff3de546') in 0.024272 seconds 
+  Import took 0.033229 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/UI/Triangle_2.png
+  artifactKey: Guid(40bfc300241860c4bb8113ac10a348f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Triangle_2.png using Guid(40bfc300241860c4bb8113ac10a348f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fa5181960d66bb236ef164da03c5892') in 0.017120 seconds 
+  Import took 0.026104 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000583 seconds.
+  path: Assets/UI/UISprite 5.png
+  artifactKey: Guid(0b86a70772e1cdd41ac642da354ebaa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/UISprite 5.png using Guid(0b86a70772e1cdd41ac642da354ebaa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51c5f0289e5945dd403350dfbda6f946') in 0.023145 seconds 
+  Import took 0.033719 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/UI/UISpriteBorder.png
+  artifactKey: Guid(6562c8384d7d4b64d84d6c3c550a74aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/UISpriteBorder.png using Guid(6562c8384d7d4b64d84d6c3c550a74aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0901ff9c19fd847ccf1baaf3fbb4d7b3') in 0.025329 seconds 
+  Import took 0.034480 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/UI/UISprite 2.png
+  artifactKey: Guid(8c48cc69cae3ba645bd77a355029b1ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/UISprite 2.png using Guid(8c48cc69cae3ba645bd77a355029b1ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de17ae611d1d1a5dd5549fe55b1de471') in 0.023729 seconds 
+  Import took 0.032439 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/UI/UISprite 11.png
+  artifactKey: Guid(ceae64065a615704587e10180735fd7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/UISprite 11.png using Guid(ceae64065a615704587e10180735fd7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a668caa7dbe50e33bfd1d828809e327') in 0.033407 seconds 
+  Import took 0.043157 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/UI/UISpriteBorderHD.png
+  artifactKey: Guid(b965706e692d0944599131a0bd653f05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/UISpriteBorderHD.png using Guid(b965706e692d0944599131a0bd653f05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0255c767da368b694027d1f0fc9df692') in 0.184688 seconds 
+  Import took 0.192946 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011428 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of UnityEngine.Advertisements.Editor.PostProcessBuildPlist:PlistContainsAdNetworkId due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+Error: Could not load signature of UnityEditor.Purchasing.AppleCapabilities:AddInAppPurchasingCapability due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+Unloading broken assembly Library/ScriptAssemblies/UnityEngine.Advertisements.Editor.dll, this assembly can cause crashes in the runtime
+Unloading broken assembly Library/ScriptAssemblies/UnityEditor.Purchasing.dll, this assembly can cause crashes in the runtime
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.37 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.891 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1891ms)
+		BeginReloadAssembly (152ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (50ms)
+		EndReloadAssembly (1655ms)
+			LoadAssemblies (151ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (423ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (94ms)
+			SetupLoadedEditorAssemblies (545ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (171ms)
+				ProcessInitializeOnLoadAttributes (337ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (43ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.57 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3964 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 163.9 MB.
+System memory in use after: 164.1 MB.
+
+Unloading 54 unused Assets to reduce memory usage. Loaded Objects now: 4626.
+Total: 6.626100 ms (FindLiveObjects: 0.728300 ms CreateObjectMapping: 0.504500 ms MarkObjects: 5.347500 ms  DeleteObjects: 0.044100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 28.985937 seconds.
+  path: Assets/UI/Designer.prefab
+  artifactKey: Guid(6efc3b5088c80cd409688275370fe421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Designer.prefab using Guid(6efc3b5088c80cd409688275370fe421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a31e04f98bbd94eebb3534c0cabfa203') in 0.128870 seconds 
+  Import took 0.138420 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.845160 seconds.
+  path: Assets/UI/Designer.prefab
+  artifactKey: Guid(6efc3b5088c80cd409688275370fe421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Designer.prefab using Guid(6efc3b5088c80cd409688275370fe421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56776c5e41dd038c2169a406ba3fe4e3') in 0.030966 seconds 
+  Import took 0.041410 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1000.144481 seconds.
+  path: Assets/UI/Designer.prefab
+  artifactKey: Guid(6efc3b5088c80cd409688275370fe421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Designer.prefab using Guid(6efc3b5088c80cd409688275370fe421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6584ebcf6536bb3aa443218aa9e658e2') in 0.045157 seconds 
+  Import took 0.059316 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 145.627458 seconds.
+  path: Assets/Scenes/Design.unity
+  artifactKey: Guid(7fcc502a0ec47b046bac47a8811c7e7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Design.unity using Guid(7fcc502a0ec47b046bac47a8811c7e7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3aaddc80006443506311fd4ecf6e66d4') in 0.068250 seconds 
+  Import took 0.076538 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1535.423499 seconds.
+  path: Assets/Scenes/IntroScene.unity
+  artifactKey: Guid(66ee0de336ec1fa44aca6a2ef7b923a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/IntroScene.unity using Guid(66ee0de336ec1fa44aca6a2ef7b923a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4665e88a67ece51eafb481d29eaf95af') in 0.289073 seconds 
+  Import took 0.310148 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 914.222702 seconds.
+  path: Assets/Scripts/AnimationSpeedController.cs
+  artifactKey: Guid(d8f8529135754b345851f656b90d2ace) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/AnimationSpeedController.cs using Guid(d8f8529135754b345851f656b90d2ace) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18f696147f332cd8c5db44bcda497a99') in 0.010106 seconds 
+  Import took 0.020423 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010480 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of UnityEngine.Advertisements.Editor.PostProcessBuildPlist:PlistContainsAdNetworkId due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+Error: Could not load signature of UnityEditor.Purchasing.AppleCapabilities:AddInAppPurchasingCapability due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+Unloading broken assembly Library/ScriptAssemblies/UnityEngine.Advertisements.Editor.dll, this assembly can cause crashes in the runtime
+Unloading broken assembly Library/ScriptAssemblies/UnityEditor.Purchasing.dll, this assembly can cause crashes in the runtime
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.67 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.191 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3192ms)
+		BeginReloadAssembly (1384ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (91ms)
+		EndReloadAssembly (1717ms)
+			LoadAssemblies (165ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (448ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (102ms)
+			SetupLoadedEditorAssemblies (554ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (170ms)
+				ProcessInitializeOnLoadAttributes (344ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (44ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.33 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3964 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 164.4 MB.
+System memory in use after: 164.7 MB.
+
+Unloading 57 unused Assets to reduce memory usage. Loaded Objects now: 4628.
+Total: 5.356600 ms (FindLiveObjects: 0.511500 ms CreateObjectMapping: 0.190200 ms MarkObjects: 4.576000 ms  DeleteObjects: 0.077400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
