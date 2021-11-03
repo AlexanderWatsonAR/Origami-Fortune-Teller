@@ -10,6 +10,7 @@ public class SideBarTween : MonoBehaviour
     public GameObject SidePanel;
     public GameObject ShopWindow;
     public GameObject Preview;
+    public GameObject ShopContent;
 
     private bool isSideBarVisible;
     private GameObject topSection;
@@ -69,6 +70,7 @@ public class SideBarTween : MonoBehaviour
 
     public void OpenShowWindow()
     {
+        ShopContent.SetActive(true);
         topSection.GetComponent<VerticalLayoutGroup>().enabled = false;
         sidePanelTransform.DOPlayBackwards();
         isSideBarVisible = !isSideBarVisible;

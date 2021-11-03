@@ -1,44 +1,38 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.Advertisements;
-using DG.Tweening;
+using UnityEngine.SceneManagement;
 
 public class BannerAd : MonoBehaviour
 {
-    // For the purpose of this example, these buttons are for functionality testing:
-    //[SerializeField] Button loadBannerButton;
-    //[SerializeField] Button showBannerButton;
-    //[SerializeField] Button hideBannerButton;
-
-    [SerializeField] BannerPosition bannerPosition = BannerPosition.CENTER;
+    [SerializeField] BannerPosition bannerPosition = BannerPosition.BOTTOM_CENTER;
 
     [SerializeField] string androidAdUnitId = "Banner_Android";
     [SerializeField] string appleAdUnitId = "Banner_iOS";
     string _adUnitId;
 
-    void Start()
-    {
-        if (PlayerPrefs.GetInt("RemoveAdsPurchased") == 1)
-            return;
+    public static bool isBannerShowing;
 
-        // Set the banner position:
+    void Awake()
+    {
+        // Get the Ad Unit ID for the current platform:
+        _adUnitId = (Application.platform == RuntimePlatform.IPhonePlayer)
+            ? appleAdUnitId
+            : androidAdUnitId;
+
         Advertisement.Banner.SetPosition(bannerPosition);
-        StartCoroutine(ShowBanner());
-        StartCoroutine(CloseBannerAd(246.0f));
+        //if (PlayerPrefs.GetInt("RemoveAdsPurchased") == 1)
+        //    return;
     }
 
-    private IEnumerator ShowBanner()
+    public IEnumerator ShowBanner()
     {
         // Delay so AdsInitializer can finish awake routine.
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(1.0f);
         LoadBanner();
-        yield return new WaitForSeconds(5);
-        ShowBannerAd();
     }
 
-    private IEnumerator CloseBannerAd(float timeInSeconds)
+    public IEnumerator CloseBannerAd(float timeInSeconds)
     {
         yield return new WaitForSeconds(timeInSeconds);
         HideBannerAd();
@@ -61,8 +55,12 @@ public class BannerAd : MonoBehaviour
     // Implement code to execute when the loadCallback event triggers:
     void OnBannerLoaded()
     {
-        Debug.Log("Banner loaded");
-        ShowBannerAd();
+        if (isBannerShowing == false)
+        {
+            Debug.Log("Banner loaded" + "Method: OnBannerLoaded()");
+            
+            ShowBannerAd();
+        }
     }
 
     // Implement code to execute when the load errorCallback event triggers:
@@ -84,18 +82,31 @@ public class BannerAd : MonoBehaviour
 
         // Show the loaded Banner Ad Unit:
         Advertisement.Banner.Show(_adUnitId, options);
+        SceneManager.activeSceneChanged += HideBannerActiveSceneChanged;
+        isBannerShowing = true;
+    }
+
+    private void HideBannerActiveSceneChanged(Scene current, Scene next)
+    {
+        HideBannerAd();
+        SceneManager.activeSceneChanged -= HideBannerActiveSceneChanged;
     }
 
     // Implement a method to call when the Hide Banner button is clicked:
     public void HideBannerAd()
     {
+        if (isBannerShowing == false)
+            return;
+
         // Hide the banner:
         Advertisement.Banner.Hide();
+        isBannerShowing = false;
     }
 
-    void OnBannerClicked() { }
+    void OnBannerClicked() 
+    {
+        HideBannerAd();
+    }
     void OnBannerShown() { }
     void OnBannerHidden() { }
-
-    void OnDestroy()   {}
 }

@@ -106,7 +106,7 @@ public class DesignSceneTween : MonoBehaviour
     public IEnumerator DesignToHome()
     {
         Destroy(openMainScene);
-        Designer.transform.DOLocalMoveX(-615.8f, 0.75f).SetDelay(0.4f);
+        Designer.transform.DOLocalMoveX(-1230.8f, 0.75f).SetDelay(0.4f);
         Buttons.transform.DOMoveX(-1231.6f, 0.75f).SetDelay(0.4f);
         origami.transform.DOMoveX(-5.0f, 0.75f).SetDelay(0.4f);
 

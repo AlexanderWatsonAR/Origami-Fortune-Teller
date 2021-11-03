@@ -15,6 +15,7 @@ public class AdsManager : MonoBehaviour, IUnityAdsInitializationListener
     public static AdsManager instance;
     public InterstitialAd interAd;
     public BannerAd bannerAd;
+    public bool isInitialised;
 
     void Awake()
     {
@@ -27,6 +28,7 @@ public class AdsManager : MonoBehaviour, IUnityAdsInitializationListener
             adCount++;
             PlayerPrefs.SetInt("interstitialAdCount", adCount);
             interstitialAdCount = adCount;
+            StartCoroutine(ShowAds());
         }
         else
         {
@@ -50,26 +52,45 @@ public class AdsManager : MonoBehaviour, IUnityAdsInitializationListener
     public void OnInitializationComplete()
     {
         Debug.Log("Unity Ads initialization complete.");
-        interAd.LoadAd();
+        isInitialised = true;
+        instance.isInitialised = true;
+    }
 
-        if (interstitialAdCount % 10 == 0)
+    public IEnumerator ShowAds()
+    {
+        while(instance.isInitialised != true)
         {
-            instance.interAd.ShowAd();
+            yield return new WaitForSeconds(Time.fixedDeltaTime);
         }
+
+        StartCoroutine(bannerAd.ShowBanner());
+        StartCoroutine(bannerAd.CloseBannerAd(246.0f));
+
+        if (interstitialAdCount % 6 == 0)
+        {
+            interAd.LoadAd();
+        }
+
+        yield return null; 
     }
 
     public void OnInitializationFailed(UnityAdsInitializationError error, string message)
     {
         Debug.Log($"Unity Ads Initialization Failed: {error} - {message}");
+        isInitialised = false;
     }
 
     public void RemoveAds()
     {
-        bannerAd.HideBannerAd();
+        if(bannerAd != null)
+            bannerAd.HideBannerAd();
     }
 
     public void PlayInterstialAd()
     {
+        if (PlayerPrefs.GetInt("RemoveAdsPurchased") == 1)
+            return;
+
         int adCount = PlayerPrefs.GetInt("interstitialAdCount");
         adCount++;
         PlayerPrefs.SetInt("interstitialAdCount", adCount);

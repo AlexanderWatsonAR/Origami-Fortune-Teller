@@ -57,25 +57,25 @@ public class ChangeOrigamiSticker : Change
                     DataLoading.LoadMaterialData(origami.transform.GetChild(12).gameObject, stickerMatRef, OrigamiManager.instance.CheckAllStickerBorders);
                     DataLoading.LoadMaterialData(origami.transform.GetChild(13).gameObject, stickerMatRef, OrigamiManager.instance.CheckAllStickerBorders);
                     OrigamiManager.instance.origamiStickerHash[0] = stickerHash;
-                    DesignData.TopLeftStickerTex = stickerIndex;
+                    DesignData.TopLeftStickerTex = stickerHash;
                     break;
                 case 1:
                     DataLoading.LoadMaterialData(origami.transform.GetChild(14).gameObject, stickerMatRef, OrigamiManager.instance.CheckAllStickerBorders);
                     DataLoading.LoadMaterialData(origami.transform.GetChild(15).gameObject, stickerMatRef, OrigamiManager.instance.CheckAllStickerBorders);
                     OrigamiManager.instance.origamiStickerHash[1] = stickerHash;
-                    DesignData.TopRightStickerTex = stickerIndex;
+                    DesignData.TopRightStickerTex = stickerHash;
                     break;
                 case 2:
                     DataLoading.LoadMaterialData(origami.transform.GetChild(18).gameObject, stickerMatRef, OrigamiManager.instance.CheckAllStickerBorders);
                     DataLoading.LoadMaterialData(origami.transform.GetChild(19).gameObject, stickerMatRef, OrigamiManager.instance.CheckAllStickerBorders);
-                    DesignData.BottomLeftStickerTex = stickerIndex;
                     OrigamiManager.instance.origamiStickerHash[2] = stickerHash;
+                    DesignData.BottomLeftStickerTex = stickerHash;
                     break;
                 case 3:
                     DataLoading.LoadMaterialData(origami.transform.GetChild(16).gameObject, stickerMatRef, OrigamiManager.instance.CheckAllStickerBorders);
                     DataLoading.LoadMaterialData(origami.transform.GetChild(17).gameObject, stickerMatRef, OrigamiManager.instance.CheckAllStickerBorders);
                     OrigamiManager.instance.origamiStickerHash[3] = stickerHash;
-                    DesignData.BottomRightStickerTex = stickerIndex;
+                    DesignData.BottomRightStickerTex = stickerHash;
                     break;
             }
         }

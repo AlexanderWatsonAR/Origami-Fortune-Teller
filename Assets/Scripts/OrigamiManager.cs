@@ -271,8 +271,16 @@ public class OrigamiManager : MonoBehaviour
 
     public void LoadStickerTexData(GameObject origami, string entryIndex)
     {
-        if (entryIndex == "-1" || PlayerPrefs.GetInt("KawaiiCollection1Purchased") != 1)
+        if (entryIndex == "-1" || (PlayerPrefs.GetInt("KawaiiCollection1Purchased") != 1 && PlayerPrefs.GetInt("Halloween2021CollectionPurchased") != 1))
             return;
+
+        bool kawaiiStickerCollectionPurchased = PlayerPrefs.GetInt("KawaiiCollection1Purchased") == 1 ? true : false;
+        bool halloween2021CollectionPurchased = PlayerPrefs.GetInt("Halloween2021CollectionPurchased") == 1 ? true : false;
+
+        origamiStickerHash[0] = (int)PlayerPrefs.GetFloat("TopLeftStickerTex" + entryIndex);
+        origamiStickerHash[1] = (int)PlayerPrefs.GetFloat("TopRightStickerTex" + entryIndex);
+        origamiStickerHash[2] = (int)PlayerPrefs.GetFloat("BottomLeftStickerTex" + entryIndex);
+        origamiStickerHash[3] = (int)PlayerPrefs.GetFloat("BottomRightStickerTex" + entryIndex);
 
         // Bottom Left
         Color blColour = origami.transform.GetChild(0).GetComponent<Renderer>().material.GetColor("Color_cc2877fbd4c8430591cd0e4dc9d8ad1a");
@@ -292,58 +300,116 @@ public class OrigamiManager : MonoBehaviour
         AssetReferenceT<Material> b = StickerMaterialRefs[(int)PlayerPrefs.GetFloat("TopRightStickerTex" + entryIndex)];
         AssetReferenceT<Material> c = StickerMaterialRefs[(int)PlayerPrefs.GetFloat("BottomRightStickerTex" + entryIndex)];
         AssetReferenceT<Material> d = StickerMaterialRefs[(int)PlayerPrefs.GetFloat("BottomLeftStickerTex" + entryIndex)];
-        
-        origamiStickerHash[0] = (int)PlayerPrefs.GetFloat("TopLeftStickerTex" + entryIndex);
-        origamiStickerHash[1] = (int)PlayerPrefs.GetFloat("TopRightStickerTex" + entryIndex);
-        origamiStickerHash[2] = (int)PlayerPrefs.GetFloat("BottomLeftStickerTex" + entryIndex);
-        origamiStickerHash[3] = (int)PlayerPrefs.GetFloat("BottomRightStickerTex" + entryIndex);
 
         // Top Left
-        //if (origami.transform.GetChild(12).gameObject.activeSelf)
-        //{
+        if (kawaiiStickerCollectionPurchased && (origamiStickerHash[0] > 0 && origamiStickerHash[0] < 20))
+        {
             DataLoading.LoadMaterialData(origami.transform.GetChild(12).gameObject, a, CheckAllStickerBorders);
             origami.transform.GetChild(12).gameObject.GetComponent<Renderer>().material.SetColor("Color_a699c866f1d14065bc7b7abae9858103", tlColour);
-        //}
-        //if (origami.transform.GetChild(13).gameObject.activeSelf)
-        //{
             DataLoading.LoadMaterialData(origami.transform.GetChild(13).gameObject, a, CheckAllStickerBorders);
             origami.transform.GetChild(13).gameObject.GetComponent<Renderer>().material.SetColor("Color_a699c866f1d14065bc7b7abae9858103", tlColour);
-        //}
+        }
+
+        // Top Left
+        if (halloween2021CollectionPurchased && (origamiStickerHash[0] > 19 && origamiStickerHash[0] < 40))
+        {
+            DataLoading.LoadMaterialData(origami.transform.GetChild(12).gameObject, a, CheckAllStickerBorders);
+            origami.transform.GetChild(12).gameObject.GetComponent<Renderer>().material.SetColor("Color_a699c866f1d14065bc7b7abae9858103", tlColour);
+            DataLoading.LoadMaterialData(origami.transform.GetChild(13).gameObject, a, CheckAllStickerBorders);
+            origami.transform.GetChild(13).gameObject.GetComponent<Renderer>().material.SetColor("Color_a699c866f1d14065bc7b7abae9858103", tlColour);
+        }
+
+        // Top Left
+        if (origamiStickerHash[0] > 39 && origamiStickerHash[0] < 60)
+        {
+            DataLoading.LoadMaterialData(origami.transform.GetChild(12).gameObject, a, CheckAllStickerBorders);
+            origami.transform.GetChild(12).gameObject.GetComponent<Renderer>().material.SetColor("Color_a699c866f1d14065bc7b7abae9858103", tlColour);
+            DataLoading.LoadMaterialData(origami.transform.GetChild(13).gameObject, a, CheckAllStickerBorders);
+            origami.transform.GetChild(13).gameObject.GetComponent<Renderer>().material.SetColor("Color_a699c866f1d14065bc7b7abae9858103", tlColour);
+        }
+
         // Top Right
-        //if (origami.transform.GetChild(14).gameObject.activeSelf)
-        //{
+        if (kawaiiStickerCollectionPurchased && (origamiStickerHash[1] > 0 && origamiStickerHash[1] < 20))
+        {
             DataLoading.LoadMaterialData(origami.transform.GetChild(14).gameObject, b, CheckAllStickerBorders);
             origami.transform.GetChild(14).gameObject.GetComponent<Renderer>().material.SetColor("Color_a699c866f1d14065bc7b7abae9858103", trColour);
-        //}
-        //if (origami.transform.GetChild(15).gameObject.activeSelf)
-        //{
             DataLoading.LoadMaterialData(origami.transform.GetChild(15).gameObject, b, CheckAllStickerBorders);
             origami.transform.GetChild(15).gameObject.GetComponent<Renderer>().material.SetColor("Color_a699c866f1d14065bc7b7abae9858103", trColour);
-        //}
+        }
+
+        // Top Right
+        if (halloween2021CollectionPurchased && (origamiStickerHash[1] > 19 && origamiStickerHash[1] < 40))
+        {
+            DataLoading.LoadMaterialData(origami.transform.GetChild(14).gameObject, b, CheckAllStickerBorders);
+            origami.transform.GetChild(14).gameObject.GetComponent<Renderer>().material.SetColor("Color_a699c866f1d14065bc7b7abae9858103", trColour);
+            DataLoading.LoadMaterialData(origami.transform.GetChild(15).gameObject, b, CheckAllStickerBorders);
+            origami.transform.GetChild(15).gameObject.GetComponent<Renderer>().material.SetColor("Color_a699c866f1d14065bc7b7abae9858103", trColour);
+        }
+
+        // Top Right
+        if (origamiStickerHash[1] > 39 && origamiStickerHash[1] < 60)
+        {
+            DataLoading.LoadMaterialData(origami.transform.GetChild(14).gameObject, b, CheckAllStickerBorders);
+            origami.transform.GetChild(14).gameObject.GetComponent<Renderer>().material.SetColor("Color_a699c866f1d14065bc7b7abae9858103", trColour);
+            DataLoading.LoadMaterialData(origami.transform.GetChild(15).gameObject, b, CheckAllStickerBorders);
+            origami.transform.GetChild(15).gameObject.GetComponent<Renderer>().material.SetColor("Color_a699c866f1d14065bc7b7abae9858103", trColour);
+        }
+
         // Bottom Right
-       // if (origami.transform.GetChild(16).gameObject.activeSelf)
-        //{
+        if (kawaiiStickerCollectionPurchased && (origamiStickerHash[2] > 0 && origamiStickerHash[2] < 20))
+        {
             DataLoading.LoadMaterialData(origami.transform.GetChild(16).gameObject, c, CheckAllStickerBorders);
             origami.transform.GetChild(16).gameObject.GetComponent<Renderer>().material.SetColor("Color_a699c866f1d14065bc7b7abae9858103", brColour);
-        //}
-        //if (origami.transform.GetChild(17).gameObject.activeSelf)
-        //{
             DataLoading.LoadMaterialData(origami.transform.GetChild(17).gameObject, c, CheckAllStickerBorders);
             origami.transform.GetChild(17).gameObject.GetComponent<Renderer>().material.SetColor("Color_a699c866f1d14065bc7b7abae9858103", brColour);
-        //}
+        }
+
+        // Bottom Right
+        if (halloween2021CollectionPurchased && (origamiStickerHash[2] > 19 && origamiStickerHash[2] < 40))
+        {
+            DataLoading.LoadMaterialData(origami.transform.GetChild(16).gameObject, c, CheckAllStickerBorders);
+            origami.transform.GetChild(16).gameObject.GetComponent<Renderer>().material.SetColor("Color_a699c866f1d14065bc7b7abae9858103", brColour);
+            DataLoading.LoadMaterialData(origami.transform.GetChild(17).gameObject, c, CheckAllStickerBorders);
+            origami.transform.GetChild(17).gameObject.GetComponent<Renderer>().material.SetColor("Color_a699c866f1d14065bc7b7abae9858103", brColour);
+        }
+
+        // Bottom Right
+        if (origamiStickerHash[2] > 39 && origamiStickerHash[2] < 60)
+        {
+            DataLoading.LoadMaterialData(origami.transform.GetChild(16).gameObject, c, CheckAllStickerBorders);
+            origami.transform.GetChild(16).gameObject.GetComponent<Renderer>().material.SetColor("Color_a699c866f1d14065bc7b7abae9858103", brColour);
+            DataLoading.LoadMaterialData(origami.transform.GetChild(17).gameObject, c, CheckAllStickerBorders);
+            origami.transform.GetChild(17).gameObject.GetComponent<Renderer>().material.SetColor("Color_a699c866f1d14065bc7b7abae9858103", brColour);
+        }
+
         // Bottom Left
-        //if (origami.transform.GetChild(18).gameObject.activeSelf)
-        //{
+        if (kawaiiStickerCollectionPurchased && (origamiStickerHash[3] > 0 && origamiStickerHash[3] < 20))
+        {
             DataLoading.LoadMaterialData(origami.transform.GetChild(18).gameObject, d, CheckAllStickerBorders);
             origami.transform.GetChild(18).gameObject.GetComponent<Renderer>().material.SetColor("Color_a699c866f1d14065bc7b7abae9858103", blColour);
-        //}
-        //if (origami.transform.GetChild(19).gameObject.activeSelf)
-        //{
             DataLoading.LoadMaterialData(origami.transform.GetChild(19).gameObject, d, CheckAllStickerBorders);
             origami.transform.GetChild(19).gameObject.GetComponent<Renderer>().material.SetColor("Color_a699c866f1d14065bc7b7abae9858103", blColour);
-        //}
+        }
 
+        // Bottom Left
+        if (halloween2021CollectionPurchased && (origamiStickerHash[3] > 19 && origamiStickerHash[3] < 40))
+        {
+            DataLoading.LoadMaterialData(origami.transform.GetChild(18).gameObject, d, CheckAllStickerBorders);
+            origami.transform.GetChild(18).gameObject.GetComponent<Renderer>().material.SetColor("Color_a699c866f1d14065bc7b7abae9858103", blColour);
+            DataLoading.LoadMaterialData(origami.transform.GetChild(19).gameObject, d, CheckAllStickerBorders);
+            origami.transform.GetChild(19).gameObject.GetComponent<Renderer>().material.SetColor("Color_a699c866f1d14065bc7b7abae9858103", blColour);
+        }
+
+        // Bottom Left
+        if (origamiStickerHash[3] > 39 && origamiStickerHash[3] < 60)
+        {
+            DataLoading.LoadMaterialData(origami.transform.GetChild(18).gameObject, d, CheckAllStickerBorders);
+            origami.transform.GetChild(18).gameObject.GetComponent<Renderer>().material.SetColor("Color_a699c866f1d14065bc7b7abae9858103", blColour);
+            DataLoading.LoadMaterialData(origami.transform.GetChild(19).gameObject, d, CheckAllStickerBorders);
+            origami.transform.GetChild(19).gameObject.GetComponent<Renderer>().material.SetColor("Color_a699c866f1d14065bc7b7abae9858103", blColour);
+        }
     }
+
     public int ColourIndex(Color colour)
     {
         for (int i = 0; i < colours.Length; i++)

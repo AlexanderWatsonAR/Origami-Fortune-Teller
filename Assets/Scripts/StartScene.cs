@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEditor;
+using UnityEngine.SceneManagement;
 
 // Aspect Ratio
 // Samsung Galaxy Z F2| 2,208 / 1,768 = 1.24886877828
@@ -37,15 +37,16 @@ public class StartScene : MonoBehaviour
     {
         //Time.timeScale = 0.25f;
         Application.backgroundLoadingPriority = ThreadPriority.Low;
-        //ConfigureUI();
-//#if UNITY_EDITOR
-//        PlayerSettings.statusBarHidden = false;
-//#endif
-//        Debug.unityLogger.logEnabled = false;
 
-//#if UNITY_EDITOR
-//        Debug.unityLogger.logEnabled = true;
-//#endif
+        //ConfigureUI();
+        //#if UNITY_EDITOR
+        //        PlayerSettings.statusBarHidden = false;
+        //#endif
+        //        Debug.unityLogger.logEnabled = false;
+
+        //#if UNITY_EDITOR
+        //        Debug.unityLogger.logEnabled = true;
+        //#endif
 
         //ApplicationChrome.statusBarState =  ApplicationChrome.States.Hidden;
         //ApplicationChrome.navigationBarState = ApplicationChrome.States.TranslucentOverContent;
@@ -92,7 +93,7 @@ public class StartScene : MonoBehaviour
     //            scrollRect.sizeDelta = new Vector2(scrollRect.sizeDelta.x, height * 0.72f);
     //        }
 
-            
+
     //        emptyRect.sizeDelta = new Vector2(scrollRect.sizeDelta.x, 350.0f);
     //    }
 

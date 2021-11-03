@@ -14,7 +14,7 @@ public class DataLoading : MonoBehaviour
         {
             if (!stickerRef.OperationHandle.IsDone)
             {
-                stickerRef.OperationHandle.Completed += (AsyncOperationHandle obj) =>
+                stickerRef.OperationHandle.Completed += delegate (AsyncOperationHandle obj)
                 {
                     if (obj.IsValid() && obj.Result != null)
                     {
@@ -37,7 +37,7 @@ public class DataLoading : MonoBehaviour
         }
         else
         {
-            stickerRef.LoadAssetAsync<Material>().Completed += (AsyncOperationHandle<Material> obj) =>
+            stickerRef.LoadAssetAsync<Material>().Completed += delegate (AsyncOperationHandle<Material> obj) 
             {
                 if (obj.IsValid() && obj.Result != null)
                 {
@@ -53,13 +53,15 @@ public class DataLoading : MonoBehaviour
 
     public static void GetSpriteFromRef(AssetReferenceSprite stickerRef, Image image)
     {
+        //stickerRef.OperationHandle<AssetReferenceSprite>.Result = default(AsyncOperationHandle<AssetReferenceSprite>);
+
         // If asset has already started being loaded into memory.
         if (stickerRef.OperationHandle.IsValid())
         {
             // if loading is not already completed.
             if (!stickerRef.OperationHandle.IsDone)
             {
-                stickerRef.OperationHandle.Completed += (AsyncOperationHandle obj) =>
+                stickerRef.OperationHandle.Completed += delegate (AsyncOperationHandle obj) 
                 {
                     if (obj.IsValid() && obj.Result != null)
                     {
@@ -76,7 +78,7 @@ public class DataLoading : MonoBehaviour
         else
         {
             // if loading hasn't started.
-            stickerRef.LoadAssetAsync<Sprite>().Completed += (AsyncOperationHandle<Sprite> obj) =>
+            stickerRef.LoadAssetAsync<Sprite>().Completed += delegate (AsyncOperationHandle<Sprite> obj) 
             {
                 if (obj.IsValid() && obj.Result != null)
                 {
@@ -92,7 +94,7 @@ public class DataLoading : MonoBehaviour
         {
             if (!texReference.OperationHandle.IsDone)
             {
-                texReference.OperationHandle.Completed += (AsyncOperationHandle obj) =>
+                texReference.OperationHandle.Completed += delegate (AsyncOperationHandle obj)
                 {
                     if (obj.IsValid() && obj.Result != null)
                     {
@@ -107,7 +109,7 @@ public class DataLoading : MonoBehaviour
         }
         else
         {
-            texReference.LoadAssetAsync<Texture>().Completed += (AsyncOperationHandle<Texture> obj) =>
+            texReference.LoadAssetAsync<Texture>().Completed += delegate (AsyncOperationHandle<Texture> obj)
             {
                 if (obj.IsValid() && obj.Result != null)
                 {
@@ -124,7 +126,7 @@ public class DataLoading : MonoBehaviour
         {
             if (!stickerRef.OperationHandle.IsDone)
             {
-                stickerRef.OperationHandle.Completed += (AsyncOperationHandle obj) =>
+                stickerRef.OperationHandle.Completed += delegate (AsyncOperationHandle obj)
                 {
                     if (obj.IsValid() && obj.Result != null)
                     {
@@ -139,7 +141,7 @@ public class DataLoading : MonoBehaviour
         }
         else
         {
-            stickerRef.LoadAssetAsync<Material>().Completed += (AsyncOperationHandle<Material> obj) =>
+            stickerRef.LoadAssetAsync<Material>().Completed += delegate (AsyncOperationHandle<Material> obj)
             {
                 if (obj.IsValid() && obj.Result != null)
                 {

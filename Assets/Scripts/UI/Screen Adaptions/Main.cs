@@ -101,6 +101,8 @@ public class Main : ScreenAdapter
 
     protected override void OnePointNineSeven()
     {
+        //numberButtons.transform.position = new Vector3(numberButtons.transform.position.x, 1.41f, numberButtons.transform.position.z);
+
         Preview.transform.position = new Vector3(Preview.transform.position.x, 1.58f, Preview.transform.position.z);
         Preview.transform.localScale = new Vector3(0.475f, 0.475f, 0.475f);
 
@@ -169,12 +171,20 @@ public class Main : ScreenAdapter
         reverseButton.transform.localScale = new Vector3(reverseButton.transform.localScale.x, 2.5f, reverseButton.transform.localScale.z);
         sidePanelLayout.enabled = false;
         emptyRect.sizeDelta = new Vector2(emptyRect.sizeDelta.x, 600.0f);
-        sidePanelLayout.enabled = true;
 
-        if(aspectRatio > 2.165f && aspectRatio < 2.168f)
+        if (aspectRatio < 2.16f)
+        {
+            emptyRect.sizeDelta = new Vector2(emptyRect.sizeDelta.x, 800.0f);
+            Preview.transform.position = new Vector3(Preview.transform.position.x, 1.35f, Preview.transform.position.z);
+            mainCameraTransform.position = new Vector3(mainCameraTransform.position.x, mainCameraTransform.position.y - 0.2f, mainCameraTransform.position.z);
+        }
+
+        if (aspectRatio > 2.165f && aspectRatio < 2.168f)
         {
             mainCameraTransform.position = new Vector3(mainCameraTransform.position.x, 0.85f, mainCameraTransform.position.z);
         }
+
+        sidePanelLayout.enabled = true;
     }
     protected override void TwoPointTwoTwo()
     {

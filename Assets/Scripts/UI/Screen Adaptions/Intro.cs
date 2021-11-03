@@ -25,6 +25,7 @@ public class Intro : ScreenAdapter
         scrollRect = scrollView.transform as RectTransform;
         emptyRect = emptySpace.transform as RectTransform;
         ConfigureUI();
+        Debug.Log(aspectRatio);
     }
 
     protected override void OnePointSix()
@@ -76,9 +77,16 @@ public class Intro : ScreenAdapter
         //{
         //    scrollRect.sizeDelta = new Vector2(scrollRect.sizeDelta.x, height * 0.77f);
         //}
+        
+        if (PlayerPrefs.GetInt("RemoveAdsPurchased") == 1)
+        {
+            scrollRect.sizeDelta = new Vector2(scrollRect.sizeDelta.x, scrollRect.sizeDelta.y - (scrollRect.sizeDelta.y * 0.095f));
+        }
+        else
+        {
+            scrollRect.sizeDelta = new Vector2(scrollRect.sizeDelta.x, scrollRect.sizeDelta.y - (scrollRect.sizeDelta.y * 0.25f));
+        }
 
-
-        scrollRect.sizeDelta = new Vector2(scrollRect.sizeDelta.x, scrollRect.sizeDelta.y - (scrollRect.sizeDelta.y * 0.095f));
         sidePanelLayout.enabled = false;
         emptyRect.sizeDelta = new Vector2(emptyRect.sizeDelta.x, 390.0f);
         sidePanelLayout.enabled = true;
@@ -91,6 +99,13 @@ public class Intro : ScreenAdapter
     {
         sidePanelLayout.enabled = false;
         emptyRect.sizeDelta = new Vector2(emptyRect.sizeDelta.x, 610.0f);
+        scrollRect.sizeDelta = new Vector2(scrollRect.sizeDelta.x, 1350.0f);
+        if (PlayerPrefs.GetInt("RemoveAdsPurchased") == 1)
+        {
+            scrollRect.sizeDelta = new Vector2(scrollRect.sizeDelta.x, 1500.0f);
+        }
+
+
         sidePanelLayout.enabled = true;
         
     }
@@ -100,6 +115,7 @@ public class Intro : ScreenAdapter
         mainVerticalLayout.enabled = false;
         sidePanelLayout.enabled = false;
         scrollRect.sizeDelta = new Vector2(scrollRect.sizeDelta.x, height * 0.44f);
+
         emptyRect.sizeDelta = new Vector2(scrollRect.sizeDelta.x, 690f);
 
         if (aspectRatio > 2.0f && aspectRatio < 2.05f)
@@ -128,6 +144,7 @@ public class Intro : ScreenAdapter
             scrollRect.sizeDelta = new Vector2(scrollRect.sizeDelta.x, height * 0.55f);
         }
 
+        // Never hits?
         if (aspectRatio > 2.1f && aspectRatio < 2.15f)
         {
             scrollRect.sizeDelta = new Vector2(scrollRect.sizeDelta.x, height * 0.66f);
@@ -139,11 +156,25 @@ public class Intro : ScreenAdapter
 
     protected override void TwoPointOneSix()
     {
-        Preview.transform.position = new Vector3(Preview.transform.position.x, 0.4f, Preview.transform.position.z);
         mainVerticalLayout.enabled = false;
         sidePanelLayout.enabled = false;
-        emptyRect.sizeDelta = new Vector2(emptyRect.sizeDelta.x, 600.0f);
-        scrollRect.sizeDelta = new Vector2(scrollRect.sizeDelta.x, Screen.height * 0.52f);
+
+        if (aspectRatio < 2.16f)
+        {
+            emptyRect.sizeDelta = new Vector2(emptyRect.sizeDelta.x, 800.0f);
+            scrollRect.sizeDelta = new Vector2(scrollRect.sizeDelta.x, Screen.height * 0.6f);
+        }
+        else
+        {
+            Preview.transform.position = new Vector3(Preview.transform.position.x, 0.4f, Preview.transform.position.z);
+            emptyRect.sizeDelta = new Vector2(emptyRect.sizeDelta.x, 600.0f);
+            scrollRect.sizeDelta = new Vector2(scrollRect.sizeDelta.x, Screen.height * 0.47f);
+            if (PlayerPrefs.GetInt("RemoveAdsPurchased") == 1)
+            {
+                scrollRect.sizeDelta = new Vector2(scrollRect.sizeDelta.x, Screen.height * 0.52f);
+            }
+        }
+
         sidePanelLayout.enabled = true;
         mainVerticalLayout.enabled = true;
     }

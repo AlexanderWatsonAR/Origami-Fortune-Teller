@@ -10,11 +10,13 @@ public class Drag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
 
     private RectTransform rectTransform;
     private Rect boundsRect;
+    private Vector2 startPosition;
 
     private void Start()
     {
         rectTransform = transform as RectTransform;
         boundsRect = bounds.GetComponent<RectTransform>().rect;
+        startPosition = rectTransform.anchoredPosition;
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -38,7 +40,7 @@ public class Drag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
 
         if(!boundsRect.Contains(rectTransform.anchoredPosition))
         {
-            rectTransform.anchoredPosition = Vector2.zero;
+            rectTransform.anchoredPosition = startPosition;
         }
 
     }

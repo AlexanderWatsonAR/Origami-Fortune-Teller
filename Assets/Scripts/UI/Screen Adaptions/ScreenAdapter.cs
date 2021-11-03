@@ -55,14 +55,14 @@ public class ScreenAdapter : MonoBehaviour
             configuration = ScreenType.OnePointFourThree;
         }
 
+        if (aspectRatio > 1.59f && aspectRatio < 1.61f)
+        {
+            configuration = ScreenType.OnePointSix;
+        }
+
         if (aspectRatio > 1.7f && aspectRatio < 1.8f)
         {
             configuration = ScreenType.OnePointSevenSeven;
-        }
-
-        if(aspectRatio > 1.59f && aspectRatio < 1.61f)
-        {
-            configuration = ScreenType.OnePointSix;
         }
 
         if (aspectRatio > 1.9f && aspectRatio < 2.0f)

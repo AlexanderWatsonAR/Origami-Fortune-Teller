@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Advertisements;
 
@@ -34,6 +35,19 @@ public class InterstitialAd : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsSho
     // Implement Load Listener and Show Listener interface methods:  
     public void OnUnityAdsAdLoaded(string adUnitId)
     {
+        Debug.Log(adUnitId +"Loaded");
+        if(adUnitId == "Interstitial_Android" || adUnitId == "Interstitial_iOS")
+            StartCoroutine(ShowInterAd());
+    }
+
+    private IEnumerator ShowInterAd()
+    {
+        if (Advertisement.IsReady())
+        {
+            ShowAd();
+        }
+
+        yield return new WaitForSeconds(Time.fixedDeltaTime);
     }
 
     public void OnUnityAdsFailedToLoad(string adUnitId, UnityAdsLoadError error, string message)

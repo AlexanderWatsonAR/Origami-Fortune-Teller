@@ -88,7 +88,14 @@ public class DecisionMaker : ScreenAdapter
     protected override void TwoPointOneSix()
     {
         sidePanelLayout.enabled = false;
-        emptyRect.sizeDelta = new Vector2(emptyRect.sizeDelta.x, 600.0f);
+
+        if (aspectRatio < 2.16f)
+        {
+            emptyRect.sizeDelta = new Vector2(emptyRect.sizeDelta.x, 800.0f);
+            Preview.transform.position = new Vector3(Preview.transform.position.x, 0.36f, Preview.transform.position.z);
+        }
+        else
+            emptyRect.sizeDelta = new Vector2(emptyRect.sizeDelta.x, 600.0f);
         sidePanelLayout.enabled = true;
 
     }

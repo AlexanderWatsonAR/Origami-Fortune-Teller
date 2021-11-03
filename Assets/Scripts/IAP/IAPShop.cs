@@ -6,23 +6,79 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Purchasing;
 
+public class ShopManager 
+{
+    private ProductCatalog catalog;
+
+    public ShopManager()
+    {
+        catalog = ProductCatalog.LoadDefaultCatalog();
+
+        StandardPurchasingModule module = StandardPurchasingModule.Instance();
+
+        ConfigurationBuilder builder = ConfigurationBuilder.Instance(module);
+
+        foreach (ProductCatalogItem product in catalog.allProducts)
+        {
+            if (product.allStoreIDs.Count > 0)
+            {
+                var ids = new IDs();
+                foreach (var storeID in product.allStoreIDs)
+                {
+                    ids.Add(storeID.id, storeID.store);
+                }
+                builder.AddProduct(product.id, product.type, ids);
+            }
+            else
+            {
+                builder.AddProduct(product.id, product.type);
+            }
+        }
+    }
+
+    // Check to See if item exists in Catalog
+    public bool IsProductInCatalog(string productID)
+    {
+        foreach (ProductCatalogItem product in catalog.allProducts)
+        {
+            if (product.id == productID)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+}
+
+
 public class IAPShop : MonoBehaviour
 {
     [SerializeField]
     private const string kawaiiStickerCollection1 = "com.onlyinvalid.origamidecisionmaker.kawaiicollectionone";
 
     [SerializeField]
+    private const string halloween2021Collection = "com.onlyinvalid.origamidecisionmaker.halloween2021";
+
+    [SerializeField]
     private const string removeAds = "com.onlyinvalid.origamidecisionmaker.removeads";
 
     public GameObject KawaiiCollection1StickerPicker;
     public GameObject KawaiiCollection1PurchaseButton;
+    public GameObject halloween2021CollectionStickerPicker;
+    public GameObject halloween2021PurchaseButton;
     public GameObject removeAdsButton;
 
-    private void Awake()
+    private void Start()
     {
+
         if (PlayerPrefs.GetInt("KawaiiCollection1Purchased") == 1)
         {
-            Unlock();
+            Unlock(KawaiiCollection1StickerPicker, KawaiiCollection1PurchaseButton);
+        }
+
+        if (PlayerPrefs.GetInt("Halloween2021CollectionPurchased") == 1)
+        {
+            Unlock(halloween2021CollectionStickerPicker, halloween2021PurchaseButton);
         }
 
         if (PlayerPrefs.GetInt("RemoveAdsPurchased") == 1)
@@ -38,8 +94,15 @@ public class IAPShop : MonoBehaviour
             case kawaiiStickerCollection1:
                 Debug.Log("Purchase of " + product.definition.id + " has been successful");
                 {
-                    Unlock();
+                    Unlock(KawaiiCollection1StickerPicker, KawaiiCollection1PurchaseButton);
                     PlayerPrefs.SetInt("KawaiiCollection1Purchased", 1);
+                }
+                break;
+            case halloween2021Collection:
+                Debug.Log("Purchase of " + product.definition.id + " has been successful");
+                {
+                    Unlock(halloween2021CollectionStickerPicker, halloween2021PurchaseButton);
+                    PlayerPrefs.SetInt("Halloween2021CollectionPurchased", 1);
                 }
                 break;
             case removeAds:
@@ -51,23 +114,48 @@ public class IAPShop : MonoBehaviour
     public void OnPurchaseFailed(Product product, PurchaseFailureReason reason)
     {
         Debug.Log("Purchase of " + product.definition.id + " has failed");
+
+        switch(product.definition.id)
+        {
+            case kawaiiStickerCollection1:
+                if (product.hasReceipt == true)
+                {
+                    Unlock(KawaiiCollection1StickerPicker, KawaiiCollection1PurchaseButton);
+                    PlayerPrefs.SetInt("KawaiiCollection1Purchased", 1);
+                }
+                break;
+            case halloween2021Collection:
+                if (product.hasReceipt == true)
+                {
+                    Unlock(halloween2021CollectionStickerPicker, halloween2021PurchaseButton);
+                    PlayerPrefs.SetInt("Halloween2021CollectionPurchased", 1);
+                }
+                break;
+            case removeAds:
+                if (product.hasReceipt == true)
+                {
+                    PlayerPrefs.SetInt("RemoveAdsPurchased", 1);
+                    RemoveAds();
+                }
+                break;
+        }
     }
 
-    private void Unlock()
+    private void Unlock(GameObject collection, GameObject purchaseButton)
     {
-        for (int i = 0; i < KawaiiCollection1StickerPicker.transform.childCount; i++)
+        for (int i = 0; i < collection.transform.childCount; i++)
         {
-            KawaiiCollection1StickerPicker.transform.GetChild(i).transform.GetChild(1).gameObject.SetActive(false);
+            collection.transform.GetChild(i).transform.GetChild(1).gameObject.SetActive(false);
         }
 
-        for (int i = 0; i < KawaiiCollection1PurchaseButton.transform.childCount; i++)
+        for (int i = 0; i < purchaseButton.transform.childCount; i++)
         {
-            if (KawaiiCollection1PurchaseButton.transform.GetChild(i).gameObject.GetComponent<TextMeshProUGUI>() != null)
+            if (purchaseButton.transform.GetChild(i).gameObject.GetComponent<TextMeshProUGUI>() != null)
             {
-                KawaiiCollection1PurchaseButton.transform.GetChild(i).gameObject.GetComponent<TextMeshProUGUI>().text = "Purchased";
+                purchaseButton.transform.GetChild(i).gameObject.GetComponent<TextMeshProUGUI>().text = "Purchased";
             }
         }
-        KawaiiCollection1PurchaseButton.GetComponent<Button>().interactable = false;
+        purchaseButton.GetComponent<Button>().interactable = false;
     }
 
     private void RemoveAds()
@@ -76,7 +164,6 @@ public class IAPShop : MonoBehaviour
         if (removeAdsButton != null)
         {
             removeAdsButton.GetComponent<Button>().interactable = false;
-            removeAdsButton.transform.GetChild(0).gameObject.GetComponent<Renderer>().material = null;
             removeAdsButton.transform.GetChild(0).gameObject.GetComponent<Image>().color = Color.gray;
             removeAdsButton.transform.GetChild(1).GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().color = Color.gray;
         }

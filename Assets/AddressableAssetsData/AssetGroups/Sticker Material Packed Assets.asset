@@ -20,135 +20,273 @@ MonoBehaviour:
   - m_GUID: c7c20d68898968d42a99d4990c42546c
     m_Address: Assets/Stickers/Materials/Ice Cream.mat
     m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_SerializedLabels:
+    - default
   - m_GUID: 4630166ef5325914cb614c8bc5d8d24a
     m_Address: Assets/Stickers/Materials/Narwhal 1.mat
     m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_SerializedLabels:
+    - default
   - m_GUID: 1c58b579d4917c74bb0d1933b4f851f7
     m_Address: Assets/Stickers/Materials/Moon.mat
     m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_SerializedLabels:
+    - default
   - m_GUID: 32f08cf6a721aad4fbc7ea9bab553db4
     m_Address: Assets/Stickers/Materials/NarwhalFoil.mat
     m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_SerializedLabels:
+    - default
   - m_GUID: 6ad6b738ff3bfb449a5bf5d680fdfbcb
     m_Address: Assets/Stickers/Materials/Clock.mat
     m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_SerializedLabels:
+    - default
   - m_GUID: 0a809950e612c8e4585ec08adeb1f7ce
     m_Address: Assets/Stickers/Materials/CactusFoil.mat
     m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_SerializedLabels:
+    - default
   - m_GUID: 2ac8c087ed48bb44686e903f5fd14b58
     m_Address: Assets/Stickers/Materials/Panda.mat
     m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_SerializedLabels:
+    - default
   - m_GUID: 8305e518966823043a53957937ac4967
     m_Address: Assets/Stickers/Materials/Pineapple.mat
     m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_SerializedLabels:
+    - default
   - m_GUID: 1f02e3c75ffe31b4a8e6954767efef5f
     m_Address: Assets/Stickers/Materials/Clock 1.mat
     m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_SerializedLabels:
+    - default
   - m_GUID: d21c173e835d08e4eaac2c004e8a7a72
     m_Address: Assets/Stickers/Materials/Watermelon.mat
     m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_SerializedLabels:
+    - default
   - m_GUID: a0d2e8c70d306f14bb404aab02b199b0
     m_Address: Assets/Stickers/Materials/Heart.mat
     m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_SerializedLabels:
+    - default
   - m_GUID: 37b00bb0a369cb24b9b83487a292f93a
     m_Address: Assets/Stickers/Materials/Chocolate.mat
     m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_SerializedLabels:
+    - default
   - m_GUID: 02d65629484a15047817ddc1205bfaa3
     m_Address: Assets/Stickers/Materials/Llama.mat
     m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_SerializedLabels:
+    - default
   - m_GUID: c0c6bd653e3225e4884fb15a613d1a4a
     m_Address: Assets/Stickers/Materials/Teapot.mat
     m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_SerializedLabels:
+    - default
   - m_GUID: ff84972a45b432840bda991191252111
     m_Address: Assets/Stickers/Materials/Avocado Foil.mat
     m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_SerializedLabels:
+    - default
   - m_GUID: 911725f3c8380d54880e06c7e7ca5040
     m_Address: Assets/Stickers/Materials/Bowler Hat.mat
     m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_SerializedLabels:
+    - default
   - m_GUID: 8b7031b5246164941a6690938a659850
     m_Address: Assets/Stickers/Materials/Teacup.mat
     m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_SerializedLabels:
+    - default
   - m_GUID: 0724069a15e762247a9962feb58568bc
     m_Address: Assets/Stickers/Materials/Sun.mat
     m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_SerializedLabels:
+    - default
   - m_GUID: acea69ab57edf874696b77e8c83f6877
     m_Address: Assets/Stickers/Materials/Apple.mat
     m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_SerializedLabels:
+    - default
   - m_GUID: 45dae30a719f508438370c4ba90f58d5
     m_Address: Assets/Stickers/Materials/Rainbow.mat
     m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_SerializedLabels:
+    - default
   - m_GUID: 3cc36ecb362f9df42b86d587fd78603d
     m_Address: Assets/Stickers/Materials/SheepFoil.mat
     m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_SerializedLabels:
+    - default
   - m_GUID: 1ca911507c3819c4a959fd529624670b
     m_Address: Assets/Stickers/Materials/StarRainbowFoil.mat
     m_ReadOnly: 0
+    m_SerializedLabels:
+    - default
+  - m_GUID: 580bb01d1b56250468addf7025718bcd
+    m_Address: Assets/Stickers/Halloween Collection 2021/Materials/Coffin.mat
+    m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+  - m_GUID: f3c892e058430ee4986a3c846915f2e6
+    m_Address: Assets/Stickers/Halloween Collection 2021/Materials/Web.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6995a7f77f330c5468ecb30887537510
+    m_Address: Assets/Stickers/Halloween Collection 2021/Materials/Witch Hat.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: bd1a7170d6dbbc74c90d61633aaa2ad7
+    m_Address: Assets/Stickers/Halloween Collection 2021/Materials/Trick or Treat.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2585f4a5e9a51bb4e9a60df860824cce
+    m_Address: Assets/Stickers/Halloween Collection 2021/Materials/Toffee Apple.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a8a78ce2dfd22ba499e4a2a48337864c
+    m_Address: Assets/Stickers/Halloween Collection 2021/Materials/Skull.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ba0bb3b8aee52c44591b9aadccb751e1
+    m_Address: Assets/Stickers/Halloween Collection 2021/Materials/Necronomicon.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7e31dea6bb531e9468e995d9f4d92532
+    m_Address: Assets/Stickers/Halloween Collection 2021/Materials/Scythe.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d551a05bb1f2b15458aa4f4a9afdf5ac
+    m_Address: Assets/Stickers/Halloween Collection 2021/Materials/Scarecrow.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3b95f0c694952d64a8bed079d353709d
+    m_Address: Assets/Stickers/Halloween Collection 2021/Materials/Ghost.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: efcf211ef2cbbdf4596674cfe894c9a5
+    m_Address: Assets/Stickers/Halloween Collection 2021/Materials/Eyeball.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: aff756aedabfabf4bbdb7cf30648d522
+    m_Address: Assets/Stickers/Halloween Collection 2021/Materials/Pumpkin.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c36030043b0464e4dbd12eda64ad0f8a
+    m_Address: Assets/Stickers/Halloween Collection 2021/Materials/Happy Halloween.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0cacb610b8622ab45856fb10fbc57625
+    m_Address: Assets/Stickers/Halloween Collection 2021/Materials/Vampire Teeth.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0d7e03b007f283a449de270f78d2cfa6
+    m_Address: Assets/Stickers/Halloween Collection 2021/Materials/Cauldron.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f53aed5a7a0980d4a98e00d001d62f24
+    m_Address: Assets/Stickers/Halloween Collection 2021/Materials/Bat.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8bd3dce99b7bdde4f91a1f5cb5afbd12
+    m_Address: Assets/Stickers/Halloween Collection 2021/Materials/Brain Jar.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1b35165296c3e1f4383eca3152951150
+    m_Address: Assets/Stickers/Halloween Collection 2021/Materials/Crow.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: fc94385de9f685f4eb52ad67f11b667e
+    m_Address: Assets/Stickers/Halloween Collection 2021/Materials/Broom.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3593f720d6cb08d428ba0ed7969939bd
+    m_Address: Assets/Stickers/Halloween Collection 2021/Materials/Trident.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ad1afcb9a04783745a3e59c3929e8cc2
+    m_Address: Assets/Stickers/Flags/Materials/USA.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 053e50fc202cb3d4ab2672ded44a889e
+    m_Address: Assets/Stickers/Flags/Materials/Sweden.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2f8324bd58a85d24d9081415d5630303
+    m_Address: Assets/Stickers/Flags/Materials/South Korea.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 279ab7a6c42b51141beb8a968f4e24d0
+    m_Address: Assets/Stickers/Flags/Materials/Oman.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e700be5e3a7d8664181fb2f88f6ec701
+    m_Address: Assets/Stickers/Flags/Materials/Lebanon.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 70499e99b9a89954a8b5e303b9ff5389
+    m_Address: Assets/Stickers/Flags/Materials/New Zealand.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d2751e7eee788ab448bcf35c6d32023f
+    m_Address: Assets/Stickers/Flags/Materials/Germany.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 68c543b8e9484464ea96bad30b53e5c4
+    m_Address: Assets/Stickers/Flags/Materials/Egypt.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 58b53fdc297e4194d9920fe27a6cc0e4
+    m_Address: Assets/Stickers/Flags/Materials/France.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d74abb01b63deb14c959639f3099b60f
+    m_Address: Assets/Stickers/Flags/Materials/Italy.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: adc6f32dfa429ae4b8acd6586c1f1fd3
+    m_Address: Assets/Stickers/Flags/Materials/Portugal.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7867a277003114644aa085f367958cdc
+    m_Address: Assets/Stickers/Flags/Materials/Canada.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: dc651d6d5a1c317439e1abea3ca3728e
+    m_Address: Assets/Stickers/Flags/Materials/Jordan.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 82a7b43875796bd46acb7cc74cca1053
+    m_Address: Assets/Stickers/Flags/Materials/Austria.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7dd9409bc60166b40b0db5f8d8a9545f
+    m_Address: Assets/Stickers/Flags/Materials/Spain.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 22211e4adfc30f14bb6b67477679c284
+    m_Address: Assets/Stickers/Flags/Materials/UAE.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 84d4c5886552f1f488db97d3a88e7f71
+    m_Address: Assets/Stickers/Flags/Materials/Japan.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7271670277080344598dee3d87b90aad
+    m_Address: Assets/Stickers/Flags/Materials/Qatar.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: fcd2ce57f41c0594d8ea947b07de437e
+    m_Address: Assets/Stickers/Flags/Materials/Australia.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3118a67b03b43894d9169eff849b45f5
+    m_Address: Assets/Stickers/Flags/Materials/UK.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 4331345866ae5a044bc2bfc0f638c7f6, type: 2}
   m_SchemaSet:
