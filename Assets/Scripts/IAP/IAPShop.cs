@@ -5,6 +5,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Purchasing;
+using UnityEngine.UDP;
 
 public class ShopManager 
 {
@@ -54,13 +55,13 @@ public class ShopManager
 public class IAPShop : MonoBehaviour
 {
     [SerializeField]
-    private const string kawaiiStickerCollection1 = "com.onlyinvalid.origamidecisionmaker.kawaiicollectionone";
+    private const string kawaiiStickerCollection1 = "com.onlyinvalid.origami.kawaiicollectionone";
 
     [SerializeField]
-    private const string halloween2021Collection = "com.onlyinvalid.origamidecisionmaker.halloween2021";
+    private const string halloween2021Collection = "com.onlyinvalid.origami.halloween2021";
 
     [SerializeField]
-    private const string removeAds = "com.onlyinvalid.origamidecisionmaker.removeads";
+    private const string removeAds = "com.onlyinvalid.origami.removeads";
 
     public GameObject KawaiiCollection1StickerPicker;
     public GameObject KawaiiCollection1PurchaseButton;
@@ -68,8 +69,13 @@ public class IAPShop : MonoBehaviour
     public GameObject halloween2021PurchaseButton;
     public GameObject removeAdsButton;
 
+
     private void Start()
     {
+        StoreService.Initialize(UDPListener.instance);
+
+        KawaiiCollection1PurchaseButton.GetComponent<IAPButton>().priceText.transform.parent.gameObject.GetComponent<TextMeshProUGUI>().text = KawaiiCollection1PurchaseButton.GetComponent<IAPButton>().priceText.text;
+        halloween2021PurchaseButton.GetComponent<IAPButton>().priceText.transform.parent.gameObject.GetComponent<TextMeshProUGUI>().text = halloween2021PurchaseButton.GetComponent<IAPButton>().priceText.text;
 
         if (PlayerPrefs.GetInt("KawaiiCollection1Purchased") == 1)
         {

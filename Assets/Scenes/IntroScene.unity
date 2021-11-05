@@ -841,7 +841,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 879606496}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1302,7 +1302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36a5f511b0d8142cba0aeb92d0b264c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  productId: com.onlyinvalid.origamidecisionmaker.removeads
+  productId: com.onlyinvalid.origami.removeads
   buttonType: 0
   consumePurchase: 1
   onPurchaseComplete:
@@ -1401,6 +1401,85 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!1 &532449302
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 532449305}
+  - component: {fileID: 532449304}
+  - component: {fileID: 532449303}
+  m_Layer: 5
+  m_Name: Halloween 2021 Collection Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &532449303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532449302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &532449304
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532449302}
+  m_CullTransparentMesh: 1
+--- !u!224 &532449305
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532449302}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 910186888}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -1.1782504, y: -25.821234}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &597846007
 GameObject:
   m_ObjectHideFlags: 0
@@ -2569,6 +2648,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2701774941364393229, guid: 5603ae8d735823a4f92b6221af1f42e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Halloween 2021 Price Text (TMP)
+      objectReference: {fileID: 0}
     - target: {fileID: 2767336667911565521, guid: 5603ae8d735823a4f92b6221af1f42e7,
         type: 3}
       propertyPath: m_Color.a
@@ -3649,6 +3733,16 @@ PrefabInstance:
       propertyPath: Preview
       value: 
       objectReference: {fileID: 1168362668}
+    - target: {fileID: 5155686037828583631, guid: 5603ae8d735823a4f92b6221af1f42e7,
+        type: 3}
+      propertyPath: priceText
+      value: 
+      objectReference: {fileID: 532449303}
+    - target: {fileID: 5155686037828583631, guid: 5603ae8d735823a4f92b6221af1f42e7,
+        type: 3}
+      propertyPath: productId
+      value: com.onlyinvalid.origami.halloween2021
+      objectReference: {fileID: 0}
     - target: {fileID: 5155686037828583631, guid: 5603ae8d735823a4f92b6221af1f42e7,
         type: 3}
       propertyPath: onPurchaseFailed.m_PersistentCalls.m_Calls.Array.size
@@ -4807,7 +4901,7 @@ PrefabInstance:
     - target: {fileID: 8693317998925157435, guid: 5603ae8d735823a4f92b6221af1f42e7,
         type: 3}
       propertyPath: productId
-      value: com.onlyinvalid.origamidecisionmaker.kawaiicollectionone
+      value: com.onlyinvalid.origami.kawaiicollectionone
       objectReference: {fileID: 0}
     - target: {fileID: 8693317998925157435, guid: 5603ae8d735823a4f92b6221af1f42e7,
         type: 3}
@@ -4999,6 +5093,12 @@ CanvasGroup:
 --- !u!224 &879606496 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1750486120979453110, guid: 5603ae8d735823a4f92b6221af1f42e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 879606491}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &910186888 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4149468662555556593, guid: 5603ae8d735823a4f92b6221af1f42e7,
     type: 3}
   m_PrefabInstance: {fileID: 879606491}
   m_PrefabAsset: {fileID: 0}
@@ -6920,32 +7020,32 @@ PrefabInstance:
     - target: {fileID: 1659503588374044666, guid: fd2bd479280dacd49a54a3f61306a57a,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1659503588374044666, guid: fd2bd479280dacd49a54a3f61306a57a,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1659503588374044666, guid: fd2bd479280dacd49a54a3f61306a57a,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 150
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1659503588374044666, guid: fd2bd479280dacd49a54a3f61306a57a,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 150
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1659503588374044666, guid: fd2bd479280dacd49a54a3f61306a57a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 225
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1659503588374044666, guid: fd2bd479280dacd49a54a3f61306a57a,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2051749540314849708, guid: fd2bd479280dacd49a54a3f61306a57a,
         type: 3}
@@ -6956,62 +7056,62 @@ PrefabInstance:
     - target: {fileID: 2960074111026557062, guid: fd2bd479280dacd49a54a3f61306a57a,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2960074111026557062, guid: fd2bd479280dacd49a54a3f61306a57a,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2960074111026557062, guid: fd2bd479280dacd49a54a3f61306a57a,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 150
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2960074111026557062, guid: fd2bd479280dacd49a54a3f61306a57a,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 150
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2960074111026557062, guid: fd2bd479280dacd49a54a3f61306a57a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 225
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2960074111026557062, guid: fd2bd479280dacd49a54a3f61306a57a,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -225
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3465361114826604647, guid: fd2bd479280dacd49a54a3f61306a57a,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3465361114826604647, guid: fd2bd479280dacd49a54a3f61306a57a,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3465361114826604647, guid: fd2bd479280dacd49a54a3f61306a57a,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 150
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3465361114826604647, guid: fd2bd479280dacd49a54a3f61306a57a,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 150
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3465361114826604647, guid: fd2bd479280dacd49a54a3f61306a57a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3465361114826604647, guid: fd2bd479280dacd49a54a3f61306a57a,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -225
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4149534809437499048, guid: fd2bd479280dacd49a54a3f61306a57a,
         type: 3}
@@ -7402,32 +7502,32 @@ PrefabInstance:
     - target: {fileID: 4159007732304592339, guid: fd2bd479280dacd49a54a3f61306a57a,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4159007732304592339, guid: fd2bd479280dacd49a54a3f61306a57a,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4159007732304592339, guid: fd2bd479280dacd49a54a3f61306a57a,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 150
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4159007732304592339, guid: fd2bd479280dacd49a54a3f61306a57a,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 150
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4159007732304592339, guid: fd2bd479280dacd49a54a3f61306a57a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4159007732304592339, guid: fd2bd479280dacd49a54a3f61306a57a,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4757049844663814182, guid: fd2bd479280dacd49a54a3f61306a57a,
         type: 3}

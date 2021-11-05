@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -107981364, guid: 741884b37a0234d86bb740e55081cd5f, type: 3}
+  m_Name: UDP Settings
+  m_EditorClassIdentifier: 
+  UnityProjectID: c8c5bf92-c115-4399-bc9e-1019ca173775
+  UnityClientID: z3m3AcqBMt9BmEQeowGH2w
+  UnityClientKey: crszRr5LnGvukmXtPqhMy69Z69g-2dgHbQ79Nyj8Ec8
+  UnityClientRSAPublicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAteXbxso/b+3YchdYzN8GJmSy/ufQHx6NtLRNynS7nhthg4OYr8tjW3CJXUhJb/LsIikX+qWyBlT4kAx7WOsPAscwGgptA6zYtZQA5OjFyLlkjnX4tpQShwJIs8a1i23NYIWJ0g7T9pWKuVtpll1hncjL+v2m6dPiYhfMdbTR8sGJT+k8krkx79f3BUyUx4PN+QbcCoG1CdtyimI4yMnJCqELMIx8NlAp9AnLN8jn5i2rdTohu/nlYnM85L7L+6XqyLnadUYz8XdmMkOWtXwRkZUnwP8WiiOJp3Hvx8H7IqzAZsdiyEYmIeaRb018ANrMjxfOgIWI7oQrL9lB/fLKXwIDAQAB
+  AppName: Origami Decision Maker
+  AppSlug: 7f35bdd8-183e-4887-9556-fbce0831bd0c
+  AppItemId: 61817ff6e8b9cfe949b20cfe
+  Permission: 
