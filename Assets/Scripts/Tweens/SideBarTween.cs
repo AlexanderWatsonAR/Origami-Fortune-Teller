@@ -75,6 +75,16 @@ public class SideBarTween : MonoBehaviour
         sidePanelTransform.DOPlayBackwards();
         isSideBarVisible = !isSideBarVisible;
         StartCoroutine(TweenEvent(2, 0.33f));
+
+        if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "IntroScene")
+        {
+            ChangeOrigamiSticker[] stickers = FindObjectsOfType<ChangeOrigamiSticker>();
+
+            foreach (ChangeOrigamiSticker cos in stickers)
+            {
+                cos.LoadSprite();
+            }
+        }
     }
 
     public void CloseShopWindow()

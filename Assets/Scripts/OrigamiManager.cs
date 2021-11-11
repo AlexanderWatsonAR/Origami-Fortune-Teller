@@ -271,7 +271,7 @@ public class OrigamiManager : MonoBehaviour
 
     public void LoadStickerTexData(GameObject origami, string entryIndex)
     {
-        if (entryIndex == "-1" || (PlayerPrefs.GetInt("KawaiiCollection1Purchased") != 1 && PlayerPrefs.GetInt("Halloween2021CollectionPurchased") != 1))
+        if (entryIndex == "-1")
             return;
 
         bool kawaiiStickerCollectionPurchased = PlayerPrefs.GetInt("KawaiiCollection1Purchased") == 1 ? true : false;

@@ -5,13 +5,13 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Purchasing;
-using UnityEngine.UDP;
+//using UnityEngine.UDP;
 
-public class ShopManager 
+public class ShopCatalog 
 {
     private ProductCatalog catalog;
 
-    public ShopManager()
+    public ShopCatalog()
     {
         catalog = ProductCatalog.LoadDefaultCatalog();
 
@@ -72,10 +72,20 @@ public class IAPShop : MonoBehaviour
 
     private void Start()
     {
-        StoreService.Initialize(UDPListener.instance);
+        //if (UDPListener.instance != null)
+        //{
+        //    IInitListener listener = new UDPListener();
+        //    StoreService.Initialize(listener);
+        //}
 
-        KawaiiCollection1PurchaseButton.GetComponent<IAPButton>().priceText.transform.parent.gameObject.GetComponent<TextMeshProUGUI>().text = KawaiiCollection1PurchaseButton.GetComponent<IAPButton>().priceText.text;
-        halloween2021PurchaseButton.GetComponent<IAPButton>().priceText.transform.parent.gameObject.GetComponent<TextMeshProUGUI>().text = halloween2021PurchaseButton.GetComponent<IAPButton>().priceText.text;
+        TextMeshProUGUI kawaiiPriceText = KawaiiCollection1PurchaseButton.GetComponent<IAPButton>().priceText.transform.parent.gameObject.GetComponent<TextMeshProUGUI>();
+        TextMeshProUGUI halloweenText = halloween2021PurchaseButton.GetComponent<IAPButton>().priceText.transform.parent.gameObject.GetComponent<TextMeshProUGUI>();
+
+        kawaiiPriceText.text = KawaiiCollection1PurchaseButton.GetComponent<IAPButton>().priceText.text;
+        halloweenText.text = halloween2021PurchaseButton.GetComponent<IAPButton>().priceText.text;
+
+        kawaiiPriceText.text = kawaiiPriceText.text == "" ? "$0.99" : kawaiiPriceText.text;
+        halloweenText.text = halloweenText.text == "" ? "$0.99" : halloweenText.text;
 
         if (PlayerPrefs.GetInt("KawaiiCollection1Purchased") == 1)
         {

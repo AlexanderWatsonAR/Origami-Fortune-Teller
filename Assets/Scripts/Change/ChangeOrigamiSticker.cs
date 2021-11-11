@@ -14,6 +14,7 @@ public class ChangeOrigamiSticker : Change
     //public GameObject ScrollView;
     public int stickerHash;
     public bool isBorderActive;
+    public bool doesSpriteStartInactive;
 
     private float stickerIndex;
 
@@ -31,7 +32,8 @@ public class ChangeOrigamiSticker : Change
         if (spriteRef == null)
             return;
 
-        LoadSprite();
+        if(doesSpriteStartInactive == false)
+            LoadSprite();
       
 
         //ScrollView.GetComponent<ScrollRect>().onValueChanged.AddListener(delegate
@@ -145,7 +147,7 @@ public class ChangeOrigamiSticker : Change
     //    }
     //}
 
-    private void LoadSprite()
+    public void LoadSprite()
     {
         Image tempImage = GetComponent<Image>();
         DataLoading.GetSpriteFromRef(spriteRef, tempImage);
